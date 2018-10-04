@@ -1,0 +1,15 @@
+@import '_vars';
+@import 'feronSection1/feronSection1';
+@import 'feronSection2/feronSection2';
+@import 'feronSection3/feronSection3';
+@import 'feronSection4/feronSection4';
+@import 'feronSection5/feronSection5';
+.wrappers {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+}

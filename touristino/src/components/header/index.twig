@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/style.bundle.css">
+
+    <title>{{ title }}</title>
+</head>
+<body>
+
+{% include '../svg/index.twig' %}
+
+<div class="popup-container"></div>
+
+<div class="page">
+    {# header start #}
+    <header {% if headerReverse %}class="{{ headerReverse }}"{% endif %}>
+
+        <div class="header">
+            <div class="wrapper header__wrapper">
+
+                <a href="./index.html" class="logo header__logo"><img src="./img/logo.png" alt="{{ companyName }}"></a>
+
+                <div class="slicker">
+
+                    {% for i in 0..2 %}
+                        <span class="slicker__item"></span>
+                    {% endfor %}
+
+                </div>
+
+                <nav class="header__nav">
+                    {% include '../menu/index.twig' %}
+
+                    <div class="mob-container">
+
+                        <a href="#" class="mob-basket__profile" data-action="popup" data-scope="ajax.html #signIn">login</a>
+                        <a href="#" class="mob-basket__favorite" data-action="popup" data-scope="ajax.html #notific-2">favorite</a>
+
+                    </div>
+
+                    <div class="mob-select">
+
+                        <div class="cselect lang">
+                            <span class="cselect__current lang__current" data-current="{{ lang.curr }}"></span>
+                            <ul class="cselect__list lang__list">
+                                {% for item in lang.items %}
+                                    <li class="cselect__item lang__item {% if loop.index == 1 %}active{% endif %}">
+                                        <span data-select="{{ item }}">{{ item }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <div class="cselect currency">
+                            <span class="cselect__current currency__current" data-current="{{ currency.curr }}"></span>
+                            <ul class="cselect__list currency__list">
+                                {% for item in currency.items %}
+                                    <li class="cselect__item currency__item {% if loop.index == 1 %}active{% endif %}">
+                                        <span data-select="{{ item }}">{{ item }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <span class="menu-close"></span>
+
+                </nav>
+
+                <div class="header__ui active-desk">
+
+                    <div class="search">
+                        <button type="button" class="search__button" data-action="popup" data-scope="ajax.html #search">
+                            <svg viewBox="0 0 451 451">
+                                <use xlink:href="#search" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="basket">
+
+                        <a href="#" class="basket__item basket__profile" data-action="popup" data-scope="ajax.html #signIn">
+                            <svg viewBox="0 0 482.9 482.9">
+                                <use xlink:href="#profile" />
+                            </svg>
+                            <span>2</span>
+                        </a>
+
+                        {#{% if headerReverse %}
+                        <a href="#" class="basket__item basket__profile" data-action="popup" data-scope="ajax.html #signIn">
+                            <svg viewBox="0 0 482.9 482.9">
+                                <use xlink:href="#profile" />
+                            </svg>
+                            <span>2</span>
+                        </a>
+                        {% endif %}#}
+
+                        <a href="#" class="basket__item basket__favorite" data-action="popup" data-scope="ajax.html #notific-2">
+                            <svg viewBox="0 0 512 512">
+                                <use xlink:href="#favorite" />
+                            </svg>
+                            <span>0</span>
+                        </a>
+
+                        <a href="#" class="basket__item basket__inner" data-action="popup" data-scope="ajax.html #basket">
+                            <svg viewBox="0 0 38.133 38.133">
+                                <use xlink:href="#basket" />
+                            </svg>
+                            <span>2</span>
+                        </a>
+
+                        <span class="basket__item basket__amount cy" data-cy="{{ cy }}">0.00</span>
+                    </div>
+
+                    <div class="cselect lang">
+                        <span class="cselect__current lang__current" data-current="{{ lang.curr }}"></span>
+                        <ul class="cselect__list lang__list">
+                            {% for item in lang.items %}
+                                <li class="cselect__item lang__item {% if loop.index == 1 %}active{% endif %}">
+                                    <span data-select="{{ item }}">{{ item }}</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="cselect currency">
+                        <span class="cselect__current currency__current" data-current="{{ currency.curr }}"></span>
+                        <ul class="cselect__list currency__list">
+                            {% for item in currency.items %}
+                                <li class="cselect__item currency__item {% if loop.index == 1 %}active{% endif %}">
+                                    <span data-select="{{ item }}">{{ item }}</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        {% if slidingMenu %}
+
+        {% include '../menu/sliding.menu/index.twig' %}
+
+        {% endif %}
+
+        {% if headerReverse %}
+
+            <div class="basic" style="background:url('./img/earth-round.png') no-repeat center/contain">
+
+                <div class="basic-container">
+
+                    <div>
+                        <div class="basic-substrate"></div>
+                    </div>
+
+                    {% include '../slider/basic/index.twig' %}
+
+                </div>
+
+            </div>
+
+        {% endif %}
+    </header>
+    {# header end #}

@@ -1,0 +1,115 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <div class="section-background">
+        {# backgrounds start #}
+        {% for i in 0..2 %}
+            <img class="section-background__item item-{{ i+1 }}" src="./img/bg/about-item-{{ i+1 }}.png" alt="">
+        {% endfor %}
+        {# backgrounds end #}
+
+        {# main-content add below #}
+
+        <section>
+
+            <div class="wrapper">
+
+                {% include '../components/breadcrumbs/index.twig' %}
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="wrapper">
+
+                <h1 class="h1">{{ h1 }}</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua.</p>
+
+                <div class="about-block">
+                    <h2 class="h2">Your favorite travel agency <br /> TURISTINO</h2>
+                    <p class="subtitle">Founded in 1990</p>
+                    <div class="about-block__text">
+                        <div class="shorty" data-short-height="242">
+                            <p>Туристическое агентство "Пятый Океан" - это компания, предоставляющая весь спектр туристических услуг. Мы работаем только с проверенными партнерами и предлагаем широкий ассортимент групповых и индивидуальных туров в любую страну мира.</p>
+                            <br />
+                            <p>
+                                Компания была основана в 2006 году. За 10 лет успешной работы турагентство "Пятый Океан" зарекомендовало себя на туристическом рынке Херсона и области как надёжный партнёр, свидетельством чего являются положительные отзывы наших клиентов, значительная часть которых являются постоянными.</p>
+                            <br />
+                            <p>Наша цель проста и понятна каждому: мы любим яркий отдых и делаем все, чтобы его полюбило как можно больше людей.
+                            </p>
+                            <p>
+                                Компания была основана в 2006 году. За 10 лет успешной работы турагентство "Пятый Океан" зарекомендовало себя на туристическом рынке Херсона и области как надёжный партнёр, свидетельством чего являются положительные отзывы наших клиентов, значительная часть которых являются постоянными.</p>
+                            <br />
+                            <p>Наша цель проста и понятна каждому: мы любим яркий отдых и делаем все, чтобы его полюбило как можно больше людей.
+                            </p>
+                        </div>
+
+                        <a href="#" class="read__more about-block__button shorty-button" data-display="true" data-after="&rarr;">read more</a>
+                    </div>
+
+                    <div class="about-block__image">
+                        <img src="./img/bg/about-item-5.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+            <div class="wrapper">
+
+                <h2 class="h2">Why we are the best</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                {% include '../components/recommendation.list/index.twig' %}
+
+            </div>
+
+        </section>
+
+        <section style="background-image:url('./img/bg/about-item-4.png')">
+
+            <div class="wrapper">
+
+                <h2 class="h2">Our team</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+
+                {% include '../components/slider/common/index.twig' %}
+
+            </div>
+
+        </section>
+
+        <section class="review">
+
+            <div class="wrapper">
+
+                <h2 class="h2">Review about us</h2>
+
+                <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua.</p>
+
+                {% include "../components/slider/review/index.twig" %}
+
+                <div class="review__button">
+
+                    <a href="" class="button-white review__more">view more</a>
+                    <a href="" class="button-green review__send">Send review</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

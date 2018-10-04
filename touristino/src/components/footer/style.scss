@@ -1,0 +1,168 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 72px;
+
+    .copy {
+      position: absolute;
+      bottom: 22px;
+      right: 0;
+      color: #4b4b4b;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 19px;
+      letter-spacing: 0.3px;
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &-contact {
+    &__item {
+      display: flex;
+    }
+  }
+
+  &-item__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    & >* .h5 {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        border-color: transparent;
+        border: {
+          style: solid;
+          width: 5px 4.5px 0;
+          color: #000 transparent transparent;
+        }
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__item {
+
+    &:not(.payment) {
+      margin-right: 20px;
+    }
+
+    &:first-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 3.9%;
+    }
+
+    .logo {
+      display: inline-block;
+      margin-top: -95px;
+
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .h5 {
+      font: {
+        size: 14px;
+        weight: 500;
+      }
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #4b4b4b;
+      margin: {
+        bottom: 19px;
+        left: -11px;
+      }
+    }
+
+    &.payment {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 20px;
+
+      a:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__list:not(.footer-contact__list) {
+
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+
+    a {
+      display:inline-block;
+     font-size: 14px;
+      line-height: 16px;
+      color: #4b4b4b;
+      letter-spacing: 0.06px;
+      transition: color 250ms ease;
+
+      &:hover {
+        color: #0d9e51;
+      }
+    }
+  }
+
+  &-contact {
+
+    &__item {
+      span {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.06px;
+        color: #393939;
+
+        a {
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+          letter-spacing: inherit;
+          color: inherit;
+        }
+      }
+
+      & + .footer-contact__item {
+        margin-top: 18px;
+      }
+    }
+
+    &__icon {
+      width: 21px;
+      height: 21px;
+      fill: #393939;
+      vertical-align: top;
+      margin-right: 11px;
+    }
+
+    &__telephone {
+      span {
+        font: {
+          family: $proxima;
+          weight: 600;
+        }
+      }
+    }
+  }
+}

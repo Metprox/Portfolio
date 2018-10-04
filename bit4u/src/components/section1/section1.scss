@@ -1,0 +1,219 @@
+.wrapper img {
+    width: auto;
+}
+
+.wrapper {
+    font-family: $main-fonts;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section1__leftBlock {
+    position: relative;
+    width: 25%;
+    background-image: linear-gradient(85deg, rgba(70, 98, 149, .6), rgba(0, 0, 0, 0.3));
+    box-shadow: 0px 3px 7px 0 rgba(4, 14, 31, 0.35);
+}
+
+.section1__leftBlock div {
+    padding-left: 21px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.section1__leftBlock h2 {
+    margin-left: 30px;
+    font-family: $main-fonts;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.section1__leftBlock p {
+    margin-top: 20px;
+    font-family: $main-fonts;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.section1__leftBlock div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section1__leftBlock div:nth-child(2),
+.section1__leftBlock div:nth-child(3) {
+    padding-top: 10px;
+}
+
+.section1__rightBlock {
+    width: 70%;
+}
+
+.rightBlock__two {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.rightBlock__two div {
+    display: flex;
+    align-items: center;
+}
+
+.rightBlock__two a {
+    text-align: center;
+    width: 152px;
+    height: 58px;
+    padding-top: 6px;
+    font-family: $main-fonts;
+    font-size: 18.5px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.3;
+    letter-spacing: 3.7px;
+    color: #fff;
+    transition: all .1s linear;
+    border-radius: 1%;
+    border: solid 1px #dc7d43;
+    background: #dc7d43;
+}
+
+.bg__orange:hover {
+    border: solid 1px #ffffff;
+    background: transparent;
+}
+
+.rightBlock__two div p {
+    margin-left: 20px;
+    font-family: $main-fonts;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #fff;
+}
+
+.rightBLock__one {
+    width: 100%;
+    height: 97px;
+    background-color: rgba(70, 98, 149, .5);
+    box-shadow: 0px 3px 7px 0 rgba(9, 14, 31, 0.35);
+}
+
+.good {
+    display: none;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: auto;
+}
+
+.swiper__points {
+    width: 63px;
+}
+
+.swiper-slide div:first-child {
+    margin-left: 50px;
+}
+
+.swiper-slide div:last-child {
+    margin-right: 50px;
+}
+
+.swiper__points h3 {
+    font-family: $main-fonts;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.41;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #80fd42;
+}
+
+.swiper__points p {
+    font-family: $main-fonts;
+    font-size: 13.5px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.swiper__points {
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+
+.bool {
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    width: 8px;
+    height: 8px;
+    background-color: #80fd42;
+    border-radius: 50%;
+}
+
+.greenBool {
+    background-color: #80fd42;
+}
+
+.redBool {
+    background-color: #dc4343;
+}
+
+.section1__leftBlock div:last-child {
+    padding-bottom: 0px;
+}
+
+#swiper-pagination {
+    display: none;
+}
+
+#swiper-container2 img {
+    transform: scale(1) rotate(0deg);
+    transition: all .1s linear;
+}
+
+#swiper-container2 img:hover {
+    transform: scale(1.050) rotate(1deg);
+}

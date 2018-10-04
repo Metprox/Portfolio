@@ -1,0 +1,25 @@
+<div class="posts">
+
+    <h4 class="h4">Tags</h4>
+
+    <ul class="tag__list">
+
+        {% set tags = ["web design", "Photography", "food", "Photography", "love"] %}
+        {% for item in tags %}
+            <li class="tag__item">
+
+                <label class="tag-box">
+                    <input type="checkbox" name="" value="" />
+                    <span class="tag__button">{{ item }}</span>
+                </label>
+
+            </li>
+        {% endfor %}
+
+    </ul>
+
+    {% include './post.popular/index.twig' %}
+
+    {% include './post.watched/index.twig' %}
+
+</div>

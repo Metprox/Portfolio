@@ -1,0 +1,215 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include "../components/breadcrumbs/index.twig" %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                <br /> incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam</p>
+
+        </div>
+
+    </section>
+
+    {% set sectionImage = { image:'guid-image'} %}
+    {% include '../components/section.image/index.twig' with sectionImage %}
+
+    <section id="acquaintance">
+
+        <div class="wrapper">
+
+            <h2 class="h2">Acquaintance with the city</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+            <div class="guid-list guid-list__reverse">
+
+                <div class="guid-path guid-path__list">
+
+                    {% for item in guidlist1 %}
+
+                        {% include '../components/guid.module/index.twig' with item %}
+
+                    {% endfor %}
+
+                </div>
+
+                <div class="guid-path guid-path__image">
+
+                    <img src="./img/bg/bg-guid-1.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="restaurant">
+
+        <div class="wrapper">
+
+            <div class="guid-block">
+
+                {% for item in guidlist2 %}
+
+                    {% include '../components/guid.module/index.twig' with item %}
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h2 class="h2">Routes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+            <div class="guid-list">
+
+                <div class="guid-path guid-path__list">
+
+                    {% for item in guidlist3 %}
+
+                        {% include '../components/guid.module/index.twig' with item %}
+
+                    {% endfor %}
+
+                </div>
+
+                <div class="guid-path guid-path__image">
+
+                    <img src="./img/bg/bg-guid-3.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="shopping" style="background: url('./img/bg/bg-guid-slide-1.png')no-repeat 60% 100%;">
+
+        <div class="wrapper">
+
+            <h2 class="h2">Shopping</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+            <div class="guid-slider">
+
+                {% for item in guidlist4|merge(guidlist4) %}
+
+                    {% include '../components/guid.module/index.twig' with item %}
+
+                {% endfor %}
+
+            </div>
+
+            <a href="" class="button-green guid-slider__button">View all</a>
+
+        </div>
+
+    </section>
+
+    <section style="background-color:#ada3ff" id="night">
+
+        <div class="wrapper">
+
+            <div class="guid-night">
+
+                <div class="guid-night__image">
+                    <img src="./img/bg/bg-guid-night.png" alt="">
+                </div>
+
+                <div class="guid-path">
+
+                    <h2 class="h2">Night life</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                    <a href="" class="guid-night__button button-white">read more</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="beauties" style="background:url('./img/bg/bg-guid-tile.png') no-repeat -50% 190px">
+
+        <div class="wrapper">
+
+            <h2 class="h2">Shopping mall</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="guid-tile">
+
+                {% for item in guidlist5 %}
+
+                    {% include '../components/guid.module/index.twig' with item %}
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="spreading" style="background: url('./img/bg/bg-guid-slide-2.png')no-repeat 60% 100%;">
+
+        <div class="wrapper">
+
+            <h2 class="h2">Entertainment</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+            <div class="guid-slider">
+
+                {% for item in guidlist6|merge(guidlist6) %}
+
+                    {% include '../components/guid.module/index.twig' with item %}
+
+                {% endfor %}
+
+            </div>
+
+            <a href="" class="button-green guid-slider__button">View all</a>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/seo/index.twig' %}
+
+        </div>
+
+    </section>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

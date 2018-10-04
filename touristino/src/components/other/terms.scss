@@ -1,0 +1,35 @@
+.terms {
+  overflow-y: hidden;
+  transition: max-height 200ms ease;
+
+  &-content {
+    padding-bottom: 90px;
+  }
+
+  &-subtitle {
+    color: #0d9e51;
+    font-weight: 500;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    margin: 10px 0 30px;
+  }
+
+  p {
+    line-height: 2.6rem;
+
+    a, span {
+      color: #0d9e51;
+    }
+
+    &.terms-point {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+  }
+
+  &-button {
+    margin: 45px 0 0;
+  }
+}

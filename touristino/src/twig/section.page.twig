@@ -1,0 +1,89 @@
+{% include '../components/header/index.twig' %}
+
+{# main content start #}
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    {#{% include '../components/menu/sliding.menu/index.twig' %}#}
+
+    <section>
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                <br /> ut labore et dolore magna aliqua.</p>
+
+        </div>
+
+    </section>
+
+    {% set sectionImage = { image:'shopping-image'} %}
+    {% include '../components/section.image/index.twig' with sectionImage %}
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/recommendation.list/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h2 class="h2">The most interesting things in Dubai</h2>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua.</p>
+
+            {% include '../components/catalog/index.twig' %}
+
+            {# Кнопка в макете не отрисова, в ТЗ прописана. Если необходимо расположить справа/слева => .float-right/left #}
+            {#<button type="button" class="show__more button-white">view more</button>
+
+            <div class="clearfix"></div>#}
+
+            {% include '../components/pagination/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h3 class="h3">Recommended  tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua.</p>
+
+            {% include '../components/slider/main/proposes/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/seo/index.twig' %}
+
+        </div>
+
+    </section>
+
+</main>
+{# main content end #}
+
+{% include '../components/footer/index.twig' %}

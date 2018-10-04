@@ -1,0 +1,66 @@
+<form>
+
+    <div class="popup-header">
+
+        <span>Sign up</span>
+        <a href="#" data-action="popup" data-scope="ajax.html #signIn">Sign in</a>
+
+    </div>
+
+    <div class="popup__fieldset">
+
+        {% set fieldset = [
+            { label: "E-mail", id : "popup-email", type : "email", placeholder : "google@gmail.com", icon : "email-popup" },
+            { label: "Password", id : "password", type : "password", placeholder : "password", icon : "padlock-popup" },
+            { label: "Password", id : "password2", type : "password", placeholder : "password", icon : "padlock-popup" }
+        ] %}
+
+        {% for item in fieldset %}
+            <div class="popup__row">
+
+                <label for="{{ item.id }}">{{ item.label }}</label>
+                <input type="{{ item.type }}" id="{{ item.id }}" placeholder="{{ item.placeholder }}" {% if item.mask %}data-mask="{{ item.mask }}"{% endif %} style="background: #fff url('./img/icon/{{ item.icon }}.png') no-repeat 17px 50%"/>
+                <span class="input-error" style="visibility: hidden">*Not correct</span>
+
+            </div>
+        {% endfor %}
+
+        <label class="custom-box">
+
+            <input type="checkbox" name="" value="">
+            <span class="custom-checkbox"></span>
+            <span class="custom-label">I agree with site rules</span>
+
+        </label>
+        <div class="clearfix"></div>
+
+        <button type="submit" class="popup__button button-green">LOGIN</button>
+
+    </div>
+
+    <div class="popup-footer">
+
+        <span class="popup-footer__title">Or sign in social medisa</span>
+
+        <div class="popup-footer__button">
+
+            {% set socialLinker = [
+                { color: "#3b5a9b", box: "0 0 430.113 430.114", id : "facebook2", name : "facebook" },
+                { color: "#4285f4", box: "0 0 491.858 491.858", id : "google+", name : "google" }
+            ] %}
+            {% for item in socialLinker %}
+                <a href="" class="social-linker button-green {{ item.name }}" style="background-color: {{ item.color }}">
+                    <i><svg viewBox="{{ item.box }}"><use xlink:href="#{{ item.id }}" /></svg></i>
+                    <span>{{ item.name }}</span>
+                </a>
+            {% endfor %}
+
+        </div>
+
+        <p>* Have you got an account - <a href="#" data-action="popup" data-scope="ajax.html #signIn">Sign In</a></p>
+
+    </div>
+
+    <span class="popup__close"></span>
+
+</form>

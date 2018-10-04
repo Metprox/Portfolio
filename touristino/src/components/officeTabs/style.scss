@@ -1,0 +1,182 @@
+.officeTabs {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 24vh;
+    z-index: 1;
+    &__ul {
+        display: inline-block;
+        position: absolute;
+        top: 33vh;
+        left: 3vw;
+        z-index: 10;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 18px 0 rgba(0, 0, 0, 0.07);
+    }
+    &__li {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border: solid 1px #ffffff;
+        cursor: pointer;
+        transition: all .2s ease-in;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -50px;
+            border-top: 32px solid transparent;
+            border-left: 50px solid #ffffff;
+            border-bottom: 32px solid transparent;
+            box-shadow: inset 0px 27px 43px 0 rgba(32, 94, 171, 0.16);
+            opacity: 0;
+            transition: all .3s ease-in;
+        }
+        &:hover {
+            .officeTabs {
+                &__p {
+                    transform: translateX(2vw);
+                    color: $green;
+                }
+                &__img {
+                    opacity: 1;
+                    transform: translateX(1vw);
+                }
+            }
+            box-shadow: 20px 27px 43px 0 rgba(32, 94, 171, 0.16);
+            background-color: #ffffff;
+            border: solid 1px #ffffff;
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    &__img {
+        margin-left: .4em;
+        opacity: 0;
+        transition: all .3s ease-in;
+    }
+    &__p {
+        display: inline-block;
+        padding-top: 1em;
+        padding-right: 2em;
+        padding-left: 0em;
+        padding-bottom: 1em;
+        font-family: $gotham;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        text-align: left;
+        color: #393939;
+        transition: all .3s ease-in;
+    }
+    &__aside {
+        width: 30%;
+        margin-left: 0%;
+    }
+    &__section {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 74px;
+        overflow: hidden;
+        margin-bottom: -100px;
+    }
+    &__tabBlock {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 700vw;
+        transform: translateX(15vw);
+        transition: all .3s ease-in;
+    }
+    &__tabItem {
+        width: 65vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.officeTabs {
+    &__li--select {
+        box-shadow: 20px 27px 43px 0 rgba(32, 94, 171, 0.16);
+        background-color: #ffffff;
+        border: solid 1px #ffffff;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -50px;
+            border-top: 32px solid transparent;
+            border-left: 50px solid #ffffff;
+            border-bottom: 32px solid transparent;
+            box-shadow: inset 0px 27px 43px 0 rgba(32, 94, 171, 0.16);
+            opacity: 1;
+            transition: all .3s ease-in;
+        }
+        .officeTabs__p {
+            color: $green;
+            transform: translateX(2vw);
+        }
+        .officeTabs__img {
+            opacity: 1;
+            transform: translateX(1vw);
+        }
+    }
+}
+
+.officeTabs__bg {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all .3s ease-out;
+    &--localData {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../img/bg/lk__privateData.png') no-repeat;
+            z-index: -1;
+            transform: translate(5vw, 25vh);
+        }
+    }
+}
+
+.transformHover-1 {
+    transform: translateX(15vw)!important;
+}
+
+.transformHover-2 {
+    transform: translateX(-85vw)!important;
+}
+
+.transformHover-3 {
+    transform: translateX(-185vw)!important;
+}
+
+.transformHover-4 {
+    transform: translateX(-285vw)!important;
+}
+
+.transformHover-5 {
+    transform: translateX(-385vw)!important;
+}
+
+.transformHover-6 {
+    transform: translateX(-485vw)!important;
+}
+
+.transformHover-7 {
+    transform: translateX(-585vw)!important;
+}

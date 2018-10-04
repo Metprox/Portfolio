@@ -1,0 +1,156 @@
+    @import 'animate.css';
+    .page-wrap {
+        width: 100%;
+        border: 20px solid #fff;
+        position: relative;
+        background: url('assets/img/bg__img3.png');
+        background-size: 100% 100% no-repeat;
+        overflow: hidden;
+        background-attachment: fixed;
+    }
+    
+    .page-wrap:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: url('assets/img/bg__img2.png') no-repeat top;
+        background-size: 100% 100%;
+        overflow: hidden;
+        z-index: 1;
+        pointer-events: none;
+        background-attachment: fixed;
+    }
+    
+    @import '_vars';
+    @import './components/section1/section1';
+    @import './components/section2/section2';
+    @import './components/section3/section3';
+    @import '../bower_components/swiper/dist/css/swiper.css';
+    .img__lang {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 8px;
+        left: 15px;
+        z-index: 10;
+    }
+    
+    .tool {
+        animation: inve 1s forwards;
+    }
+    
+    .inversion {
+        filter: invert(1);
+    }
+    
+    .inversionNOT {
+        filter: invert(0);
+    }
+    
+    @keyframes inve {
+        from {
+            filter: invert(0);
+        }
+        to {
+            filter: invert(1);
+        }
+    }
+    
+    .swiper-button-next {
+        top: 60%;
+        background-image: url('assets/img/section1__rightArrow.png');
+        width: 23px;
+        height: 23px;
+        background-size: none;
+        background-position: none;
+        background-repeat: none;
+    }
+    
+    .swiper-button-prev {
+        top: 60%;
+        background-image: url('assets/img/section1__leftArrow.png');
+        width: 23px;
+        height: 23px;
+        background-size: none;
+        background-position: none;
+        background-repeat: none;
+    }
+    
+    .hidden {
+        opacity: 0;
+    }
+    
+    .visible {
+        opacity: 1;
+    }
+    
+    .copy p,
+    .design p {
+        font-family: $main-fonts;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+    
+    .footer-menu ul li {
+        font-family: $main-fonts;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #fff;
+    }
+    
+    #swiper-pagination1 {
+        display: none;
+    }
+    
+    .header {
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .post {
+        opacity: 0;
+    }
+    
+    .W-swipe {
+        width: 100vw;
+    }
+    
+    .post1--visible {
+        animation-fill-mode: both;
+        animation: fadeInUp 1s linear;
+        transition: all 1s linear;
+    }
+    
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0%, 100%, 0);
+            animation-fill-mode: both;
+        }
+        50% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+            animation-fill-mode: both;
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            animation-fill-mode: both;
+        }
+    }
+    
+    @import '_media';

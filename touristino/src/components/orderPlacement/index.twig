@@ -1,0 +1,265 @@
+<main class="orderPlacement">
+    <h1>Оформление заказов</h1>
+    <div class="orderPlacement__HeaderBlock">
+        <div class="orderPlacement__formBlock">
+            <div class="orderPlacement__crumbs">
+
+                <div class="orderPlacement__crumbs--1 orderPlacement__crumbs--green">
+                    <span>Ввод данных</span>
+                </div>
+
+                <div class="orderPlacement__crumbs--2">
+                    <span>Оформление</span>
+                </div>
+
+            </div>
+
+            <div class="orderPlacement__selectMenu">
+                <div class="orderPlacement__onclick orderPlacement__selectMenu--1 orderPlace__animationMenu"><span>Новый покупатель</span></div>
+                <div class="orderPlacement__onclick orderPlacement__selectMenu--2"><span>Постоянный покупатель</span></div>
+            </div>
+
+            <form class="tabItem__form orderPlacement__form orderPlacement__form--1 form__open" method="POST" action="">
+
+                <div class="tabItem__info orderPlacement__info">
+
+                    <label for="names" class="orderPlacement__label">Имя</label>
+                    <input class="tabItem__input orderPlacement__input" id="names" type="text" placeholder="Имя заказчика" required>
+
+                    <label for="tabItem__input--email" class="orderPlacement__label">E-mail</label>
+                    <input id="tabItem__input--email" class="tabItem__input orderPlacement__input" type="email" placeholder="E-mail" required>
+
+                    <label for="orderPlacement__tel" class="orderPlacement__label">Телефон</label>
+                    <input id="orderPlacement__tel" class="tabItem__input tabItem__input--tel orderPlacement__input orderPlacement__input--tel" type="tel" placeholder="Телефон" minlength="10" maxlength="10" pattern="[\+][\(][0-9]{3}[\)]\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required>
+
+
+
+                    <label class="tabItem__label tabItem__label--width orderPlacement__input--checkbox"><input class="tabItem__checkbox" type="checkbox" id="checkbox">Я согласен с условиями предоставления персональных данных интернет магазину.</label>
+
+
+                    <div class="orderPlacement__buttons">
+                        <a href="#" class="orderPlacement__registration">
+                            <span>Зарегистрироваться</span>
+                        </a>
+                        <button class="orderPlacement__next">Далее</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            {# form 2 #}
+
+
+            <form class="tabItem__form orderPlacement__form orderPlacement__form--2" method="POST" action="">
+
+                <div class="tabItem__info orderPlacement__info">
+
+                    <label for="names2" class="orderPlacement__label">Логин</label>
+                    <input class="tabItem__input orderPlacement__input" id="names2" type="text" placeholder="Логин" required>
+
+                    <label for="newPassword" class="orderPlacement__label">Пароль</label>
+                    <input class="tabItem__input orderPlacement__input" id="newPassword" type="password" placeholder="Пароль" minlength="6" maxlength="18" required>
+
+
+                    <div class="orderPlacement__buttons">
+                        <button class="orderPlacement__next">Далее</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+
+
+            <div class="orderPlacement__info2">
+
+                <form action="" class="orderPlacement__form2">
+                    <div class="orderPlacement__step1">
+                        <p>01<span>step</span></p>
+                        <span>Добавьте пожалуйста информация о количестве гостей и заполните их данные. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    </div>
+
+                    <div id="mainAdd" class="orderPlacement__pplAdd" rebest="yes">
+                        <span class="orderPlacement__close">X</span>
+
+                        <div class="orderPlacement__pplContent">
+                            <div class="orderPlacement__pplContent--1">
+
+                                <label class="orderPlacement__label orderPlacement__label--content"> Имя
+                                <input class="orderPlacement__input orderPlacement__input--content media-width" type="text" required placeholder="Имя">
+                            </label>
+
+                                <label class="orderPlacement__label orderPlacement__label--content orderPlacement__label--disable">Возраст
+                            <input class="orderPlacement__input  orderPlacement__input--content media-width" type="text" placeholder="Взрослый старше 12 лет">
+                            </label>
+
+                            </div>
+
+
+                            <div class="orderPlacement__pplContent--2">
+
+                                <div id="selectRost" class="tabItem__listSelect--rost tabItem__arrowSlideR--rost orderPlacement__input--content orderPlacement__input--rost" data-roster="175см">
+
+                                    <ul class="tabItem__ul--rost" name="select--communication" id="tabItem__selectCommunication-2">
+
+                                        <li class="orderPlacement__li--rost">155см</li>
+
+                                        <li class="orderPlacement__li--rost">165см</li>
+
+                                        <li class="orderPlacement__li--rost">175см</li>
+
+                                        <li class="orderPlacement__li--rost">185см</li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div id="selectVes" class="tabItem__listSelect--ves tabItem__arrowSlideV--ves orderPlacement__input--content orderPlacement__input--ves" data-veses="200кг">
+
+                                    <ul class="tabItem__ul--ves" name="select--communication" id="tabItem__selectCommunication-3">
+
+                                        <li class="orderPlacement__li--ves">80кг</li>
+
+                                        <li class="orderPlacement__li--ves">100кг</li>
+
+                                        <li class="orderPlacement__li--ves">150кг</li>
+
+                                        <li class="orderPlacement__li--ves">200кг</li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="orderPlacement__pplAddHere">
+
+                    </div>
+
+                    <div id="orderPlacement__addButton--id" class="orderPlacement__addButton">
+                        <span>
+                            Добавить еще одного Путешественника?
+                        </span>
+                    </div>
+
+                    <div class="orderPlacement__step2">
+                        <p>02<span>step</span></p>
+                        <span>Заполните пожалуйста формы.. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</span>
+                    </div>
+
+                    <div class="orderPlacement__info3">
+                        <div class="orderPlacement__info3--1">
+
+                            <label for="orderPlacement__name1" class="orderPlacement__info3--label orderPlacement__info3--label--star">Имя</label>
+                            <input class="orderPlacement__info3--input" id="orderPlacement__name1" type="text" placeholder="Имя заказчика" required>
+
+
+
+                            <label for="orderPlacement__name2" class="orderPlacement__info3--label">Выберите национальность</label>
+                            <div id="orderPlacement__name2" class="tabItem__listSelect--lang tabItem__arrowSlide--lang orderPlacement__info3--input" data-language="Русский">
+
+                                <ul class="tabItem__ul--lang" name="select--communication" id="tabItem__selectLanguage">
+
+                                    <li class="tabItem__li--lang">Русский</li>
+
+                                    <li class="tabItem__li--lang">Английский</li>
+
+                                </ul>
+
+                            </div>
+
+
+
+
+                            <label for="orderPlacement__name3" class="orderPlacement__info3--label">E-mail</label>
+                            <input class="orderPlacement__info3--input" id="orderPlacement__name3" type="email" placeholder="E-mail" required>
+
+                            <label for="orderPlacement__name4" class="orderPlacement__info3--label orderPlacement__info3--label--star">Имя</label>
+                            <input class="orderPlacement__info3--input" id="orderPlacement__name4" type="text" placeholder="Имя заказчика" required>
+
+                        </div>
+
+                        <div class="orderPlacement__info3--2">
+
+                            <label for="orderPlacement__name5" class="orderPlacement__info3--label">Серия и номер паспорта</label>
+                            <input class="orderPlacement__info3--input" id="orderPlacement__name5" type="text" placeholder="" required>
+
+                            <label for="orderPlacement__name6" class="orderPlacement__info3--label">Язык гида</label>
+
+
+
+                            <div id="orderPlacement__name6" class="tabItem__listSelect--lang tabItem__arrowSlide--ged orderPlacement__info3--input" data-ged="Русский">
+
+                                <ul class="tabItem__ul--lang--ged" name="select--communication" id="tabItem__selectLanguage2">
+
+                                    <li class="tabItem__li--lang--ged">Русский</li>
+
+                                    <li class="tabItem__li--lang--ged">Английский</li>
+
+                                </ul>
+
+                            </div>
+
+
+
+                            <label for="orderPlacement__name7" class="orderPlacement__info3--label">Телефон</label>
+                            <input id="orderPlacement__name7" class="orderPlacement__info3--input orderPlacement__info3--input--tel" type="tel" placeholder="" minlength="10" maxlength="10" pattern="[\+][\(][0-9]{3}[\)]\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required>
+
+                            <label for="orderPlacement__name8" class="orderPlacement__info3--label">Серия и номер паспорта</label>
+                            <input class="orderPlacement__info3--input" id="orderPlacement__name8" type="text" placeholder="" required>
+
+                        </div>
+
+
+                        <div class="orderPlacement__payments">
+
+                            <div class="orderPlacement__payments--1">
+
+                                <span>Способ оплаты:</span>
+
+                                <img src="./img/payment/payfort.png" alt="payments">
+
+                            </div>
+
+                            <div class="orderPlacement__payments--2">
+
+                                <label for="orderPlacement__name9" class="orderPlacement__info3--label">Номер карты</label>
+                                <input class="orderPlacement__info3--input m-t-8" id="orderPlacement__name9" type="text" placeholder="Номер карты" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="orderPlacement__buttons">
+
+                            <div class="orderPlacement__button--prev">
+                                <span>Назад</span>
+                            </div>
+
+                            <div class="orderPlacement__button--next">
+                                <button type="submit">Complete my booking</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="orderPlacement__basket">
+            {% include '../basket/index.twig' %}
+        </div>
+    </div>
+
+</main>

@@ -1,0 +1,55 @@
+<div class="wrap wrap-slider-for">
+
+    <div class="slider-for">
+
+        {% for item in sliderFor %}
+            <div class="slider-for__item">
+
+                <div {% if item.class %}class="{{ item.class }}"{% endif %}>
+
+                    <img src="./img/asnavitem.png" alt="">
+
+                    {% if item.class %}
+                    <button type="button" class="video-slide__button" data-youtube="https://www.youtube.com/embed/Xa0Q0J5tOP0">
+                        <svg viewBox="0 0 420 420"><use xlink:href="#play-button" /></svg>
+                    </button>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="wrap-slider-for__mark">
+        <span>
+            <svg viewBox="0 0 430.114 430.114">
+                <use xlink:href="#mark" />
+            </svg>
+        </span>
+        <p>DELTA, 48 Boulevard index 07123   Dudai</p>
+    </div>
+
+</div>
+<div class="wrap wrap-slider-nav">
+
+    <div class="slider-nav">
+
+        {% for item in sliderFor %}
+            <div class="slider-nav__item {% if item.class %}btnPlay{% endif %}">
+
+                {% if item.class %}
+                    <span class="slide-nav__button">
+                        <svg viewBox="0 0 420 420"><use xlink:href="#play-button" /></svg>
+                    </span>
+                {% endif %}
+
+                <img src="./img/asnavitem.png" alt="">
+
+            </div>
+        {% endfor %}
+
+    </div>
+
+</div>

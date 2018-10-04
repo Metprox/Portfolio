@@ -1,0 +1,29 @@
+$main-fonts: "Akzidenz-Grotesk BQ";
+$second-fonts: "Raleway";
+$open-sans: "Open Sans";
+$blue-color: #305e9a;
+$white-color: #fff;
+.news__fontsH {
+    font-family: $main-fonts;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.news__fontsSpan {
+    color: #305e9a;
+}
+
+.news__fontsP {
+    font-family: $main-fonts;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+}

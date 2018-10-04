@@ -1,0 +1,163 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                <br /> ut labore et dolore magna aliqua. </p>
+
+        </div>
+
+    </section>
+
+    <section class="main-section">
+
+        <div class="wrapper">
+
+            <div class="main-path">
+
+                <div class="blog-head">
+
+                    <form class="blog-head__path">
+                        <p>Search :</p>
+
+                        <div class="search__wrapper">
+
+                            <input type="search" placeholder="Search"/>
+
+                            <button class="search__button"><svg viewBox="0 0 451 451"><use xlink:href="#search" /></svg></button>
+
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="blog-body">
+
+                    <div class="terms">
+
+                        <h2 class="h2">Политика конфиденциальности сайтa TURISTINO</h2>
+
+                        <p class="terms-subtitle">Правила пользования сайтом. Редакция от 24.07.2017</p>
+
+                        <p>Российская Федерация, город Воронеж</p>
+                        <br />
+
+                        <p>Общество с ограниченной ответственностью «СмартДата» в лице Генерального директора, Лобашева Руслана Витальевича, действующего на основании Устава, предлагает любому пользователю сети Интернет использовать сайт в сети Интернет, расположенный по адресу
+                            <a href="./index.html">http://www.turistino.ru/</a> в соответствии со следующими правилами.</p>
+                        <br />
+
+                        <p class="terms-point">1. Термины и определения</p>
+                        <br />
+
+                        <p>1.1. В настоящих правилах пользования сайтом, если из текста прямо не вытекает иное, следующие термины будут иметь указанные ниже значения:</p>
+                        <br />
+
+                        <p>«Компания» — Общество с ограниченной ответственностью «СмартДата» — юридическое лицо, зарегистрированное по законодательству Российской Федерации, <span>ОГРН 1147847084990</span>, находящееся по адресу Российская Федерация, 394006, Воронежская область, г. Воронеж, ул. Станкевича д. 36, оф. 8.</p>
+                        <br />
+
+                        <p>«Пользователь» — Любое лицо, использующее Сайт любым способом, в том числе, путем посещения Сайта.</p>
+                        <br />
+
+                        <p>«Сайт» — Совокупность информации, текстов, графических элементов, дизайна, изображений, фото и видеоматериалов и иных результатов интеллектуальной деятельности, а также программ для ЭВМ, содержащихся в информационной системе, обеспечивающей доступность такой информации в сети Интернет по сетевому адресу
+                            <a href="">http://www.dataart.ru/</a>. Сайт является Интернет — ресурсом, предназначенным для публикации и получения информации о различных Мероприятиях.</p>
+                        <br />
+
+                        <p>«Правила» — Настоящие правила пользования сайтом.</p>
+                        <br />
+
+                        <p>«Стороны» — Пользователь и Компания.</p>
+                        <br />
+
+                        <p>1.2. Все остальные термины и определения, встречающиеся в тексте Правил, толкуются в соответствии с действующим законодательством Российской Федерации.</p>
+                        <br />
+
+                        <p>1.3. Названия заголовков (статей) Правил предназначены исключительно для удобства пользования текстом Правил и буквального юридического значения не имеют.</p>
+                        <br />
+
+                        <p class="terms-point">2. Обязательность Правил и изменение Правил</p>
+                        <br />
+
+                        <p>2.1. Текст Правил, постоянно размещенный в сети Интернет по адресу http://www.dataart.ru/docs/site-rules/ содержит все условия использования Сайта и является предложением Компании каждому Пользователю использовать Сайт, на указанных в тексте Правил условиях. Таким образом, в соответствии с положениями пункта 2 статьи 437 Гражданского кодекса Российской Федерации, текст Правил является публичной офертой.</p>
+                        <br />
+
+                        <p>2.2. В соответствии с пунктом 3 статьи 438 Гражданского кодекса Российской Федерации, надлежащим акцептом этой оферты считается использование Сайта любым третьим лицом, включая, просмотр Сайта, размещение какой-либо информации на Сайте, передача ссылки на Сайт любым третьим лицам и иные действия.</p>
+                        <br />
+
+                        <p>2.3. С момента начала использования Сайта, Пользователь соглашается с Правилами и обязуется их соблюдать. Правила приобретают юридическую силу в отношениях между Сторонами с момента начала использования Сайта Пользователем.</p>
+
+                    </div>
+
+                    <button type="button" class="read__more terms-button" data-after="&rarr;">Read More</button>
+
+                </div>
+
+            </div>
+
+
+            <aside>
+
+                <div class="posts">
+
+                    {% include '../components/post.list/post.popular/index.twig' %}
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    <section class="review">
+
+        <div class="wrapper">
+
+            <h3 class="h3">Review about tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/review/index.twig" %}
+
+            <div class="review__button">
+
+                <a href="" class="button-white review__more">view more</a>
+                <a href="" class="button-green review__send">Send review</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h3 class="h3">Recommended tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/main/recommend/index.twig" %}
+
+        </div>
+
+    </section>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

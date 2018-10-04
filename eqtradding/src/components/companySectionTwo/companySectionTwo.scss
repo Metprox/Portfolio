@@ -1,0 +1,157 @@
+.companySectionTwo {
+    width: 90%;
+    margin: auto;
+    margin-top: 135px;
+}
+
+.companySectionTwo__headerText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 167px;
+}
+
+.companySectionTwo__headerText h2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: $white-color;
+}
+
+.companySectionTwo__headerText h2 span {
+    color: $blue-color;
+}
+
+.companySectionTwo__headerText p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #fff;
+}
+
+.companySectionTwo__headerText p span {
+    color: $blue-color;
+}
+
+.companySectionTwo__mainText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 186px;
+}
+
+.companySectionTwo__item1 {
+    flex-basis: 100%;
+    margin-bottom: 126px;
+}
+
+.companySectionTwo__item2 {
+    flex-basis: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.companySectionTwo__item2 div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.companySectionTwo__item2 div p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+    margin-left: 61px;
+}
+
+.companySectionTwo__item3 {
+    flex-basis: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.companySectionTwo__item3 div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.companySectionTwo__item3 div p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+    margin-left: 61px;
+}
+
+.companySectionTwo__mainText h2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: $white-color;
+}
+
+.companySectionTwo__lowText {
+    margin-bottom: 208px;
+}
+
+.companySectionTwo__lowText div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companySectionTwo__lowTextItem1 {
+    flex-basis: 45%;
+}
+
+.companySectionTwo__lowTextItem1 img {
+    border: 4px $white-color solid;
+}
+
+.companySectionTwo__lowTextItem2 {
+    flex-basis: 45%;
+}
+
+.companySectionTwo__lowTextItem2 p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+}

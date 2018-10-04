@@ -1,0 +1,20 @@
+@import '../bower_components/swiper/dist/css/swiper.css';
+@import '_vars';
+@import '_media';
+@import 'components/marketingSectionOne/marketingSectionOne';
+@import 'components/marketingSectionTwo/marketingSectionTwo';
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.main__container {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}

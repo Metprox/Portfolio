@@ -1,0 +1,100 @@
+.sectionThree {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.sectionThree h2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.swiper-container {
+    width: 80%;
+    height: 20%;
+}
+
+.text__swiper {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.text__swiper p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+}
+
+.swiper-container {
+    margin-bottom: 103px;
+}
+
+.swiper-slider {
+    display: flex;
+    margin: auto;
+}
+
+.swiper-pagination {
+    position: none;
+}
+
+.swiper-pagination span {
+    border-radius: 0%;
+}
+
+span.swiper-pagination-bullet {
+    background: $blue-color;
+    opacity: .41;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: $blue-color;
+    opacity: 1;
+}
+
+.pad {
+    padding-bottom: 50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-size: 18px 31px;
+    transform: scaleX(1);
+    transition: transform .1s linear;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    transform: scaleX(1.1);
+}
+
+.swiper-pagination {
+    padding-top: 40px;
+}
+
+.quat__bg {
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    opacity: 0.32;
+    z-index: -1;
+}

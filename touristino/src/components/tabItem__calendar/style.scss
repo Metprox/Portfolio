@@ -1,0 +1,505 @@
+.tabItem__ {
+    &calendar__ {
+        &Main {
+            box-shadow: 0px 27px 43px 0 rgba(32, 94, 171, 0.16);
+            background-color: #feffff;
+            border: solid 1px #e9f0f5;
+        }
+    }
+}
+
+#calendarMain1 .personal-calendar {
+    &__item {
+        width: 474px;
+        max-width: 474px;
+        margin-bottom: 90px;
+        .xdsoft_next {
+            visibility: hidden;
+            display: none;
+        }
+        .xdsoft_prev {
+            visibility: hidden;
+            display: none;
+        }
+        .xdsoft_month,
+        .xdsoft_year {
+            margin: 1em 1.8em 2em 0em;
+            position: relative;
+            width: auto;
+            border-radius: 3px;
+            background-color: #ffffff;
+            border: solid 1px #cfd8dc;
+            text-align: left;
+            >span {
+                padding: .2em 4.5em .2em 1vw;
+                font-family: $gotham;
+                font-size: 19.5px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #383b4f;
+            }
+            i {
+                display: none;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 30%;
+                right: 1vw;
+                width: 8px;
+                height: 8px;
+                border-right: solid 1px #2c3e50;
+                border-bottom: solid 1px #2c3e50;
+                transform: rotate(45deg);
+            }
+            .xdsoft_monthselect,
+            .xdsoft_yearselect {
+                width: 100%;
+                right: 0px;
+                top: 33px;
+                border-radius: 3px;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid rgb(207, 216, 220);
+                .xdsoft_option {
+                    padding: 0.4em 0 0.4em 1vw;
+                    font-family: $gotham;
+                    font-size: 17.5px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #383b4f;
+                }
+            }
+        }
+        .xdsoft_calendar {
+            padding-top: 10vh;
+            position: relative;
+            &:before {
+                content: attr(data-change-value);
+                position: absolute;
+                display: block;
+                top: 8px;
+                left: 30%;
+                left: 0%;
+                width: 100%;
+                text-transform: uppercase;
+                font-family: $gotham;
+                font-size: 26.5px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 10.6px;
+                text-align: center;
+                color: #0a131e;
+            }
+            >table {
+                >thead {
+                    >tr {
+                        border-bottom: solid 1px #dadada;
+                        >th {
+                            font-family: $gotham;
+                            font-size: 12.5px;
+                            font-weight: bold;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            color: #383b4f;
+                            border: 0px;
+                            background-color: transparent;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                >tbody {
+                    >tr {
+                        border-bottom: solid 1px #dadada;
+                        .xdsoft_date {
+                            font-family: $gotham;
+                            font-size: 12.5px;
+                            font-weight: bold;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            vertical-align: top;
+                            color: #0a131e;
+                            height: 62px;
+                            border: 0;
+                            background-color: transparent;
+                            >div {
+                                margin-top: 6px;
+                                margin-left: -34px;
+                            }
+                        }
+                        .xdsoft_current {
+                            background: transparent!important;
+                            box-shadow: none!important;
+                            color: #0a131e!important;
+                            outline: 0;
+                            &:focus {
+                                box-shadow: none!important;
+                                background: transparent!important;
+                                color: #0a131e!important;
+                                outline: 0;
+                            }
+                            &:active {
+                                box-shadow: none!important;
+                                background: transparent!important;
+                                color: #0a131e!important;
+                                outline: 0;
+                            }
+                            &.xdsoft_today {
+                                &:focus {
+                                    box-shadow: none!important;
+                                    background: transparent!important;
+                                    color: #0a131e!important;
+                                    outline: 0;
+                                }
+                            }
+                            >div {
+                                display: inline-block;
+                                background-color: #0d9e51;
+                                border-radius: 2px;
+                                padding: .3em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover {
+    box-shadow: none!important;
+    border-bottom: solid 1px green!important;
+    background: transparent!important;
+    color: #0a131e!important;
+    &:not(.calendar__lock) {
+        background-image: linear-gradient(169deg, #0d9e51, #18ed0d);
+    }
+}
+
+.calendar__lock {
+    position: relative;
+    background: linear-gradient(169deg, #0d9e51, #18ed0d);
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 1.2vh;
+        right: 0.3vw;
+        width: 17px;
+        height: 22px;
+        background: url('../img/icon/lk__calendar-lock.png');
+        background-repeat: no-repeat;
+    }
+}
+
+.calendar__heart {
+    position: relative;
+    background: rgb(156, 18, 138);
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 1.2vh;
+        right: 0.3vw;
+        width: 22px;
+        height: 22px;
+        background: url('../img/icon/lk__calendar-heart.png');
+        background-repeat: no-repeat;
+    }
+}
+
+.calendar__ticket {
+    position: relative;
+    background: rgb(93, 28, 179);
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 1.2vh;
+        right: 0.3vw;
+        width: 26px;
+        height: 26px;
+        background: url('../img/icon/lk__calendar-ticket.png');
+        background-repeat: no-repeat;
+    }
+}
+
+// .calendar__romb {
+//     position: relative;
+//     overflow: hidden;
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         top: -55px;
+//         left: -52px;
+//         border: 49px solid transparent;
+//         border-bottom: 52px solid #660080;
+//         transform: rotate(-45deg);
+//     }
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         bottom: -90px;
+//         right: auto;
+//         border: 51px solid transparent;
+//         border-top: 90px solid green;
+//         transform: rotate(-45deg);
+//     }
+// }
+.tabItem__calendar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.calendar {
+    &__top {
+        position: relative;
+        width: 25vw;
+        max-width: 25vw;
+        height: 197px;
+        min-height: 197px;
+        background-image: linear-gradient(to left, #96df21, #0d9e51);
+        box-shadow: 0px 3px 18px 0 rgba(0, 0, 0, 0.07);
+        #ChangeDataAndDay {
+            position: relative;
+            display: block;
+            font-family: $gotham;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 14.44;
+            letter-spacing: 4.4px;
+            text-align: left;
+            color: #ffffff;
+            &:before {
+                content: attr(data-day-string);
+                position: absolute;
+                top: 2vh;
+                left: 2vw;
+                color: #fff;
+            }
+            &:after {
+                content: attr(data-date-number);
+                position: absolute;
+                top: -2vh;
+                left: 3.5vw;
+                color: #fff;
+                transform: scale(2.5);
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+#dayForDay {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    width: 24px;
+    height: 24px;
+    background: url('../img/icon/lk__calendar-folderDay.png');
+    background-repeat: no-repeat;
+    &:before {
+        content: attr(data-day-for-day);
+        position: absolute;
+        top: 6px;
+        left: 4px;
+        width: 5px;
+        height: 5px;
+        transform: scale(0.74);
+        color: #fff;
+    }
+    &:after {
+        content: "Today";
+        position: absolute;
+        top: 3px;
+        left: -3vw;
+        color: #fff;
+        transform: scale(0.8);
+    }
+}
+
+.xdsoft_timepicker {
+    position: absolute;
+    top: 330px;
+    width: auto!important;
+    transform: translateX(30.5vw);
+    .xdsoft_next,
+    .xdsoft_prev {
+        display: none!important;
+    }
+    .xdsoft_time_box {
+        height: 280px!important;
+        border: 0px;
+        border-bottom: solid 0px #fff!important;
+        .xdsoft_time_variant {
+            .xdsoft_time {
+                box-shadow: none!important;
+                width: 25vw;
+                max-width: 25vw;
+                height: 50px;
+                padding-top: .5em;
+                padding-left: 2em;
+                background: transparent!important;
+                font-family: $gotham;
+                font-size: 11px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #a0acf7;
+                &.xdsoft_current {
+                    box-shadow: none!important;
+                    color: #0d9e51!important;
+                    border-bottom: solid 1px #0d9e51;
+                }
+            }
+        }
+    }
+}
+
+.postForTime {
+    position: relative;
+    display: flex;
+    color: #96df21!important;
+    font-weight: 500!important;
+}
+
+.postForTime--block {
+    position: absolute;
+    top: 2vh;
+    left: 5vw;
+    padding: 11px;
+    padding-right: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 27px 43px 0 rgba(32, 94, 171, 0.1);
+    background-color: #feffff;
+    border: solid 1px #e9f0f5;
+    z-index: 1000;
+     :first-child {
+        font-family: $gotham;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        margin-bottom: 8px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #142427;
+    }
+     :nth-child(2) {
+        font-family: $gotham;
+        font-size: 12px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: 2.4px;
+        text-align: left;
+        color: #0d9e51;
+        text-transform: uppercase;
+    }
+    .postForTime--detail {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        >span {
+            position: relative;
+            margin-bottom: 8px;
+            margin-left: 14px;
+            padding-left: 8px;
+            font-family: $gotham;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: center;
+            color: #393939;
+        }
+         :first-child {
+            margin-top: 14px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 1vh;
+                left: -1vw;
+                width: 25px;
+                height: 25px;
+                background: url('../img/icon/lk__people.png');
+                background-repeat: no-repeat;
+            }
+        }
+         :nth-child(2) {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 1vh;
+                left: -1vw;
+                width: 25px;
+                height: 25px;
+                background: url('../img/icon/lk__time.png');
+                background-repeat: no-repeat;
+            }
+        }
+         :nth-child(3) {
+            color: #0d9e51;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 1vh;
+                left: -1vw;
+                width: 25px;
+                height: 25px;
+                background: url('../img/icon/lk__mark.png');
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.firstLock {
+    &:before {
+        content: "";
+        position: absolute;
+        top: 4vh;
+        left: 0.3vw;
+        width: 25px;
+        height: 25px;
+        background: url('../img/icon/lk__calendar-blackLock.png');
+        background-repeat: no-repeat;
+    }
+}
+
+.lastLock {
+    &:before {
+        content: "";
+        position: absolute;
+        top: 4vh;
+        left: 0.3vw;
+        width: 25px;
+        height: 25px;
+        background: url('../img/icon/lk__calendar-blackLock.png');
+        background-repeat: no-repeat;
+    }
+}

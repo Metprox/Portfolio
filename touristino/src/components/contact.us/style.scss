@@ -1,0 +1,92 @@
+.contact-us {
+  box-shadow: 27px 5px 43px rgba(32, 94, 171, 0.1);
+  border-radius: 5px;
+  border: 1px solid #e9f0f5;
+  background-color: #ffffff;
+  padding: 3.85% 5.5% 7% 7.3%;
+
+  .h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    line-height: 2.6rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & >div {
+      width: calc(100% / 3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 26px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & >span:not(.contact-us__icon) {
+      color: #393939;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 2.4rem;
+      text-transform: uppercase;
+      margin-top: 17px;
+    }
+  }
+
+  &__icon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border: {
+      width: 1px;
+      style: solid;
+    }
+
+    & >span {
+      display: block;
+      width: 26px;
+      height: 26px;
+      margin: 0 auto;
+    }
+
+    &.icon__telegram {
+      border-color :#0fadff;
+
+      & >span {
+        fill: #0fadff;
+      }
+    }
+
+    &.icon__viber {
+      border-color: #9069ae;
+
+      & >span {
+        fill: #9069ae;
+      }
+    }
+
+    &.icon__vk {
+      border-color: #436eab;
+
+      & >span {
+        width: 30px;
+        height: 30px;
+        fill: #436eab;
+      }
+    }
+  }
+}

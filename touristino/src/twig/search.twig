@@ -1,0 +1,74 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                <br /> ut labore et dolore magna aliqua.</p>
+
+            <div class="h2 search-result">По запросу: <span>DUBAi</span></div>
+
+        </div>
+
+    </section>
+
+    {% include '../components/sort/index.twig' %}
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/showcase/index.twig' %}
+
+            {# Отрисова кнопка, по ТЗ пагинация, если кнопка, раскомментировать <hr> ниже #}
+            {#<button type="button" class="show__more button-white float-right">view more</button>
+
+            <div class="clearfix"></div>#}
+
+            {% include '../components/pagination/index.twig' %}
+
+            {#<hr style="max-width:1035px;width:100%;height:1px;border:none;background-color: #cfd8dc;margin:55px 0 100px;" />#}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h2 class="h2">Review about us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include '../components/slider/review/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="wrapper">
+
+            {% include '../components/seo/index.twig' %}
+
+        </div>
+    </section>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

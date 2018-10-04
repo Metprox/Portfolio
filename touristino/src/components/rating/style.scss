@@ -1,0 +1,32 @@
+.rating {
+  display: inline-block;
+  height: 13px;
+  width: 73px;
+  margin-bottom: 1px;
+
+  &-1, &-2, &-3, &-4, &-5 {
+    height: 13px;
+    margin-bottom: 1px;
+    display: inline-block;
+  }
+
+  &-1 {
+    width: 20%;
+  }
+
+  &-2 {
+    width: 40%;
+  }
+
+  &-3 {
+    width: 60%;
+  }
+
+  &-4 {
+    width: 80%;
+  }
+
+  &-5 {
+    width: 100%;
+  }
+}

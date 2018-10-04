@@ -1,0 +1,110 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                <br />ut labore et dolore magna aliqua.</p>
+
+        </div>
+
+    </section>
+
+    {% set sectionImage = { image : "excursion-image" } %}
+    {% include '../components/section.image/index.twig' with sectionImage %}
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/recommendation.list/index.twig' %}
+
+        </div>
+
+    </section>
+
+    {% include '../components/sort/index.twig' %}
+
+
+    <section>
+
+        <div class="wrapper">
+
+            <h2 class="h2">Top Tours</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+
+            {% include '../components/slider/main/proposes/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h2 class="h2">All Tours in Dubai</h2>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua.</p>
+
+            {% include '../components/showcase/index.twig' %}
+
+            <button type="button" class="show__more button-white float-center">view more</button>
+
+            {#<div class="clearfix"></div>#}
+
+            {#{% include '../components/pagination/index.twig' %}#}
+
+            <br />
+            <br />
+
+        </div>
+
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h2 class="h2">Review about us</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include '../components/slider/review/index.twig' %}
+
+            <div class="review__button">
+
+                <a href="" class="button-white review__more">view more</a>
+                <a href="" class="button-green review__send">Send review</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="wrapper">
+
+            {% include '../components/seo/index.twig' %}
+
+        </div>
+    </section>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

@@ -1,0 +1,125 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section class="main-section">
+
+        <div class="wrapper">
+
+            <div class="main-path">
+
+                <h2 class="h2">Who accompany the trip always full of enthusiasm</h2>
+
+                <div class="blog-body">
+
+                    <div class="post-element">
+
+                        <p class="post__tag">tags <span>web design</span></p>
+
+                        <div class="blog-item__image" data-publication="08 mar"><img src="./img/blog-item.png" alt=""></div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, </p>
+
+                        <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatemn numquam eius mod.</p>
+
+                        <div class="post-guid">
+
+                            <div class="post-guid__text" data-after="&ldquo;">
+                                <p><em>Out of many, one. Perhaps somebody told her
+                                    along the way thatthe source of her mother's
+                                    problems were blacks who were on
+                                    welfare </em>.</p>
+                                <br />
+                                <span class="post-guid__poster">John Dou</span>
+                                <span>guid</span>
+                            </div>
+
+                            <div class="post-guid__image"><img src="./img/posts-item.png" alt=""></div>
+
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+
+                        {% for item in blogItems %}
+                        <div class="blog-item__info">
+
+                            {% for subitem in item %}
+                                <span class="blog-item__{{ subitem.infoClass }}">
+
+                                <p>{{ subitem.text }}</p>
+
+                                    {% if subitem.subtext %}
+                                        <span>{{ subitem.subtext }}</span>
+                                    {% endif %}
+
+                                    {% if subitem.icon %}
+                                        <i><svg viewBox="{{ subitem.icon.box }}"><use xlink:href="#{{ subitem.icon.id }}" /></svg></i>
+                                    {% endif %}
+
+                </span>
+                            {% endfor %}
+
+                        </div>
+                        {% endfor %}
+
+                    </div>
+
+                    <div class="post__buttons">
+
+                        <a href="" class="button-white post__prev"><span><svg viewBox="0 0 31.49 31.49"><use xlink:href="#arrow-right" /></svg></span>back post</a>
+                        <a href="" class="button-white post__next">next post<span><svg viewBox="0 0 31.49 31.49"><use xlink:href="#arrow-right" /></svg></span></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <aside>
+
+                {% include '../components/post.list/index.twig' %}
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    {% include '../components/section.subscription/index.twig' %}
+
+    <section>
+
+        <div class="wrapper">
+
+            <h3 class="h3">Review abou post</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+
+            {% include '../components/slider/review/index.twig' %}
+
+            <div class="review__button">
+
+                <a href="" class="button-white review__more">view more</a>
+                <a href="" class="button-green review__send">Send review</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

@@ -1,0 +1,9 @@
+<div class="slider-main  recommend">
+
+    {% for item in recommends|merge(recommends) %}
+
+        {% include '../../../catalog.item/index.twig' with item %}
+
+    {% endfor %}
+
+</div>

@@ -1,0 +1,47 @@
+.slider-main {
+
+  .slick {
+    &-list {
+      margin: 0 -15px;
+      padding: 46px 0 62px;
+    }
+
+    &-slide {
+      margin: 0 15px;
+    }
+
+    &-dots {
+      bottom: 10px;
+
+       li  {
+         margin: 0;
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+         overflow: hidden;
+
+         & + li { margin-left: 14px; }
+
+         &.slick-active {
+           background-color: #0d9e51;
+         }
+
+         button {
+           width: 12px;
+           height: 12px;
+           padding: 0;
+           background-color: rgba(#0d9e51,.6);
+           transition: background-color 250ms ease;
+           cursor: pointer;
+
+           &:before { display: none; }
+         }
+       }
+    }
+  }
+
+  .favorite__ui { right: 93px; }
+  .mark__ui { right: 23px; }
+
+}
+

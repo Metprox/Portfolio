@@ -1,0 +1,61 @@
+.cookies-page {
+  .page-left, .page-right  {
+    padding-top: 0;
+  }
+}
+.check-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  label {
+    display: block;
+    padding-left: 40px;
+    cursor: pointer;
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      &:before,&:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background: #dc7d43;
+        opacity: 0;
+        transition: opacity .4s;
+      }
+      &:before {
+        transform: rotate(45deg) translate(10px, 7px);
+      }
+      &:after {
+        transform: rotate(-45deg) translate(-7px, 10px);
+      }
+    }
+  }
+}
+#cookies-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  &:checked {
+    + label span {
+      &:before, &:after {
+        opacity: 1;
+      }
+      &:before {
+        transform: rotate(45deg) translate(10px, 7px);
+      }
+      &:after {
+        transform: rotate(-45deg) translate(-7px, 10px);
+      }
+    }
+  }
+}

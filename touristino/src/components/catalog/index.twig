@@ -1,0 +1,10 @@
+<div class="section-catalog">
+
+    {% for item in catalogElement|merge(catalogElement)|slice(0,9) %}
+
+        {% include '../catalog.item/index.twig' with item %}
+
+    {% endfor %}
+
+</div>
+

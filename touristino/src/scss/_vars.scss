@@ -1,0 +1,36 @@
+@import "mixins";
+
+/* шрифты с одним именем, потом управляешь только weight */
+
+@include font-face("GothamPro", "../fonts/GothamPro/GothamPro", normal);
+@include font-face("GothamPro", "../fonts/GothamPro-Bold/GothamPro-Bold", bold);
+@include font-face("GothamPro", "../fonts/GothamPro-Light/GothamPro-Light", 300);
+@include font-face("GothamPro", "../fonts/GothamPro-LightItalic/GothamPro-LightItalic", 300, italic);
+@include font-face("GothamPro", "../fonts/GothamPro-Medium/GothamPro-Medium", 500);
+@include font-face("GothamPro", "../fonts/GothamPro-MediumItalic/GothamPro-MediumItalic", 500, italic);
+@include font-face("ProximaNova", "../fonts/ProximaNova-Regular/ProximaNova-Regular", normal);
+@include font-face("ProximaNova", "../fonts/ProximaNova-Light/ProximaNova-Light", 300);
+@include font-face("ProximaNova", "../fonts/ProximaNova-Bold/ProximaNova-Bold", bold);
+@include font-face("ProximaNova", "../fonts/ProximaNova-Semibold/ProximaNova-Semibold", 600);
+@include font-face("Montserrat", "../fonts/Montserrat-Light/Montserrat-Light", 300);
+@include font-face("Montserrat", "../fonts/Montserrat-Regular/Montserrat-Regular", normal);
+@include font-face("Montserrat", "../fonts/Montserrat-SemiBold/Montserrat-SemiBold", 600);
+@include font-face("Montserrat", "../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold", bold);
+@include font-face("SourceSansPro", "../fonts/SourceSansPro-Regular/SourceSansPro-Regular", normal);
+@include font-face("SourceSansPro", "../fonts/SourceSansPro-Black/SourceSansPro-Black", 900);
+
+/* дефол шрифт на весь проект */
+
+$gotham: 'GothamPro',
+sans-serif;
+$proxima: 'ProximaNova',
+sans-serif;
+$montserrat: 'Montserrat',
+sans-serif;
+$source: 'SourceSansPro',
+sans-serif;
+$accent: #000;
+$second-accent:#393939;
+$green: #0d9e51;
+
+/* константы - переменные цветов */

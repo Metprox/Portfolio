@@ -1,0 +1,18 @@
+{
+  "name": "bit4u",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "O.V."
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

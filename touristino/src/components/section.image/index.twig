@@ -1,0 +1,17 @@
+<section class="section__image">
+
+    <img src="./img/{{ sectionImage.image }}.png" alt="">
+
+    <div class="mouse">
+
+        <div>
+            <span class="mouse__icon"><svg viewBox="0 0 512 512"><use xlink:href="#mouse" /></svg></span>
+
+            {% for i in 0..2 %}
+                <i class="mouse__arr"><svg viewBox="0 0 284.929 284.929"><use xlink:href="#arrow-down" /></svg></i>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</section>

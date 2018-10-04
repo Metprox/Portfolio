@@ -1,0 +1,246 @@
+.review {
+  padding: 27px 0 82px;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__send, &__more {
+    max-width: 223px;
+  }
+
+  &__more {
+    margin-right: 29px;
+  }
+}
+
+.service-content {
+  padding: 0 0 188px;
+
+  .h2 {
+    margin-top: 72px;
+  }
+
+  .subtitle {
+    margin: 11px 0 12px 6px;
+  }
+
+  .banner {
+    //margin-top: 129px;
+  }
+
+  aside {
+    .add-favorite {
+      max-width:307px;
+      margin: 44px auto 56px;
+    }
+
+    .contact-us {
+      margin-top: 29px;
+    }
+  }
+}
+
+.present {
+  display: flex;
+
+  &-desc {
+    display: flex;
+
+    .tabs {
+      &__content {
+
+        & > div {
+          overflow: hidden;
+          transition: height 300ms ease;
+        }
+      }
+    }
+  }
+}
+
+.reserve {
+  box-shadow: 27px 5px 43px rgba(32, 94, 171, 0.1);
+  border-radius: 5px;
+  border: 1px solid #e9f0f5;
+  background-color: #ffffff;
+  padding: 16px 29px 38px 31px;
+
+  i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    fill: #0d9e51;
+    margin-right: 9px;
+  }
+
+  .h3 {
+    text-align: center;
+  }
+
+  p {
+    color: #0d9e51;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    & + .reserve__row {
+      margin-top: 25px;
+    }
+
+    &.promocode {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        text-align: left;
+      }
+
+      .promocode__item {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        border-radius : 0 25px 25px 0;
+        overflow: hidden;
+      }
+
+      input {
+        width: 196px;
+        margin: 0;
+        padding-right: 50px;
+        border-radius: 25px;
+        border: 1px solid #cfd8dc;
+      }
+
+      [type=submit] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #0d9e51;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 250ms ease;
+
+        &:hover {
+          background-color: #96e01f;
+        }
+
+         &:after {
+           content: "";
+           display: inline-block;
+           width: 16px;
+           height: 16px;
+           background: url('../img/icon/promocode-arr.png') no-repeat center/contain;
+         }
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.7rem;
+    white-space: nowrap;
+    margin-bottom: 5px;
+  }
+
+  &__item {
+    max-width: 190px;
+    width: 100%;
+
+    & >*:nth-child(even) {
+      margin-right: 10px;
+    }
+  }
+
+  &__tel {
+    max-width: 100%
+  }
+
+  input, .cselect__current {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #cfd8dc;
+    background-color: #ffffff;
+    outline: none;
+
+    color: rgba(#2c3e50,.8);
+    font-family: $gotham;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    padding: 0 35px 0 14px;
+
+    &[type=email] {
+      margin-top: 22px;
+    }
+
+    &[type=tel] {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    @include placeholder(1.4rem, rgba(#2c3e50,.8)) {
+      font-family: inherit;
+    }
+    @include _focus(200ms);
+  }
+
+  .cselect {
+    margin-right: 0;
+
+    &__list {
+      width: 100%;
+      top: 50px;
+    }
+
+    &__current {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      &:after {
+        right: 20px;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0 34px;
+
+    & >*{
+      max-width: 193px;
+
+      &:nth-child(even) {
+        margin-left: 10px;
+
+        i {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+

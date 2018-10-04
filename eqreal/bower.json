@@ -1,0 +1,17 @@
+{
+  "name": "eqReal",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "O.V."
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

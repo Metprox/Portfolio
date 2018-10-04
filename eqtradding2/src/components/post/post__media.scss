@@ -1,0 +1,153 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .post__headerH1 {
+        left: 10px;
+        font-size: 48px;
+    }
+    .post__tagsBlock {
+        font-size: 27px;
+    }
+    .newsCart__img {
+        height: 30vh;
+        object-fit: cover;
+    }
+    .post__section {
+        margin-top: -25vh;
+    }
+    .buttons__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .button__next,
+    .button__prev {
+        width: 80%;
+        height: 70%;
+    }
+    .svgBlock {
+        top: .2em;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .post__headerH1 {
+        left: 10px;
+        font-size: 72px;
+    }
+    .post__tagsBlock {
+        font-size: 27px;
+    }
+    .newsCart__img {
+        height: 30vh;
+        object-fit: cover;
+    }
+    .post__section {
+        margin-top: -25vh;
+    }
+    .buttons__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .button__next,
+    .button__prev {
+        width: 48%;
+        height: 70%;
+    }
+    .svgBlock {
+        top: .2em;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .post__headerH1 {
+        width: 95%;
+        left: 10px;
+        font-size: 72px;
+    }
+    .post__tagsBlock {
+        font-size: 27px;
+    }
+    .newsCart__img {
+        height: 30vh;
+        object-fit: cover;
+    }
+    .post__section {
+        margin-top: -25vh;
+    }
+    .buttons__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .button__next,
+    .button__prev {
+        width: 35%;
+        height: 70%;
+    }
+    .svgBlock {
+        top: .2em;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .post__headerH1 {
+        width: 95%;
+        left: 10px;
+        font-size: 72px;
+        top: 20vh;
+    }
+    .post__tagsBlock {
+        font-size: 27px;
+    }
+    .newsCart__img {
+        height: 30vh;
+        object-fit: cover;
+    }
+    .post__section {
+        margin-top: -25vh;
+    }
+    .buttons__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .button__next,
+    .button__prev {
+        width: 35%;
+        height: 70%;
+    }
+    .svgBlock {
+        top: .2em;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .post__headerH1 {
+        width: 95%;
+        left: 10px;
+        font-size: 72px;
+        top: 34vh;
+    }
+    .post__tagsBlock {
+        font-size: 27px;
+    }
+    .newsCart__img {
+        height: 30vh;
+        object-fit: cover;
+    }
+    .post__section {
+        margin-top: -25vh;
+    }
+    .svgBlock {
+        top: .2em;
+    }
+}

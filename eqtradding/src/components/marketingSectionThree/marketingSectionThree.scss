@@ -1,0 +1,133 @@
+.marketingSectionThree {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 143px;
+}
+
+.marketingSectionThree__mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.marketingSectionThree__mainContent h2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $white-color;
+    margin: auto;
+    margin-bottom: 63px;
+    flex-basis: 100%;
+}
+
+.marketingSectionThree__mainContent p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: $white-color;
+    margin: auto;
+    flex-basis: 100%;
+    margin-bottom: 68px;
+}
+
+.marketingSectionThree__infoMarket {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.infoMarket1 {
+    position: relative;
+    flex-basis: 50%;
+}
+
+.infoMarket2 {
+    position: relative;
+    flex-basis: 50%;
+}
+
+.infoMarket1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, $blue-color, #000);
+    box-shadow: 0px 8px 22.1px 4.9px rgba(0, 0, 0, 0.09);
+    opacity: .48;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.infoMarket1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blue-color;
+    height: 101px;
+    width: 4px;
+}
+
+.infoMarket2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blue-color;
+    height: 101px;
+    width: 4px;
+}
+
+.infoMarket2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, $blue-color, #000);
+    box-shadow: 0px 8px 22.1px 4.9px rgba(0, 0, 0, 0.09);
+    opacity: .48;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.marketingSectionThree__infoMarket h3 {
+    font-family: $open-sans;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #fff;
+    margin-left: 28px;
+    margin-top: 28px;
+}
+
+.marketingSectionThree__infoMarket p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+    margin-left: 28px;
+}

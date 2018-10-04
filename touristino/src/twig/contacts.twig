@@ -1,0 +1,231 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{%  if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt <br /> ut labore et dolore magna aliqua.</p>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+        {#style="background-image:url('./img/bg/contacts-bg.png')"#}
+
+        <div class="wrapper">
+
+            <div class="contact__block">
+
+                <div class="contact-form">
+                    <h2 class="h2">Let us hear your <br /> thoughts</h2>
+                    <p>If you have any questions about our consulting services, please contact us</p>
+
+                    <form>
+
+                        <div class="contact-form__row">
+
+                            <div class="contact-form__path">
+
+                                <span>
+                                    <label for="name">Name</label>
+                                    <input type="text" name="text" value="" id="name" placeholder="Enter your name" />
+                                </span>
+                                <span class="contact-form__error">Поле заполнено не верно *</span>
+
+                                <span>
+                                    <label for="email">Email address</label>
+                                    <input type="email" name="email" value="" id="email" placeholder="Enter a valid email address" />
+                                </span>
+                                <span class="contact-form__error">Поле заполнено не верно *</span>
+
+                            </div>
+                            <div class="contact-form__path">
+
+                                <span>
+                                    <label for="message">Your massage</label>
+                                    <textarea name="" id="message" placeholder="Tell us more about your projects"></textarea>
+                                </span>
+                                <span class="contact-form__error">&nbsp;</span>
+
+                            </div>
+
+                        </div>
+                        <div class="contact-form__row">
+
+                            <div class="contact-form__path">
+                                <label>Captcha</label>
+                                <img src="./img/captcha.png" alt="">
+                            </div>
+
+                            <button class="button-green contact-form__button">Send message</button>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="contact-info">
+
+                    <div class="contact-map">
+
+                        <div id="map"></div>
+
+                        <div class="contact-info__list">
+
+                            <div>
+                                <span class="contact-info__item">
+                                    <span class="contact-info__icon">
+                                        <svg viewBox="0 0 430.114 430.114">
+                                            <use xlink:href="#mark" />
+                                        </svg>
+                                    </span>
+                                    Sacramento, CA <br /> 222 Woodmere Road , Suite 250 <br /> Folsom, California 95630</span>
+                            </div>
+
+                            <div>
+
+                                <a class="contact-info__item contact-info__telephone" href="tel:+6221-2269 2089">
+                                    <span class="contact-info__icon">
+                                        <svg viewBox="0 0 411.595 411.595">
+                                            <use xlink:href="#telephone" />
+                                        </svg>
+                                    </span>
+                                    +6221-2269 2089</a>
+                                <a class="contact-info__item" href="mailto:support@gmail.com">
+                                    <span class="contact-info__icon">
+                                        <svg viewBox="0 0 485.211 485.211">
+                                            <use xlink:href="#mail" />
+                                        </svg>
+                                    </span>
+                                    support@gmail.com</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script>
+    function initMap() {
+        var coordinates = { lat: 38.5815719, lng: -121.4943996 },
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: coordinates,
+                zoom: 8,
+                disableDefaultUI: true,
+            }),
+
+            image = 'img/marker.svg',
+
+            marker = new google.maps.Marker({
+                position: coordinates,
+                map: map,
+                icon: image,
+                title: 'Uluru (Ayers Rock)'
+
+            });
+
+        map.setOptions({
+            styles: [{
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#444444"
+                    }]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [{
+                        "color": "#f2f2f2"
+                    }]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [{
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 45
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "simplified"
+                    }]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{
+                            "color": "#dde6e8"
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                }
+            ]
+        })
+    }
+</script>
+
+{% include '../components/footer/index.twig' %}

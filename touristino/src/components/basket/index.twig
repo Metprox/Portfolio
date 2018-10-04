@@ -1,0 +1,74 @@
+<form>
+
+    <div class="basket-header">
+
+        <span>chip basket</span>
+
+    </div>
+
+    <div class="basket-table">
+
+        {% for i in 0..2 %}
+        <div class="tr">
+
+            <div class="td">
+                <img src="./img/basket-item.png" alt="">
+            </div>
+
+            <div class="td">
+                <p>Bedroom Boundless</p>
+                <p>excursion tour</p>
+                <span class="basket__icons">
+                        {% set elements = [
+                            { box : "0 0 448 448", id : "person", name : "15 people" },
+                            { box : "0 0 97.16 97.16", id : "clock", name : "2,5 hours" },
+                            { box : "0 0 430.114 430.114", id : "mark", name : "DELTA, 48 Boulevard" }
+                        ] %}
+                    {% for item in elements %}
+                        <span><i><svg viewBox="{{ item.box }}"><use xlink:href="#{{ item.id }}" /></svg></i>{{ item.name }}</span>
+                    {% endfor %}
+                    </span>
+            </div>
+
+            <div class="td">
+
+                {% set cost = '20' %}
+
+                <div class="counter">
+                    <span class="counter__button minus">-</span>
+                    <input type="number" class="count" name="number" value="1" min="1" />
+                    <span class="counter__button plus">+</span>
+                </div>
+
+            </div>
+
+            <div class="td">
+                <span class="cost cy" data-cy="{{ cy }}">{{ 50 * (i+1) }}</span>
+            </div>
+
+            <div class="td">
+                <span class="del"></span>
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="basket-footer">
+
+        <div class="total-amount">
+
+            <p>Total price :</p>
+
+            <span class="cy" data-cy="{{ cy }}">50.00</span>
+
+        </div>
+
+        <button type="submit" class="button-green basket-footer__button">checkout</button>
+
+    </div>
+
+    <span class="popup__close"></span>
+
+</form>

@@ -1,0 +1,15 @@
+<ul class="recommendation__list">
+
+    {% for item in recommendationList %}
+        <li class="recommendation__item">
+
+            <div>
+                <img src="./img/icon/{{ item.nameImage }}-{{ loop.index }}.png" alt="">
+            </div>
+            <p class="recommendation__title">{{ item.title }}</p>
+            <p>{{ item.text }}</p>
+
+        </li>
+    {% endfor %}
+
+</ul>

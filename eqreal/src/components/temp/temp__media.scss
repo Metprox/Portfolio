@@ -1,0 +1,475 @@
+@media screen and (max-width: 575px) {
+    .tempHeaderBLock__left--img {
+        width: 100vw;
+    }
+    .tempHeaderBlock__right {
+        width: 100vw;
+        margin-top: 24px;
+    }
+    .bg--white {
+        top: -3vh;
+        left: 0vw;
+        width: 100vw;
+    }
+    .tempHeaderBlock--HeaderText {
+        font-size: 52px;
+    }
+    .temp__listBlock {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+    .temp__buttonBlock {
+        width: 100vw;
+        flex-flow: column wrap;
+    }
+    .buttonBlock__left,
+    .buttonBlock__right {
+        width: 80vw;
+        margin-bottom: 14px;
+    }
+    .tempMain {
+        width: 100%;
+        margin-top: 0;
+    }
+    .bgLine--big1--img {
+        display: none;
+    }
+    .bgLine--big2--img {
+        display: none;
+    }
+    .small-container2 {
+        display: none;
+    }
+    .middleBlock__left--header {
+        width: 95vw;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .pricing__h2 {
+        text-align: center;
+    }
+    .broker--block {
+        width: 90vw;
+    }
+    .text--small--width {
+        font-size: 40px;
+        text-align: left;
+    }
+    #swiper4__button-next,
+    #swiper4__button-prev {
+        display: none;
+    }
+    .temp__reviewSlides {
+        overflow-x: hidden;
+    }
+    .reviewSlides__list {
+        background-color: transparent;
+    }
+    .reviewSlides__header {
+        flex-basis: 100%;
+    }
+    .reviewSlides__headerBottomText {
+        width: 100%;
+    }
+    .temp__broker {
+        width: 88%;
+    }
+    .text--left {
+        text-align: left;
+    }
+    .pricing__headerBlock {
+        margin-top: 44px;
+    }
+    .width--text {
+        width: 95vw;
+    }
+    .pricing__lowBlock {
+        margin-bottom: 0;
+    }
+    #swiper2__button-next {
+        display: block;
+        right: 13%;
+    }
+    #swiper2__button-prev {
+        display: block;
+        left: 66%;
+    }
+    .tempMob--style {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .tempHeaderBLock__left--img {
+        width: 100vw;
+    }
+    .tempHeaderBlock__right {
+        width: 100vw;
+        margin-top: 24px;
+    }
+    .bg--white {
+        top: -15vh;
+        left: 0vw;
+        width: 100vw;
+    }
+    .tempHeaderBlock--HeaderText {
+        font-size: 52px;
+    }
+    .temp__listBlock {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+    .temp__buttonBlock {
+        width: 95vw;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .buttonBlock__left,
+    .buttonBlock__right {
+        width: 40vw;
+        margin-bottom: 14px;
+    }
+    .tempMain {
+        width: 100%;
+        margin-top: 0;
+    }
+    .bgLine--big1--img {
+        display: none;
+    }
+    .bgLine--big2--img {
+        display: none;
+    }
+    .middleBlock__left--header {
+        width: 95vw;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .pricing__h2 {
+        font-size: 64px;
+        text-align: center;
+    }
+    .broker--block {
+        width: 90vw;
+    }
+    .text--small--width {
+        font-size: 40px;
+        text-align: left;
+    }
+    #swiper4__button-next,
+    #swiper4__button-prev {
+        display: none;
+    }
+    .temp__reviewSlides {
+        overflow-x: hidden;
+    }
+    .reviewSlides__list {
+        background-color: transparent;
+    }
+    .reviewSlides__header {
+        flex-basis: 100%;
+    }
+    .reviewSlides__headerBottomText {
+        width: 100%;
+    }
+    .temp__broker {
+        width: 88%;
+    }
+    .text--left {
+        text-align: center;
+    }
+    .pricing__headerBlock {
+        margin-top: 44px;
+    }
+    .width--text {
+        width: 95vw;
+    }
+    .small-container2 {
+        display: none;
+    }
+    .temp__reviewSlides {
+        margin-top: 80px;
+    }
+    .text--small--width {
+        font-size: 64px;
+        text-align: center;
+    }
+    .bg--white {
+        top: -18vh;
+    }
+    #swiper2__button-next {
+        display: block;
+        right: 13%;
+    }
+    #swiper2__button-prev {
+        display: block;
+        left: 66%;
+    }
+    .footerSection1__text {
+        width: 50%;
+        margin: auto;
+    }
+    .tempMob--style {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .tempHeaderBLock__left--img {
+        width: 100vw;
+    }
+    .tempHeaderBlock__right {
+        width: 100vw;
+        margin-top: 24px;
+    }
+    .bg--white {
+        top: -15vh;
+        left: 0vw;
+        width: 100vw;
+    }
+    .tempHeaderBlock--HeaderText {
+        font-size: 52px;
+    }
+    .temp__listBlock {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+    .temp__buttonBlock {
+        width: 95vw;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .buttonBlock__left,
+    .buttonBlock__right {
+        width: 40vw;
+        margin-bottom: 14px;
+    }
+    .tempMain {
+        width: 100%;
+        margin-top: 0;
+    }
+    .bgLine--big1--img {
+        display: none;
+    }
+    .bgLine--big2--img {
+        display: none;
+    }
+    .middleBlock__left--header {
+        width: 95vw;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .pricing__h2 {
+        font-size: 64px;
+        text-align: center;
+    }
+    .broker--block {
+        width: 90vw;
+    }
+    .text--small--width {
+        font-size: 40px;
+        text-align: left;
+    }
+    #swiper4__button-next,
+    #swiper4__button-prev {
+        display: none;
+    }
+    .temp__reviewSlides {
+        overflow-x: hidden;
+    }
+    .reviewSlides__list {
+        background-color: transparent;
+    }
+    .reviewSlides__header {
+        flex-basis: 100%;
+    }
+    .reviewSlides__headerBottomText {
+        width: 100%;
+    }
+    .temp__broker {
+        width: 88%;
+    }
+    .text--left {
+        text-align: center;
+    }
+    .pricing__headerBlock {
+        margin-top: 154px;
+    }
+    .width--text {
+        width: 95vw;
+    }
+    .small-container2 {
+        display: none;
+    }
+    .temp__reviewSlides {
+        margin-top: 80px;
+    }
+    .text--small--width {
+        font-size: 64px;
+        text-align: center;
+    }
+    .bg--white {
+        top: -18vh;
+    }
+    #swiper2__button-next {
+        display: block;
+        right: 20%;
+    }
+    #swiper2__button-prev {
+        display: block;
+        left: 70%;
+    }
+    .middleBlock__left--textLow {
+        width: 80%;
+    }
+    .footerSection1__text {
+        width: 50%;
+        margin: auto;
+    }
+    .temp__reviewSlides {
+        width: 60%;
+    }
+    .reviewSlides__list {
+        margin-top: 78px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .leftBlock__header {
+        flex-basis: 20%;
+    }
+    .rightBlock__header {
+        height: auto;
+    }
+    .bg--white {
+        height: 85vh;
+    }
+    .temp__listBlock {
+        width: 65%;
+        justify-content: space-between;
+    }
+    .buttonBlock__left,
+    .buttonBlock__right {
+        width: 25vw;
+        margin-bottom: 14px;
+    }
+    .footerSection1__text {
+        width: 50%;
+        margin: auto;
+    }
+    .europeMain {
+        margin-top: 0;
+    }
+    .pricing__h2 {
+        font-size: 64px;
+        text-align: center;
+    }
+    .text--left {
+        font-size: 62px;
+        text-align: center;
+    }
+    .middleBlock__left {
+        margin-top: 200px;
+    }
+    .small-container2 {
+        right: 7vw;
+        bottom: -20vh;
+    }
+    .bgLine--big1--img {
+        display: none;
+    }
+    .bgLine--big2--img {
+        display: none;
+    }
+    .modalBlock__position {
+        left: 6.5%;
+    }
+    #modal-button-next {
+        left: 88vw;
+    }
+    #modal-button-prev {
+        left: -4vw;
+    }
+    .width--text {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+    .middleBlock__left--header {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 44px;
+    }
+    .temp--mt-1 {
+        margin-top: 154px;
+    }
+    .broker--block {
+        width: 30%;
+    }
+    #swiper4__button-next,
+    #swiper4__button-prev {
+        right: 0vw;
+    }
+    .reviewSlides__header {
+        margin-left: 18px;
+    }
+    #swiper2__button-next {
+        display: block;
+    }
+    #swiper2__button-prev {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .europeContent__items2--textSmall:before {
+        left: -6vw;
+    }
+    .leftBlock__header {
+        flex-basis: 20%;
+    }
+    .rightBlock__header {
+        height: auto;
+    }
+    .bg--white {
+        height: 78vh;
+    }
+    .temp__listBlock {
+        width: 65%;
+        justify-content: space-between;
+    }
+    .bgLine--big1--img {
+        display: none;
+    }
+    .bgLine--big2--img {
+        display: none;
+    }
+    .broker--block {
+        width: 23%;
+    }
+    .buttonBlock__left,
+    .buttonBlock__right {
+        width: 20vw;
+    }
+    .temp__buttonBlock {
+        width: 94%;
+    }
+    .small-container2 {
+        width: 250px;
+        height: 250px;
+    }
+    .broker--block {
+        width: 23%;
+    }
+    .modalBlock__position {
+        left: 15%;
+    }
+    #modal-button-next {
+        left: 78vw;
+    }
+    #modal-button-prev {
+        left: -10vw;
+    }
+}

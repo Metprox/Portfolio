@@ -1,0 +1,624 @@
+@media screen and (max-width: 575px) {
+    .europeMain {
+        width: 90%;
+    }
+    .header__container--europe {
+        height: 14vh;
+        width: 100vw;
+    }
+    .logo__leftBlock--europe {
+        height: 100%;
+        justify-content: space-between;
+    }
+    .text__rightBlock--europe {
+        height: 30%;
+        justify-content: flex-start;
+    }
+    .europeImage {
+        width: 100vw;
+    }
+    .europeImage__allText {
+        right: 0vw;
+        width: 100%;
+    }
+    .europeHover1 {
+        top: -1vh;
+        right: 6vw;
+    }
+    .europeHover2 {
+        bottom: -1vh;
+        right: 53vw;
+    }
+    .europeImage__bigText {
+        margin-top: 80px;
+        width: 100%;
+        font-size: 68px;
+    }
+    .smallText__link {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+    .europeImage__belowText,
+    .europeImage__bigText {
+        text-align: left;
+    }
+    .europeImage__belowText {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .europeLink1__text,
+    .europeLink2__text {
+        font-size: 12px;
+    }
+    .europeLink1__img1,
+    .europeLink2__img2 {
+        width: 150px;
+        height: 130px;
+    }
+    .europeLink1__shadow,
+    .europeLink2__shadow {
+        width: 150px;
+        height: 130px;
+    }
+    .belowBlock__text {
+        display: none;
+    }
+    .europeImage__smallText {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .europeImage__smallText:before {
+        top: 1.3vh;
+        width: 34px;
+    }
+    .tab__text {
+        line-height: 2;
+        font-size: 18px;
+    }
+    .aboveTab {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab1 {
+        margin: 0;
+        margin-bottom: 14px;
+    }
+    .tab2 {
+        margin: 0;
+    }
+    .searchFrame__form {
+        width: 100%;
+        margin-left: 0;
+    }
+    #searchFrame__input {
+        width: 100%;
+    }
+    .searchFrame--hov {
+        width: 50%;
+    }
+    .priceRange {
+        width: 50%;
+        margin-right: 0;
+        align-items: flex-end;
+    }
+    .europeContent__lists {
+        flex-flow: column wrap;
+        margin: 80px 0;
+    }
+    .europeFooter {
+        height: 100%;
+    }
+    .europeFooter__main {
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footerSection1__text {
+        width: 95%;
+        text-align: center;
+    }
+    .footerSection1 {
+        text-align: center;
+    }
+    .europeSlides__items {
+        width: 100%;
+        max-width: 100%;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    .europeSlides {
+        height: 70vh;
+    }
+    .europeContent__items2--textSmall {
+        text-align: center;
+    }
+    .priceRange--bg {
+        width: 150px;
+    }
+    .europeContent__item3 {
+        margin-top: 24px;
+    }
+    .europeContent__items2--textSmall:before {
+        left: -8vw;
+    }
+    .europeImage {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .europeMain {
+        width: 90%;
+    }
+    .header__container--europe {
+        height: 14vh;
+        width: 100vw;
+    }
+    .logo__leftBlock--europe {
+        height: 100%;
+        justify-content: space-between;
+    }
+    .text__rightBlock--europe {
+        height: 30%;
+        justify-content: flex-start;
+    }
+    .europeImage {
+        width: 100vw;
+    }
+    .europeImage__allText {
+        right: 0vw;
+        width: 100%;
+    }
+    .europeHover1 {
+        top: -1vh;
+        right: 6vw;
+    }
+    .europeHover2 {
+        bottom: -1vh;
+        right: 53vw;
+    }
+    .europeImage__bigText {
+        margin-top: 80px;
+        width: 100%;
+        font-size: 78px;
+    }
+    .smallText__link {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+    .europeImage__belowText,
+    .europeImage__bigText {
+        text-align: left;
+    }
+    .europeImage__belowText {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .europeLink1__text,
+    .europeLink2__text {
+        font-size: 12px;
+    }
+    .europeLink1__img1,
+    .europeLink2__img2 {
+        width: 150px;
+        height: 130px;
+    }
+    .europeLink1__shadow,
+    .europeLink2__shadow {
+        width: 150px;
+        height: 130px;
+    }
+    .belowBlock__text {
+        display: none;
+    }
+    .europeImage__smallText {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .europeImage__smallText:before {
+        top: 1.3vh;
+        left: 18vw;
+        width: 54px;
+    }
+    .tab__text {
+        line-height: 2;
+        font-size: 20px;
+    }
+    .aboveTab {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab1 {
+        margin: 0;
+        margin-bottom: 14px;
+    }
+    .tab2 {
+        margin: 0;
+    }
+    .searchFrame__form {
+        width: 100%;
+        margin-left: 0;
+    }
+    #searchFrame__input {
+        width: 100%;
+    }
+    .searchFrame--hov {
+        width: 50%;
+    }
+    .priceRange {
+        align-items: flex-end;
+        width: 50%;
+        margin-right: 0;
+    }
+    .europeContent__lists {
+        flex-flow: column wrap;
+        margin: 80px 0;
+    }
+    .europeFooter {
+        height: 100%;
+    }
+    .europeFooter__main {
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footerSection1__text {
+        width: 95%;
+        text-align: center;
+    }
+    .footerSection1 {
+        text-align: center;
+    }
+    .europeSlides__items {
+        width: 100%;
+        max-width: 100%;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    .europeSlides {
+        height: 65vh;
+    }
+    .europeContent__items2--textSmall {
+        text-align: left;
+        padding-left: 70px;
+    }
+    .priceRange--bg {
+        width: 150px;
+    }
+    .europeContent__item3 {
+        margin-top: 24px;
+    }
+    .europeImage {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .europeMain {
+        width: 90%;
+    }
+    .header__container--europe {
+        height: 14vh;
+        width: 100vw;
+    }
+    .logo__leftBlock--europe {
+        height: 100%;
+        justify-content: space-between;
+    }
+    .text__rightBlock--europe {
+        height: 30%;
+        justify-content: flex-start;
+    }
+    .europeImage {
+        width: 100vw;
+    }
+    .europeImage__allText {
+        right: 0vw;
+        width: 100%;
+    }
+    .europeHover1 {
+        top: -1vh;
+        right: 6vw;
+    }
+    .europeHover2 {
+        bottom: -1vh;
+        right: 53vw;
+    }
+    .europeImage__bigText {
+        margin-top: 80px;
+        width: 100%;
+        font-size: 78px;
+    }
+    .smallText__link {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+    .europeImage__belowText,
+    .europeImage__bigText {
+        text-align: left;
+    }
+    .europeImage__belowText {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .europeLink1__text,
+    .europeLink2__text {
+        font-size: 12px;
+    }
+    .europeLink1__img1,
+    .europeLink2__img2 {
+        width: 210px;
+        height: 190px;
+    }
+    .europeLink1__shadow,
+    .europeLink2__shadow {
+        width: 210px;
+        height: 190px;
+    }
+    .belowBlock__text {
+        display: none;
+    }
+    .europeImage__smallText {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .europeImage__smallText:before {
+        top: 1.3vh;
+        left: 18vw;
+        width: 54px;
+    }
+    .tab__text {
+        line-height: 2;
+        font-size: 20px;
+    }
+    .aboveTab {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab1 {
+        margin: 0;
+        margin-bottom: 14px;
+    }
+    .tab2 {
+        margin: 0;
+    }
+    .searchFrame__form {
+        width: 100%;
+        margin-left: 0;
+    }
+    #searchFrame__input {
+        width: 100%;
+    }
+    .searchFrame--hov {
+        width: 50%;
+    }
+    .priceRange {
+        align-items: flex-end;
+        width: 50%;
+        margin-right: 0;
+    }
+    .europeContent__lists {
+        flex-flow: column wrap;
+        margin: 80px 0;
+    }
+    .europeFooter {
+        height: 100%;
+    }
+    .europeFooter__main {
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footerSection1__text {
+        width: 95%;
+        text-align: center;
+    }
+    .footerSection1 {
+        text-align: center;
+    }
+    .europeSlides__items {
+        width: 100%;
+        max-width: 100%;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    .europeSlides {
+        height: 65vh;
+    }
+    .europeContent__items2--textSmall {
+        text-align: left;
+        padding-left: 70px;
+    }
+    .priceRange--bg {
+        width: 150px;
+    }
+    .europeContent__item3 {
+        margin-top: 24px;
+    }
+    .europeImage {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .europeMain {
+        width: 90%;
+    }
+    .header__container--europe {
+        height: 14vh;
+        width: 100vw;
+    }
+    .logo__leftBlock--europe {
+        height: 100%;
+        justify-content: space-between;
+    }
+    .text__rightBlock--europe {
+        height: 30%;
+        justify-content: flex-start;
+    }
+    .europeImage {
+        width: 100vw;
+    }
+    .europeImage__allText {
+        right: 0vw;
+        width: 100%;
+    }
+    .europeHover1 {
+        top: -1vh;
+        right: 6vw;
+    }
+    .europeHover2 {
+        bottom: -1vh;
+        right: 53vw;
+    }
+    .europeImage__bigText {
+        margin-top: 80px;
+        width: 100%;
+        font-size: 78px;
+    }
+    .smallText__link {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+    .europeImage__belowText,
+    .europeImage__bigText {
+        text-align: left;
+    }
+    .europeImage__belowText {
+        width: 40%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .europeLink1__text,
+    .europeLink2__text {
+        font-size: 12px;
+    }
+    .europeLink1__img1,
+    .europeLink2__img2 {
+        width: 250px;
+        height: 230px;
+    }
+    .europeLink1__shadow,
+    .europeLink2__shadow {
+        width: 250px;
+        height: 230px;
+    }
+    .belowBlock__text {
+        display: none;
+    }
+    .europeImage__smallText {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .europeImage__smallText:before {
+        top: 1.3vh;
+        left: 18vw;
+        width: 54px;
+    }
+    .tab__text {
+        line-height: 2;
+        font-size: 20px;
+    }
+    .aboveTab {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab1 {
+        margin: 0;
+        margin-bottom: 14px;
+    }
+    .tab2 {
+        margin: 0;
+    }
+    .searchFrame__form {
+        width: 100%;
+        margin-left: 0;
+    }
+    #searchFrame__input {
+        width: 100%;
+    }
+    .searchFrame--hov {
+        width: 50%;
+    }
+    .priceRange {
+        align-items: flex-end;
+        width: 50%;
+        margin-right: 0;
+    }
+    .europeContent__lists {
+        flex-flow: column wrap;
+        margin: 80px 0;
+    }
+    .europeFooter {
+        height: 100%;
+    }
+    .europeFooter__main {
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footerSection1__text {
+        width: 95%;
+        text-align: center;
+    }
+    .footerSection1 {
+        text-align: center;
+    }
+    .europeSlides__items {
+        width: 100%;
+        max-width: 100%;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    .europeSlides {
+        height: 65vh;
+    }
+    .europeContent__items2--textSmall {
+        text-align: left;
+        padding-left: 70px;
+    }
+    .priceRange--bg {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .priceRange {
+        width: 11vw;
+    }
+}

@@ -1,0 +1,249 @@
+.slider {
+  &-present {
+    display: flex;
+    padding-bottom: 62px;
+    position: relative;
+    width: calc(100% - 126px);
+
+    .wrap {
+      height: 468px;
+
+      &-slider {
+        &-for {
+          position:relative;
+          max-width: 100%;
+
+          &__mark {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 63px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(#000000,.4);
+            padding: 5px 32px;
+
+            span {
+              width: 16px;
+              height: 16px;
+              display: inline-block;
+              fill: #fff;
+            }
+
+            p {
+              color: #fff;
+              font-size: 1.4rem;
+              line-height: 2.4rem;
+              margin-left: 16px;
+            }
+          }
+        }
+
+        &-nav{
+          min-width: 95px;
+          width: 95px;
+          height: 100%;
+          overflow-y: hidden;
+          margin-left: 31px;
+        }
+      }
+    }
+  }
+
+  &-for {
+    max-width: 857px;
+    width: 100%;
+
+    &__item {
+      //height: 468px;
+      overflow: hidden;
+
+      & > * {
+        height: 468px;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .slick {
+      &-dots {
+        bottom: 20px;
+
+        li  {
+          margin: 0;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          & + li { margin-left: 14px; }
+
+          &.slick-active {
+            background-color: #0d9e51;
+          }
+
+          button {
+            width: 12px;
+            height: 12px;
+            padding: 0;
+            background-color: rgba(#0d9e51,.6);
+            transition: background-color 250ms ease;
+            cursor: pointer;
+
+            &:before { display: none; }
+          }
+        }
+      }
+    }
+
+  }
+
+  &-nav {
+
+    .slick-list {
+      margin-bottom: -29px;
+    }
+
+    .slick-slide {
+      width: 95px !important;
+      height: 95px;
+      border: none;
+      margin-bottom: 29px;
+    }
+
+    &__item {
+      width: 95px !important;
+      height: 95px;
+      border-radius: 3px;
+      overflow: hidden;
+      cursor: pointer;
+
+      img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .btnPlay {
+      position: relative;
+    }
+  }
+}
+
+.present{
+  &-state {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 62px;
+    /*display: flex;
+    align-items: center;*/
+    max-width: 857px;
+
+    & >* {
+      float: left;
+      display: inline-block;
+      line-height: 62px;
+    }
+
+    &__item {
+      /*display: flex;
+      align-items: center;*/
+
+      & >* {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .rating {
+        margin-top: -1px;
+      }
+    }
+
+    p, span:not(.present-state__icon) {
+      color: #0d9e51;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+    }
+
+    p {
+      &:after {
+        content: "";
+        width: 1px;
+        height: 12px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #0d9e51;
+        margin: 0 9px;
+      }
+    }
+
+    &__icon {
+      width: 18px;
+      height: 18px;
+      line-height: 1;
+      fill: #0d9e51;
+    }
+
+    &__rating {
+      margin-right: 18px;
+    }
+
+    &__comment {
+      margin-right: 26px;
+
+      .present-state__icon {
+        margin-left: 6px;
+      }
+    }
+
+    &__view {
+      float: right;
+
+      .present-state__icon {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.slide-nav__button {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.video-slide {
+  position: relative;
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 107px;
+    height: 107px;
+    fill: #fff;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}

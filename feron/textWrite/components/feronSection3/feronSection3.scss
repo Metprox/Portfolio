@@ -1,0 +1,51 @@
+.feronSection3 {
+    width: 80%;
+    margin: auto;
+}
+
+.feronSection3 h2 {
+    font-family: $roboto;
+    font-size: 26px;
+    font-weight: $medium;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: $black-color;
+    margin-bottom: 25px;
+}
+
+.feronSection3 p {
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: $light;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: $second-color;
+    margin-bottom: 48px;
+}
+
+.feronSection3__img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.feronSection3__img div {
+    margin: auto;
+}
+
+.feronSection3__img img {
+    position: relative;
+}
+
+.feronSection3__img p {
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    background: red;
+}

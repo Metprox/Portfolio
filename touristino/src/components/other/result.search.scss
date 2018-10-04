@@ -1,0 +1,19 @@
+.search {
+  &-content {
+    padding-bottom: 220px;
+
+    .show__more {
+      float: right;
+      max-width: 209px;
+      height: 50px;
+    }
+  }
+
+  &-result {
+    margin: 52px 0 10px;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+}

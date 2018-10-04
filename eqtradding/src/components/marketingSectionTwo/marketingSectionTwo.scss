@@ -1,0 +1,65 @@
+.marketingSectionTwo {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 167px;
+}
+
+.marketingSectionTwo__headerText h1 {
+    font-family: $main-fonts;
+    font-size: 72px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #fff;
+}
+
+.marketingSectionTwo__headerText h1 span {
+    color: $blue-color;
+}
+
+.marketingSectionTwo__headerText {
+    margin-bottom: 134px;
+}
+
+.marketingSectionTwo__middleText {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: baseline;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.marketingSectionTwo__middleText h2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: $white-color;
+    margin: auto;
+}
+
+.marketingSectionTwo__middleText h2 span {
+    color: $blue-color;
+}
+
+.marketingSectionTwo__middleText div p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+    margin: auto;
+}

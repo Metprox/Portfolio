@@ -1,0 +1,9 @@
+<div class="slider-main proposes">
+
+    {% for item in proposes|merge(proposes) %}
+
+        {% include '../../../proposes.item/index.twig' with item %}
+
+    {% endfor %}
+
+</div>

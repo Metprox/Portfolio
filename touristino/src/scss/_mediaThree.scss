@@ -1,0 +1,472 @@
+@media only screen and (max-width: 575px) {
+    .orderPlacement {
+        &__HeaderBlock {
+            flex-flow: column wrap;
+        }
+        &__formBlock {
+            width: 100%;
+        }
+        &__selectMenu {
+            &--1,
+            &--2 {
+                width: 50%;
+                overflow: hidden;
+                &>span {
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    line-height: 1;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        &__crumbs {
+            &--1,
+            &--2 {
+                width: 50%;
+                margin: 0;
+                text-align: center;
+                &>span {
+                    &:after {
+                        width: 0;
+                        height: 0;
+                    }
+                    &:before {
+                        left: -9.5vw;
+                    }
+                }
+            }
+        }
+        &__input {
+            width: 95%!important;
+        }
+        &__label {
+            margin: 0 0 8px 24px;
+            &--content {
+                width: 90%;
+            }
+        }
+        &__buttons {
+            flex-flow: column wrap;
+        }
+        &__registration {
+            width: 95%;
+            margin-bottom: 14px;
+        }
+        &__next {
+            width: 95%;
+            margin-bottom: 8px;
+        }
+        &__basket {
+            width: 90%;
+            margin: auto;
+            margin-top: 104px;
+        }
+        &__step1,
+        &__step2 {
+            flex-flow: column wrap;
+            margin-bottom: 34px;
+            &>p {
+                width: 100%;
+            }
+            &>span {
+                width: 100%;
+            }
+        }
+        &__pplContent {
+            &--1,
+            &--2 {
+                flex-flow: column wrap;
+            }
+        }
+        &__addButton {
+            margin-top: 74px;
+            width: 100%;
+            justify-content: center;
+            &>span {
+                text-align: center;
+                &:before {
+                    top: -7vh;
+                    left: 42%;
+                }
+            }
+        }
+        &__info3 {
+            flex-flow: column wrap;
+            &--1,
+            &--2 {
+                width: 100%;
+                flex-flow: column wrap;
+            }
+        }
+        &__payments {
+            flex-flow: column wrap;
+            &--1,
+            &--2 {
+                margin-bottom: 38px;
+                width: 100%;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__button {
+            &--prev,
+            &--next {
+                margin-bottom: 38px;
+                width: 100%;
+            }
+        }
+    }
+    #selectRost,
+    #selectVes,
+    #selectRost1,
+    #selectVes1,
+    #selectRost2,
+    #selectVes2,
+    #selectRost3,
+    #selectVes3,
+    #selectRost4,
+    #selectVes4,
+    #selectRost5,
+    #selectVes5,
+    #selectRost6,
+    #selectVes6,
+    #selectRost7,
+    #selectVes7,
+    #selectRost8,
+    #selectVes8,
+    #selectRost9,
+    #selectVes9,
+    #selectRost10,
+    #selectVes10 {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 8px!important;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .orderPlacement {
+        &__HeaderBlock {
+            flex-flow: column wrap;
+        }
+        &__formBlock {
+            width: 100%;
+        }
+        &__selectMenu {
+            &--1,
+            &--2 {
+                width: 50%;
+                overflow: hidden;
+            }
+        }
+        &__crumbs {
+            &--1,
+            &--2 {
+                width: 50%;
+                margin: 0;
+                text-align: center;
+                &>span {
+                    &:after {
+                        width: 0;
+                        height: 0;
+                    }
+                    &:before {
+                        left: -9.5vw;
+                    }
+                }
+            }
+        }
+        &__input {
+            width: 95%!important;
+        }
+        &__label {
+            margin: 0 0 8px 24px;
+            &--content {
+                width: 90%;
+            }
+        }
+        &__buttons {
+            flex-flow: column wrap;
+        }
+        &__registration {
+            width: 95%;
+            margin-bottom: 14px;
+        }
+        &__next {
+            width: 95%;
+            margin-bottom: 8px;
+        }
+        &__basket {
+            width: 90%;
+            margin: auto;
+            margin-top: 104px;
+        }
+        &__step1,
+        &__step2 {
+            flex-flow: column wrap;
+            margin-bottom: 34px;
+            &>p {
+                width: 100%;
+            }
+            &>span {
+                width: 100%;
+            }
+        }
+        &__pplContent {
+            &--1,
+            &--2 {
+                flex-flow: column wrap;
+            }
+        }
+        &__addButton {
+            margin-top: 74px;
+            width: 100%;
+            justify-content: center;
+            &>span {
+                text-align: center;
+                &:before {
+                    top: -7vh;
+                    left: 42%;
+                }
+            }
+        }
+        &__info3 {
+            flex-flow: column wrap;
+            &--1,
+            &--2 {
+                width: 100%;
+                flex-flow: column wrap;
+            }
+        }
+        &__payments {
+            flex-flow: column wrap;
+            &--1,
+            &--2 {
+                margin-bottom: 38px;
+                width: 100%;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__button {
+            &--prev,
+            &--next {
+                margin-bottom: 38px;
+                width: 100%;
+            }
+        }
+    }
+    #selectRost,
+    #selectVes,
+    #selectRost1,
+    #selectVes1,
+    #selectRost2,
+    #selectVes2,
+    #selectRost3,
+    #selectVes3,
+    #selectRost4,
+    #selectVes4,
+    #selectRost5,
+    #selectVes5,
+    #selectRost6,
+    #selectVes6,
+    #selectRost7,
+    #selectVes7,
+    #selectRost8,
+    #selectVes8,
+    #selectRost9,
+    #selectVes9,
+    #selectRost10,
+    #selectVes10 {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 8px!important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .orderPlacement {
+        &__HeaderBlock {
+            flex-flow: column wrap;
+        }
+        &__formBlock {
+            width: 100%;
+        }
+        &__selectMenu {
+            &--1,
+            &--2 {
+                width: 50%;
+                overflow: hidden;
+            }
+        }
+        &__crumbs {
+            &--1,
+            &--2 {
+                width: 50%;
+                margin: 0;
+                text-align: center;
+                &>span {
+                    &:after {
+                        width: 0;
+                        height: 0;
+                    }
+                    &:before {
+                        left: -9.5vw;
+                    }
+                }
+            }
+        }
+        &__input {
+            width: 44%;
+        }
+        &__label {
+            margin: auto;
+            &--content {
+                width: 45%;
+            }
+        }
+        &__buttons {
+            flex-flow: column wrap;
+        }
+        &__registration {
+            width: 50%;
+            margin-bottom: 14px;
+        }
+        &__next {
+            width: 50%;
+            margin-bottom: 8px;
+        }
+        &__basket {
+            width: 90%;
+            margin: auto;
+            margin-top: 104px;
+        }
+        &__step1,
+        &__step2 {
+            flex-flow: row wrap;
+            margin-bottom: 34px;
+            &>p {
+                width: 20%;
+            }
+            &>span {
+                width: 80%;
+            }
+        }
+        &__pplContent {
+            &--1,
+            &--2 {
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+        }
+        &__addButton {
+            margin-top: 74px;
+            width: 100%;
+            justify-content: center;
+            &>span {
+                text-align: center;
+                &:before {
+                    top: -4px;
+                    left: -7vw;
+                }
+            }
+        }
+        &__info3 {
+            flex-flow: row wrap;
+            &--1,
+            &--2 {
+                width: 50%;
+                flex-flow: column wrap;
+            }
+        }
+        &__payments {
+            flex-flow: row wrap;
+            &--1,
+            &--2 {
+                margin-bottom: 38px;
+                width: 50%;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__button {
+            &--prev,
+            &--next {
+                margin-bottom: 38px;
+                width: 50%;
+            }
+        }
+        &__info {
+            width: 100%;
+        }
+    }
+    #selectRost,
+    #selectVes,
+    #selectRost1,
+    #selectVes1,
+    #selectRost2,
+    #selectVes2,
+    #selectRost3,
+    #selectVes3,
+    #selectRost4,
+    #selectVes4,
+    #selectRost5,
+    #selectVes5,
+    #selectRost6,
+    #selectVes6,
+    #selectRost7,
+    #selectVes7,
+    #selectRost8,
+    #selectVes8,
+    #selectRost9,
+    #selectVes9,
+    #selectRost10,
+    #selectVes10 {
+        width: 45%;
+        margin: 0;
+        margin-bottom: 8px!important;
+    }
+    .media-width {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .orderPlacement {
+        &__info {
+            width: 90%!important;
+        }
+        &__selectMenu {
+            &--1,
+            &--2 {
+                overflow: hidden;
+            }
+        }
+        &__input {
+            &--checkbox {
+                width: 100%;
+            }
+        }
+        &__info3 {
+            &--label {
+                height: 40px;
+            }
+        }
+    }
+    #orderPlacement {
+        &__name2,
+        &__name6 {
+            width: 95%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {}

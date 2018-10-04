@@ -1,0 +1,250 @@
+ {% include '../components/header/index.twig' %}
+
+    <section>
+
+        <div class="wrapper">
+
+          <div class="menuAdaptive">
+            <div class="menuAdaptive__Profile">
+                <p>Profile Menu</p>
+                <div class="menuAdaptive__close">
+                    <div class="menuAdaptive__humb"></div>
+                </div>
+            </div>
+            <ul class="menuAdaptive__ul">
+                <li class="menuAdaptive__li menuAdaptive__li--1">
+                    <p>Личные данные</p>
+                </li>
+                <li class="menuAdaptive__li menuAdaptive__li--2">
+                    <p>Резервации</p>
+                </li>
+                <li class="menuAdaptive__li menuAdaptive__li--3">
+                    <p>Брони</p>
+                </li>
+                <li class="menuAdaptive__li menuAdaptive__li--4">
+                    <p>Избранное</p>
+                </li>
+                <li class="menuAdaptive__li menuAdaptive__li--5">
+                    <p>Карта</p>
+                </li>
+                <li class="menuAdaptive__li menuAdaptive__li--6">
+                    <p>Календарь</p>
+                </li>
+                <li class="menuAdaptive__li menuAdaptive__li--7">
+                    <p>Достижения и бонусы</p>
+                </li>
+            </ul>
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    {% include '../components/officeTabs/index.twig' %}
+
+ <script>
+     function initMap() {
+         var coordinates = {lat: 38.6215719, lng: -121.643996},
+             map = new google.maps.Map(document.getElementById('map'), {
+                 center: coordinates,
+                 zoom: 11,
+                 disableDefaultUI: true,
+             }),
+
+             //markers
+             bron = 'img/markers/bron.png',
+             reserv = 'img/markers/reserve.png',
+             favor = 'img/markers/favor.png';
+
+         map.setOptions({
+             styles: [{
+                 "featureType": "administrative",
+                 "elementType": "labels.text.fill",
+                 "stylers": [{
+                     "color": "#444444"
+                 }]
+             },
+                 {
+                     "featureType": "landscape",
+                     "elementType": "all",
+                     "stylers": [{
+                         "color": "#f2f2f2"
+                     }]
+                 },
+                 {
+                     "featureType": "poi",
+                     "elementType": "all",
+                     "stylers": [{
+                         "visibility": "off"
+                     }]
+                 },
+                 {
+                     "featureType": "road",
+                     "elementType": "all",
+                     "stylers": [{
+                         "saturation": -100
+                     },
+                         {
+                             "lightness": 45
+                         }
+                     ]
+                 },
+                 {
+                     "featureType": "road.highway",
+                     "elementType": "all",
+                     "stylers": [{
+                         "visibility": "simplified"
+                     }]
+                 },
+                 {
+                     "featureType": "road.highway",
+                     "elementType": "geometry.fill",
+                     "stylers": [{
+                         "color": "#ffffff"
+                     }]
+                 },
+                 {
+                     "featureType": "road.arterial",
+                     "elementType": "labels.icon",
+                     "stylers": [{
+                         "visibility": "off"
+                     }]
+                 },
+                 {
+                     "featureType": "transit",
+                     "elementType": "all",
+                     "stylers": [{
+                         "visibility": "off"
+                     }]
+                 },
+                 {
+                     "featureType": "water",
+                     "elementType": "all",
+                     "stylers": [{
+                         "color": "#dde6e8"
+                     },
+                         {
+                             "visibility": "on"
+                         }
+                     ]
+                 }
+             ]
+         });
+
+         function item(name, tag, icon, location, image) {
+             var self = this;
+
+             this.name  = name;
+             this.tag = tag;
+             this.icon = icon;
+             this.location = location;
+
+             this.init = function() {
+                 self.marker = new google.maps.Marker({
+                     position: self.location,
+                     map: map,
+                     icon: image,
+                     title: String(self.count),
+                     count: self.count
+                 });
+                 self.infowindow = new google.maps.InfoWindow({
+                     content: self.name+self.tag+self.icon
+                 });
+             };
+
+             this.openWindow = function() {
+                 self.infowindow.open(map, self.marker);
+             }
+             this.closeWindow = function() {
+                 self.infowindow.close();
+             };
+         }
+
+         var item1 = new item(
+             "<p>Bedroom Boundless</p>",
+             "<p>excursion tour</p>",
+             "<div><span><i><svg viewBox=\"0 0 448 448\"><use xlink:href=\"#person\" /></svg></i><span>15 people</span></span><span><i><svg viewBox=\"0 0 97.16 97.16\"><use xlink:href=\"#clock\" /></svg></i><span>2,5 hours</span></span><span><i><svg viewBox=\"0 0 430.114 430.114\"><use xlink:href=\"#mark\" /></svg></i><span>DELTA, 48 Boulevard</span></span></div>",
+             {lat: 38.5915719, lng: -121.4943996},
+             favor
+         );
+
+         var item2 = new item(
+             "<p>Bedroom Boundless</p>",
+             "<p>excursion tour</p>",
+             "<div><span><i><svg viewBox=\"0 0 448 448\"><use xlink:href=\"#person\" /></svg></i><span>15 people</span></span><span><i><svg viewBox=\"0 0 97.16 97.16\"><use xlink:href=\"#clock\" /></svg></i><span>2,5 hours</span></span><span><i><svg viewBox=\"0 0 430.114 430.114\"><use xlink:href=\"#mark\" /></svg></i><span>DELTA, 48 Boulevard</span></span></div>",
+             {lat: 38.6025719, lng: -121.53996},
+             favor
+         );
+
+         var item3 = new item(
+             "<p>Bedroom Boundless</p>",
+             "<p>excursion tour</p>",
+             "<div><span><i><svg viewBox=\"0 0 448 448\"><use xlink:href=\"#person\" /></svg></i><span>15 people</span></span><span><i><svg viewBox=\"0 0 97.16 97.16\"><use xlink:href=\"#clock\" /></svg></i><span>2,5 hours</span></span><span><i><svg viewBox=\"0 0 430.114 430.114\"><use xlink:href=\"#mark\" /></svg></i><span>DELTA, 48 Boulevard</span></span></div>",
+             {lat: 38.6125719, lng: -121.3643996},
+             bron
+         );
+
+         var item4 = new item(
+             "<p>Bedroom Boundless</p>",
+             "<p>excursion tour</p>",
+             "<div><span><i><svg viewBox=\"0 0 448 448\"><use xlink:href=\"#person\" /></svg></i><span>15 people</span></span><span><i><svg viewBox=\"0 0 97.16 97.16\"><use xlink:href=\"#clock\" /></svg></i><span>2,5 hours</span></span><span><i><svg viewBox=\"0 0 430.114 430.114\"><use xlink:href=\"#mark\" /></svg></i><span>DELTA, 48 Boulevard</span></span></div>",
+             {lat: 38.5915719, lng: -121.743996},
+             reserv
+         );
+
+         var item5 = new item(
+             "<p>Bedroom Boundless</p>",
+             "<p>excursion tour</p>",
+             "<div><span><i><svg viewBox=\"0 0 448 448\"><use xlink:href=\"#person\" /></svg></i><span>15 people</span></span><span><i><svg viewBox=\"0 0 97.16 97.16\"><use xlink:href=\"#clock\" /></svg></i><span>2,5 hours</span></span><span><i><svg viewBox=\"0 0 430.114 430.114\"><use xlink:href=\"#mark\" /></svg></i><span>DELTA, 48 Boulevard</span></span></div>",
+             {lat: 38.6215719, lng: -121.643996},
+             reserv
+         );
+
+         var allitems = [item1, item2, item3, item4, item5];
+
+         var bron = [item3];
+
+         /* Инициализация всех маркеров */
+         function initAllItems(arr) {
+             for(var i = 0; i < arr.length; i++) {
+
+                 arr[i].count = i;
+                 arr[i].init();
+                 arr[i].marker.addListener('click', function() {
+                     closeInfoWindow();
+                     arr[this.count].openWindow();
+                 });
+
+             }
+         }
+
+         initAllItems(allitems);
+
+         function closeInfoWindow() {
+             for(var i = 0; i < allitems.length; i++) {
+                 allitems[i].closeWindow()
+             }
+         }
+
+         /* Закрытие информационных окон по клику на карту */
+         google.maps.event.addListener(map, 'click', function() {
+             closeInfoWindow();
+         });
+
+         // $('.tabItem__mapSelect--onclick').each(function(i) {
+         //     $(this).on('click', function() {
+         //         if(i == 0) {
+         //             initAllItems(allitems);
+         //         }
+         //         else if(i == 1) {
+         //             // initAllItems = null;
+         //             initAllItems(bron);
+         //         }
+         //     })
+         // })
+
+     }
+ </script>
+
+ {% include '../components/footer/index.twig' %}

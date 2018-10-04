@@ -1,0 +1,13 @@
+<div class="social">
+
+    {% for item in socials %}
+    <a href="#" class="social__link {% if item.class %}{{ item.class }}{% endif %}">
+        <span>
+            <svg viewBox="{{ item.box }}">
+                <use xlink:href="#{{ item.id }}" />
+            </svg>
+        </span>
+    </a>
+    {% endfor %}
+
+</div>

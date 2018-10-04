@@ -1,0 +1,120 @@
+.post__headerH1 {
+    left: 100px;
+}
+
+.post__tags {
+    color: #305e9a;
+    transition: all .3s ease-in;
+    position: relative;
+    padding-right: 0.5em;
+    margin-right: 0.2em;
+    &:hover {
+        color: #ffffff;
+    }
+    &:not(:last-child) {
+        &:after {
+            content: "";
+            width: 2px;
+            height: 90%;
+            background-color: #305e9a;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.post__tagsBlock {
+    margin-bottom: 44px;
+    color: #305e9a;
+}
+
+.post__newsCart {
+    font-family: $open-sans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.post__section {
+    position: relative;
+    margin-top: -150px;
+}
+
+.post__whiteColor {
+    margin-top: 88px;
+}
+
+.post__whiteColor>p {
+    font-family: $main-fonts;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.2px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.buttons__wrap {
+    margin-top: 64px;
+}
+
+.button__next,
+.button__prev {
+    margin: 10px 10px 10px 0;
+    padding: 1em;
+    outline: 0;
+    font-family: $main-fonts;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #ffffff;
+    height: 60px;
+    background-color: transparent;
+    border: solid 3px #305e9a;
+    transition: background-color .3s ease-in;
+    &:hover {
+        color: #ffffff;
+        background-color: #305e9a;
+    }
+}
+
+.newsCart__img {
+    margin: 24px 0;
+}
+
+.svgBlock--position {
+    top: 0.3em;
+}
+
+.line--vertical {
+    position: relative;
+}
+
+.line--vertical:after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #305e9a;
+    margin: 0 .2em;
+}
+
+#input__submit {
+    transition: all .3s ease-in;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        border: dashed 1px #305e9a;
+    }
+}

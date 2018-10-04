@@ -1,0 +1,112 @@
+.section3 {
+    width: 100%;
+    margin-top: 70px;
+    background-color: rgba(70, 98, 149, 0.4);
+    box-shadow: 0px 3px 7px 0 rgba(9, 14, 31, 0.35);
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.section3 h2 {
+    margin-top: 36px;
+    margin-bottom: 28px;
+    font-family: $main-fonts;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #80fd42;
+}
+
+.section3__blockText {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section3__text {
+    display: inline-block;
+    width: 35%;
+}
+
+.section3__text p {
+    display: block;
+    font-family: $main-fonts;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.section3__text p span {
+    display: inline;
+    font-family: $main-fonts;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(220, 125, 67, 0.9);
+}
+
+.section3__text p span:last-child {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.section3__text p img:first-child {
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.section3__text p img:nth-child(3) {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.section3__text p span:nth-child(2) {
+    padding-right: 5px;
+}
+
+.section3__text p span:last-child {
+    padding-left: 10px;
+}
+
+.section3__blockText--hidden {
+    display: none;
+}
+
+.section3__arrowBlock {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3__arrowBlock img {
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.arrowUp {
+    transform-origin: 66% 66%;
+    transform: rotate(0deg) scaleY(-1);
+}
+
+.df {
+    display: flex;
+}

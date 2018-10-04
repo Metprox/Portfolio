@@ -1,0 +1,66 @@
+/* common styles */
+
+@import '../components/other/common.style.scss';
+
+/* custom styles*/
+
+@import '../components/other/custom.select.style';
+
+/* header */
+
+@import '../components/header/style';
+@import '../components/menu/style';
+
+/* other */
+
+@import '../components/rating/style';
+@import '../components/social/style';
+@import '../components/breadcrumbs/style';
+@import '../components/slider/style';
+@import '../components/tabs/style';
+@import '../components/contact.us/style';
+@import '../components/section.image/style';
+@import '../components/seo/style';
+@import '../components/pagination/style';
+@import '../components/recommendation.list/style';
+@import '../components/sort/style';
+@import '../components/section.subscription/style';
+@import '../components/proposes.item/style';
+@import '../components/catalog.item/style';
+@import '../components/guid.module/style';
+@import '../components/other/datetimepicker';
+@import '../components/popup/style';
+@import '../components/basket/style';
+@import '../components/tabItem__localData/style';
+@import '../components/tabItem__reserve/style';
+@import '../components/tabItem__bron/style';
+@import '../components/tabItem__service/style';
+@import '../components/tabItem__map/style';
+@import '../components/tabItem__bonus/style';
+@import '../components/tabItem__calendar/style';
+@import '../components/orderPlacement/style';
+@import '../components/menuAdaptive/style';
+
+/* pages */
+
+@import '../components/other/index';
+@import '../components/other/services';
+@import '../components/other/section.catalog';
+@import '../components/officeMain/style';
+@import '../components/other/about';
+@import '../components/other/excursion';
+@import '../components/other/result.search';
+@import '../components/other/loyalty';
+@import '../components/other/contacts';
+@import '../components/other/blog';
+@import '../components/other/post';
+@import '../components/other/terms';
+@import '../components/officeTabs/style';
+@import '../components/other/guid';
+
+/* footer */
+
+@import '../components/footer/style';
+@import 'media';
+@import '_mediaTwo';
+@import '_mediaThree';

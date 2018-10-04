@@ -1,0 +1,497 @@
+{
+    "global": {
+        "companyName": "Touristino",
+        "cy" : "usd",
+        "menu": [
+            { "name": "guide", "href": "./guid.html" },
+            { "name": "excursions", "href": "./showcase.html" },
+            { "name": "loyalty program", "href": "./loyalty.html" },
+            { "name": "about", "href": "./about.html" },
+            { "name": "contacts", "href": "./contacts.html"}
+        ],
+        "socials": [
+            { "box": "0 0 455.73 455.73", "id": "facebook" },
+            { "box": "0 0 449.956 449.956", "id": "twitter" },
+            { "box": "0 0 491.858 491.858", "id": "google+" },
+            { "box": "0 0 169.063 169.063", "id": "instagram" }
+        ],
+        "lang": {
+            "curr": "en",
+            "items": ["en", "ru"]
+        },
+        "currency": {
+            "curr": "usd",
+            "items": ["usd", "AED"]
+        },
+        "recommends": [{}, {}, {}],
+        "contactUs": [
+            { "icSoc": "telegram", "box": "0 0 300 300", "id": "telegram", "name": "telegram" },
+            { "icSoc": "viber", "box": "0 0 514.055 514.055", "id": "viber", "name": "viber" },
+            { "icSoc": "vk", "box": "0 0 512 512", "id": "vk", "name": "vkontacte" }
+        ]
+    },
+    "index.twig" : {
+      "title" : "Главная. Touristino",
+      "headerReverse" : "header-reverse",
+      "contentClass" : "main-content",
+      "slidingMenu" : "",
+      "carousel" : [
+        { "flag" : { "class" : "new", "text" : "<span class='mid'>big</span><span class='mid'>sale</span><span class='big'>20%</span>" }, "text" : "Family tours", "icons" : [ { "number" : "59", "nameIcon" : "alarm" }, { "number" : "218", "nameIcon" : "event" }, { "number" : "72", "nameIcon" : "placeholder" }, { "number" : "14", "nameIcon" : "assistance" } ] },
+        { "text" : "Hot offer tours", "icons" : [ { "number" : "59", "nameIcon" : "alarm" }, { "number" : "218", "nameIcon" : "event" }, { "number" : "72", "nameIcon" : "placeholder" }, { "number" : "14", "nameIcon" : "assistance" } ] },
+        { "text" : "Popular tours", "icons" : [ { "number" : "59", "nameIcon" : "alarm" }, { "number" : "218", "nameIcon" : "event" }, { "number" : "72", "nameIcon" : "placeholder" }, { "number" : "14", "nameIcon" : "assistance" } ] }
+      ],
+      "guidList" : [
+        { "id" : "#night","text" : "night life" },
+        { "id" : "#spreading","text" : "spreading" },
+        { "id" : "#acquaintance","text" : "acquaintance <br /> with the city" },
+        { "id" : "#restaurant","text" : "Restaurants" },
+        { "id" : "#shopping","text" : "Shopping" },
+        { "id" : "#beauties","text" : "beauties" }
+      ],
+      "reviewFor" : [{},{},{},{}],
+      "partnerSlider" : [{},{},{},{}],
+      "blogSlider" : [
+        {
+          "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+          "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+          "3" : { "infoClass" : "comments", "subtext" : "215", "icon" : { "box" : "0 0 60 60", "id" : "chat"  } },
+          "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+        },
+        {
+          "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+          "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+          "3" : { "infoClass" : "comments", "subtext" : "215", "icon" : { "box" : "0 0 60 60", "id" : "chat"  } },
+          "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+        },
+        {
+          "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+          "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+          "3" : { "infoClass" : "comments", "subtext" : "215", "icon" : { "box" : "0 0 60 60", "id" : "chat"  } },
+          "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+        },
+        {
+          "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+          "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+          "3" : { "infoClass" : "comments", "subtext" : "215", "icon" : { "box" : "0 0 60 60", "id" : "chat"  } },
+          "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+        }
+      ]
+    },
+    "service.twig": {
+        "title": "Шоу La Perle in Dubai",
+        "h1": "Шоу La Perle <br /> in Dubai",
+        "headerReverse" : "",
+        "slidingMenu" : "",
+        "contentClass": "service-content",
+        "breadcrumbs": [
+            { "name": "Главная", "href": "./index.html" },
+            { "name": "Туры", "href": "" }
+        ],
+        "reviewers": [{}, {}],
+        "sliderFor": [{"class": "video-slide"}, {}, {}, {}],
+        "recommends" : [
+          {"imageName" : "recommend", "text" : "Abu Dhabi City Tour"},
+          {"imageName" : "recommend", "text" : "Abu Dhabi City Tour"},
+          {"imageName" : "recommend", "text" : "Abu Dhabi City Tour"}
+        ]
+    },
+    "service2.twig": {
+        "title": "Сафари по пустыне с ужином",
+        "h1": "Сафари по пустыне <br /> с ужином",
+        "headerReverse" : "",
+        "contentClass": "service-content",
+        "breadcrumbs": [
+            { "name": "Главная", "href": "./index.html" },
+            { "name": "Туры", "href": "" }
+        ],
+      "person" : {
+        "curr" : "",
+        "items" : ["2 персоны", "3 персоны", " 5 персон"]
+      },
+      "socialLinker": {
+        "curr" : "",
+        "items" : ["viber" , "telegram"]
+      },
+      "recommends" : [
+        {"imageName" : "recommend", "text" : "Abu Dhabi City Tour"},
+        {"imageName" : "recommend", "text" : "Abu Dhabi City Tour"},
+        {"imageName" : "recommend", "text" : "Abu Dhabi City Tour"}
+      ]
+    },
+    "section.page.twig" : {
+      "title" : "Shopping in Dubai",
+      "h1" : "Shopping in Dubai",
+      "headerReverse" : "",
+      "slidingMenu" : [
+        { "name" : "Знакомство с городом", "href" : null, "sublist" : [
+          { "name" : "Торгово-развлекательные центры", "href" : null },
+          { "name" : "Ресторанные", "href" : null },
+          { "name" : "Рынки", "href" : null }
+        ] },
+        { "name" : "новое в дубаи", "href" : null },
+        { "name" : "рестораны", "href" : null },
+        { "name" : "достопримечательности", "href" : null },
+        { "name" : "транспорт", "href" : null },
+        { "name" : "маршруты", "href" : null, "sublist" : [
+          { "name" : "Торгово-развлекательные центры", "href" : null },
+          { "name" : "Ресторанные", "href" : null },
+          { "name" : "Рынки", "href" : null }
+        ] },
+        { "name" : "шоппинг", "href" : null, "sublist" : [
+          { "name" : "Торгово-развлекательные центры", "href" : null },
+          { "name" : "Ресторанные", "href" : null },
+          { "name" : "Рынки", "href" : null }
+        ] },
+        { "name" : "трц", "href" : null, "sublist" : [
+          { "name" : "Торгово-развлекательные центры", "href" : null },
+          { "name" : "Ресторанные", "href" : null },
+          { "name" : "Рынки", "href" : null }
+        ] },
+        { "name" : "развлечения", "href" : null, "sublist" : [
+          { "name" : "Торгово-развлекательные центры", "href" : null },
+          { "name" : "Ресторанные", "href" : null },
+          { "name" : "Рынки", "href" : null }
+        ] },
+        { "name" : "ночная жизнь", "href" : null }
+      ],
+      "contentClass" : "section-page",
+      "breadcrumbs": [
+        { "name": "Главная", "href": "./index.html" },
+        { "name": "Туры", "href": "" }
+      ],
+      "catalogElement" : [
+        { "imageName" : "recommend", "text" : "Abu Dhabi City Tour" },
+        { "imageName" : "recommend", "text" : "Abu Dhabi City Tour" },
+        { "imageName" : "recommend", "text" : "Abu Dhabi City Tour" },
+        { "imageName" : "recommend", "text" : "Abu Dhabi City Tour" },
+        { "imageName" : "recommend", "text" : "Abu Dhabi City Tour" }
+      ],
+      "recommendationList" : [
+        { "nameImage":"section-page-recommendation" ,"title" : "Интересные факты", "text" : "Только достоверная и действительно полезная информация " },
+        { "nameImage":"section-page-recommendation" ,"title" : "Секреты от местных", "text" : "Инсайдерская информация от лучших местных экспертов" },
+        { "nameImage":"section-page-recommendation" ,"title" : "Персональный гид", "text" : "Ваш прсональный онлайн гид всегда под рукой" }
+      ],
+      "proposes": [
+        { "imageName": "recommend","text": "Abu Dhabi City Tour", "propName": "excursion tour", "propCost": "137.00" },
+        { "imageName": "recommend","text": "Abu Dhabi City Tour", "propName": "excursion tour", "propCost": "103.00" },
+        { "imageName": "recommend","text": "Abu Dhabi City Tour", "propName": "excursion tour", "propCost": "50.00" }
+      ]
+    },
+    "about.twig" : {
+      "title" : "About turistino",
+      "h1" : "About turistino",
+      "headerReverse" : "",
+      "breadcrumbs" : [
+        { "name" : "Главная", "href" : "./index.html" },
+        { "name" : "About", "href" : null }
+      ],
+      "contentClass" : "about-content",
+      "reviewers": [{}, {}],
+      "recommendationList" : [
+        { "nameImage" : "about-recommendation", "title" : "Круглосуточная поддержка", "text" : "Мы ответим на все ваши вопросы, в любой удобный для вас момент" },
+        { "nameImage" : "about-recommendation", "title" : "Местные туристические эксперты", "text" : "Инсайдерская информация от лучших местных экспертов" },
+        { "nameImage" : "about-recommendation", "title" : "Услуги только высокого качества", "text" : "Самые лучшие и интересные путешествия с Turitino" }
+      ],
+      "sliderCommon" : {
+        "customClass" : "slider-team",
+        "customItems" : [ {}, {}, {}, {} ]
+      }
+    },
+  "showcase.twig" : {
+    "title" : "Excursions in Dubai",
+    "h1" : "Excursions in Dubai",
+    "headerReverse" : "",
+    "contentClass" : "excursion-content",
+    "breadcrumbs" : [
+      {"name" : "Главная", "href" : "./index.html" },
+      {"name" : "Экскурсии", "href" : null }
+    ],
+    "proposesElements" : [
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" }
+    ],
+    "recommendationList" : [
+      { "nameImage" : "excursion-recommendation", "title" : "Безопасные покупки онлайн", "text" : "Защищенные платежы PAY FORT" },
+      { "nameImage" : "excursion-recommendation", "title" : "Программа лояльности", "text" : "Собирайте баллы и получайте скидки по программе Turistino" },
+      { "nameImage" : "excursion-recommendation", "title" : "Работаем без посредников", "text" : "Преобретение услуг на прямую без наценки и посредников " }
+    ],
+    "sortByPrice" : {
+      "curr" : "Популярные в конце",
+      "items" : ["Популярные в конце", "Популярные в начале", "От дешёвых к дорогим", "По умолчанию"]
+    },
+    "sortCategory" : {
+      "curr" : "Обзорные",
+      "items" : ["Обзорные", "Билеты", "Приключения", "Гастрономия", "Ночная жизнь"]
+    },
+    "proposes": [
+      { "imageName" : "proposes-1","text": "La perle Gold", "propName": "Обязательно к посещению", "propCost": "137.00", "flag" : {"class" : "offer", "text" : "<p><span class='mid'>hot</span><span class='small'>offer</span><span class='big'>20%</span></p>"} },
+      { "imageName" : "proposes-2","text": "La perle Silver", "propName": "Обязательно к посещению", "propCost": "103.00", "flag" : {"class" : "sale", "text" : "<p><span class='mid'>big</span><span class='mid'>sale</span><span class='big'>20%</span></p>"} },
+      { "imageName" : "proposes-3","text": "La perle Bronze", "propName": "excursion tour", "propCost": "50.00", "flag" : {"class" : "new", "text" : "<p><span class='mid'>new</span></p>"} }
+    ]
+  },
+  "search.twig" : {
+    "title" : "Результат поиска",
+    "h1" : "Результат поиска",
+    "headerReverse" : "",
+    "breadcrumbs" : [
+      { "name" : "Главная", "href" : "./index.html" },
+      { "name" : "Результат поиска", "href" : null }
+    ],
+    "contentClass" : "search-content",
+    "proposesElements" : [
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" },
+      { "imageName": "recommend" ,"text" : "Abu Dhabi City Tour", "propName" : "excursion tour", "propCost" : "50.00" }
+    ],
+    "sortByPrice" : {
+      "curr" : "Популярные в конце",
+      "items" : ["Популярные в конце", "Популярные в начале", "От дешёвых к дорогим", "По умолчанию"]
+    },
+    "sortCategory" : {
+      "curr" : "Обзорные",
+      "items" : ["Обзорные", "Билеты", "Приключения", "Гастрономия", "Ночная жизнь"]
+    }
+  },
+  "loyalty.twig" : {
+    "title" : "Loyalty program",
+    "h1" : "Программа лояльности",
+    "headerReverse" : "",
+    "contentClass" : "loyalty-content",
+    "breadcrumbs" : [
+      { "name" : "Главная", "href" : "./index.html" },
+      { "name" : "Loyalty program", "href" : null }
+    ],
+    "proposes": [
+      { "imageName": "recommend","text": "Abu Dhabi City Tour", "propName": "excursion tour", "propCost": "137.00" },
+      { "imageName": "recommend","text": "Abu Dhabi City Tour", "propName": "excursion tour", "propCost": "103.00" },
+      { "imageName": "recommend","text": "Abu Dhabi City Tour", "propName": "excursion tour", "propCost": "50.00" }
+    ]
+  },
+  "contacts.twig" : {
+    "title" : "Contacts",
+    "h1" : "Contact us",
+    "headerReverse" : "",
+    "contentClass" : "contact-content",
+    "breadcrumbs" : [
+      { "name" : "Главная", "href" : "./index.html" },
+      { "name" : "Контакты", "href" : null }
+    ]
+  },
+  "blog.twig" : {
+    "title" : "Blog",
+    "h1" : "Blog",
+    "headerReverse" : "",
+    "contentClass" : "blog-content",
+    "breadcrumbs" : [
+      { "name" : "Галвная", "href" : "./index.html" },
+      { "name" : "Блог", "href" : null }
+    ],
+    "sortByPrice" : {
+      "curr" : "price",
+      "items" : ["price", "comments", "views"]
+    },
+    "blogItems" : [
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018"},
+        "2" : { "infoClass" : "tag", "text" : "tag", "subtext" : "tourism, dubai"},
+        "3" : { "infoClass" : "comments", "text" : "comments", "subtext" : "215", "icon" : { "box" : "0 0 60 60", "id" : "chat"} },
+        "4" : { "infoClass" : "share", "text" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      },
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018"},
+        "2" : { "infoClass" : "tag", "text" : "tag", "subtext" : "tourism, dubai"},
+        "3" : { "infoClass" : "comments", "text" : "comments", "subtext" : "215", "icon" : { "box" : "0 0 60 60", "id" : "chat"} },
+        "4" : { "infoClass" : "share", "text" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      }
+    ],
+    "postsPopular" : [
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      },
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      },
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      }
+    ],
+    "postsWatched" : [
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      },
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      },
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      }
+    ]
+  },
+  "post.twig" : {
+    "title" : "Пост",
+    "h1" : "Who accompany the trip always full of enthusiasm",
+    "headerReverse" : "",
+    "contentClass" : "post-content",
+    "breadcrumbs" : [
+      { "name" : "Главная", "href" : "./index.html" },
+      { "name" : "Blog", "href" : "./blog.html" },
+      { "name" : "Post", "href" : null }
+    ],
+    "blogItems" : [
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018"},
+        "2" : { "infoClass" : "tag", "text" : "tag", "subtext" : "tourism, dubai"},
+        "3" : { "infoClass" : "comments", "text" : "comments", "subtext" : "215", "icon" : { "box" : "0 0 60 60", "id" : "chat"} },
+        "4" : { "infoClass" : "share", "text" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      }
+    ]
+  },
+  "terms.of.use.twig" : {
+    "title" : "Terms of Use",
+    "h1" : "Terms of Use",
+    "headerReverse" : "",
+    "contentClass" : "terms-content",
+    "breadcrumbs" : [
+      { "name" : "Главная", "href" : "./index.html" },
+      { "name" : "Terms of use", "href" : null }
+    ],
+    "postsPopular" : [
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      },
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      }
+    ]
+  },
+  "privacy.police.twig" : {
+    "title" : "privacy policy",
+    "h1" : "privacy policy",
+    "headerReverse" : "",
+    "contentClass" : "terms-content",
+    "breadcrumbs" : [
+      { "name" : "Главная", "href" : "./index.html" },
+      { "name" : "Privacy policy", "href" : null }
+    ],
+    "postsPopular" : [
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      },
+      {
+        "1" : { "infoClass" : "date", "text" : "nov 25, 2018" },
+        "2" : { "infoClass" : "tag", "subtext" : "tourism" },
+        "3" : { "infoClass" : "comment", "subtext" : "231", "icon" : { "box" : "0 0 60 60", "id" : "chat" } },
+        "4" : { "infoClass" : "share", "icon" : { "box" : "0 0 473.932 473.932", "id" : "share"} }
+      }
+    ]
+  },
+  "guid.twig" : {
+    "title" : "Путеводитель Touristino",
+    "h1" : "guide from Touristino",
+    "headerReverse" : "",
+    "contentClass" : "guid-content",
+    "breadcrumbs" : [
+      { "name" : "Главная", "href" : "./index.html" },
+      { "name" : "Путеводитель", "href" : null }
+    ],
+    "slidingMenu" : [
+      { "name" : "Знакомство с городом", "href" : "#", "sublist" : [
+        { "name" : "Торгово-развлекательные центры", "href" : null },
+        { "name" : "Ресторанные", "href" : null },
+        { "name" : "Рынки", "href" : null }
+      ], "id" : "#night" },
+      { "name" : "новое в дубаи", "href" : "#", "id" : "#beauties" },
+      { "name" : "рестораны", "href" : "#" },
+      { "name" : "достопримечательности", "href" : "#" },
+      { "name" : "транспорт", "href" : "#" },
+      { "name" : "маршруты", "href" : "#", "sublist" : [
+        { "name" : "Торгово-развлекательные центры", "href" : null },
+        { "name" : "Ресторанные", "href" : null },
+        { "name" : "Рынки", "href" : null }
+      ] },
+      { "name" : "шоппинг", "href" : "#", "sublist" : [
+        { "name" : "Торгово-развлекательные центры", "href" : null },
+        { "name" : "Ресторанные", "href" : null },
+        { "name" : "Рынки", "href" : null }
+      ] },
+      { "name" : "трц", "href" : "#", "sublist" : [
+        { "name" : "Торгово-развлекательные центры", "href" : null },
+        { "name" : "Ресторанные", "href" : null },
+        { "name" : "Рынки", "href" : null }
+      ] },
+      { "name" : "развлечения", "href" : "#", "sublist" : [
+        { "name" : "Торгово-развлекательные центры", "href" : null },
+        { "name" : "Ресторанные", "href" : null },
+        { "name" : "Рынки", "href" : null }
+      ] },
+      { "name" : "ночная жизнь", "href" : "#" }
+    ],
+    "guidlist1" : [
+      { "icon" : "icon-14", "name" : "It is important to know", "button" : "View Route" },
+      { "icon" : "icon-15", "name" : "History and Culture", "button" : "View Route" },
+      { "icon" : "icon-16", "name" : "Districts of the city", "button" : "View Route" }
+    ],
+    "guidlist2" : [
+      { "image" : "guidlist-item-1", "name" : "Restaurants", "button" : "View Route" },
+      { "image" : "guidlist-item-2", "name" : "New in Dubai", "button" : "View Route" },
+      { "image" : "guidlist-item-3", "name" : "Attraction", "button" : "View Route" },
+      { "image" : "guidlist-item-4", "name" : "Transport", "button" : "View Route" }
+    ],
+    "guidlist3" : [
+      { "icon" : "icon-11", "name" : "pedestrian", "button" : "View Route" },
+      { "icon" : "icon-12", "name" : "automotive", "button" : "View Route" },
+      { "icon" : "icon-13", "name" : "combined", "button" : "View Route" }
+    ],
+    "guidlist4" : [
+      { "image" : "guidslide-1", "name" : "Furs", "button" : "See All" },
+      { "image" : "guidslide-2", "name" : "Brands", "button" : "See All" },
+      { "image" : "guidslide-3", "name" : "carpets", "button" : "See All" },
+      { "image" : "guidslide-4", "name" : "ethnic", "button" : "See All" }
+    ],
+    "guidlist5" : [
+      { "image" : "guidlist-item-5", "name" : "Shopping centres", "button" : "View Route" },
+      { "image" : "guidlist-item-6", "name" : "Restaurant centers", "button" : "View Route" },
+      { "image" : "guidlist-item-7", "name" : "ethnic markets", "button" : "View Route" }
+    ],
+    "guidlist6" : [
+      { "image" : "guidslide-5", "name" : "beach", "button" : "See All" },
+      { "image" : "guidslide-6", "name" : "for children", "button" : "See All" },
+      { "image" : "guidslide-7", "name" : "Show", "button" : "See All" },
+      { "image" : "guidslide-8", "name" : "Sport", "button" : "See All" }
+    ]
+  }
+}

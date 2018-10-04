@@ -1,0 +1,345 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section class="section-basic">
+
+        <div class="wrapper">
+
+            <div class="main-basic">
+
+                <div class="main-video">
+
+                    <h1 class="main-video__title">Are you ready for Dubai?</h1>
+                    <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et</p>
+
+                    <div class="main-video__button">
+                        <a href="#" data-action="popup" data-scope="ajax.html #video"></a>
+                        {% for i in 0..5 %}
+                            {% if i == 0 %}
+                                <span class="play"><svg viewBox="0 0 595.021 595.021"><use xlink:href="#triangle" /></svg></span>
+                            {% else %}
+                                <span class="video-buttons video-buttons-{{ i }}"></span>
+                            {% endif %}
+                        {% endfor %}
+                        <div>
+                            <p><span>CHECK OUR VIDEO</span></p>
+                            <p>HOW TO WORKS?</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="section-carousel" style="background-image:url('./img/bg/carousel-bg.png')">
+
+        <div class="wrapper">
+
+            <h1 class="h1" style="text-align:center;">Tours</h1>
+            <p class="subtitle-tours">Your investition is only your time</p>
+
+            <div class="carousel-wrapper" >
+                <div class="carousel" id="carousel">
+
+                    {% for item in carousel %}
+                        <a href="" class="carousel-item">
+
+                            <div class="carousel-item__image">
+
+                                {% if item.flag %}
+                                    <div class="flag flag-{{ item.flag.class }}" style="background-image:url('./img/flag-{{ item.flag.class }}.png')">
+                                        <p>
+                                            {{ item.flag.text }}
+                                        </p>
+                                    </div>
+                                {% endif %}
+
+                                <img src="./img/carousel-item-{{ loop.index }}.png" alt="" />
+
+                                <p class="carousel-item__name">{{ item.text }}</p>
+
+                            </div>
+
+                            <div class="carousel-item__icon">
+
+                                {% for subitem in item.icons %}
+                                    <div>
+                                        <i><img src="./img/icon/{{ subitem.nameIcon }}.png" alt=""></i>
+                                        <span class="{% if loop.index == 1 %}main-price{% endif %} cy" data-cy="usd">{{ subitem.number }}</span>
+                                    </div>
+                                {% endfor %}
+
+                            </div>
+
+                        </a>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            <div class="all-tours">
+                <div>
+                    <a href="#" class="button-green all-tours__button">open all tours</a>
+                    {% for i in 0..2 %}
+                        <span class="pulse-{{ loop.index }}"></span>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <div class="main-about">
+
+                <div class="main-about__text">
+
+                    <div class="h4">about</div>
+                    <div class="h1">Touristino</div>
+                    <p>Travel packages for every budget. Which one is yours?Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
+                        Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.Travel packages for every budget. Which one is yours?Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
+                        Urnaultrices quis curabitur phasellentesque congue magnis vestibulum</p>
+
+                </div>
+
+                <div class="main-about__list">
+
+                    {% set mainAboutList = ["Low prices","Guarantees","Without intermediaries","Work on the market for more than 5 years"] %}
+                    {% for i in 0..3 %}
+                    <div>
+
+                        <h6 class="h6">{{ mainAboutList[i] }}</h6>
+                        <p>Welcome to a place filled with life, yet removed from the bustle and congestion of the city.
+                            A place to see a movie with the family</p>
+
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-guid" style="background-image:url('./img/bg/main-guid-bg.png')">
+
+        <div class="wrapper">
+
+            <div class="main-guid" id="guid">
+
+                <div class="main-guid__text">
+
+                    <div class="h1">GUIDE</div>
+
+                    <p>Travel packages for every budget. Which one is yours?Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.Travel packages for every budget. Which one is yours?</p>
+
+                    <div class="main-guid__slogan">
+
+                        <p data-quot="&ldquo;">As a head, smart people will open a guidebook!As a head, smart people will open a guidebook!</p>
+
+                    </div>
+
+                    <div class="main-guid__button">
+                        <a href="" class="button-green">open all tours</a>
+                    </div>
+
+                </div>
+
+                <div class="main-guid__list">
+
+                    {% for item in guidList %}
+                    <div class="main-guid__item">
+
+                        <a href="./guid.html" data-anchor="{{ item.id }}" style="background-image:url('./img/guid-item.png')">
+
+                            <img src="./img/icon/guid-icon-{{ loop.index0 % 5 + 1 }}.png" alt="">
+
+                            <p>{{ item.text }}</p>
+
+                        </a>
+
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-blog" style="background-image:url('./img/bg/block-bg.png')">
+
+        <div class="wrapper">
+
+            <div class="main-blog">
+
+                <div class="main-blog__text">
+
+                    <div class="h1">Blog</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+
+                </div>
+
+                <div class="main-blog__slider">
+
+                    <a href="./blog.html" class="main-blog__allblogs">Wiev all</a>
+
+                    <div class="blog-slider">
+
+                        {% for item in blogSlider|merge(blogSlider) %}
+                        <a href="./post.html" class="blog-slider__item">
+
+                            <div class="blog-slider__image"><img src="./img/blog-slider-item-{{ loop.index0 % 4 + 1 }}.png" alt=""></div>
+
+                            <div class="blog-slider__text">
+
+                                <div class="posts-item__info posts-info">
+
+                                    {% for subitem in item %}
+                                        <span class="posts-info__{{ subitem.infoClass }}">
+
+                                            {% if subitem.text %}
+                                                <p>{{ subitem.text }}</p>
+                                            {% endif %}
+
+                                            {% if subitem.subtext %}
+                                                <span>{{ subitem.subtext }}</span>
+                                            {% endif %}
+
+                                            {% if subitem.icon %}
+                                                <i><svg viewBox="{{ subitem.icon.box }}"><use xlink:href="#{{ subitem.icon.id }}" /></svg></i>
+                                            {% endif %}
+
+                                        </span>
+                                    {% endfor %}
+
+                                </div>
+
+                                <br />
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+
+                                <span class="read__more" data-after="&rarr;">Read More</span>
+
+                            </div>
+
+                        </a>
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-review">
+
+        <div class="wrapper">
+
+            <div class="main-review">
+
+                <div class="main-review__text">
+
+                    <div class="h1">Review</div>
+                    <p>Travel packages for every budget. Which one is yours?Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. </p>
+
+                    <a href="#" class="button-green main-review__button">Send review</a>
+
+
+                </div>
+
+                <div class="main-review__slider" style="background-image:url('./img/bg/main-review-slider-bg.png')">
+
+                    <div class="review-slider__for review-for">
+                        
+                        {% for item in reviewFor|merge(reviewFor) %}
+                            <div class="review-for__item">
+                                <img src="./img/reviewer.png" alt="">
+                            </div>
+                        {% endfor %}
+                        
+                    </div>
+                    <div class="review-slider__nav review-nav">
+
+                        {% for item in reviewFor|merge(reviewFor) %}
+                        <div class="review-nav__item">
+
+                            <div class="review-nav__image"><img src="./img/reviewer.png" alt=""></div>
+                            <div class="review-nav__text">
+
+                                <div class="review-nav__name">John Dou</div>
+                                <div class="review-nav__prof">tourist</div>
+                                <p><em>- Real  Estate  advertising  department  brings  together  a  range  of  exclusive  offers, collected  by  us  from  networking.  with  the  best  agents  and  brokers  all  over  the  world.
+                                    The  structure  of  our  work  comes  from  understanding .</em></p>
+
+                            </div>
+
+                        </div>
+                        {% endfor %}
+
+                    </div>
+
+                    <a href="#" class="button-green main-review__button">Send review</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="section-partners">
+
+        <div class="wrapper">
+
+            <div class="main-partners__text">
+
+                <div class="h1">Our partners</div>
+                <p>Travel packages for every budget. Which one is yours?Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
+
+            </div>
+
+        </div>
+
+        <div class="section-partners__slider" style="background-color:#fff;">
+
+
+            <div class="wrapper">
+                <div class="partner-slider">
+
+                    {% for item in partnerSlider|merge(partnerSlider) %}
+                        <div class="partner-slider__item"><img src="./img/partner-item-{{ loop.index0 % 4 + 1 }}.png" alt=""></div>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

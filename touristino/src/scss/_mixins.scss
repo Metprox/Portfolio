@@ -1,0 +1,84 @@
+@function fontSize($fmin, $fmax, $vmin, $vmax, $units: px) {
+    $k: ($fmax - $fmin)/($vmax - $vmin);
+    $b: $fmin - $k * $vmin;
+    @return calc(#{$k} * 100vw - #{$b});
+}
+
+@mixin fluidFontSize($fmin, $fmax, $vmin, $vmax, $units: px) {
+    font-size: $fmax;
+    @media (max-width: $vmax) {
+        font-size: fontSize($fmin, $fmax, $vmin, $vmax, $units: px);
+    }
+    @media (max-width: $vmin) {
+        font-size: $fmin;
+    }
+}
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        @if $asset-pipeline==true {
+            src: url("#{$file-path}.eot");
+            src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+            url("#{$file-path}.woff") format("woff"),
+            url("#{$file-path}.ttf") format("truetype");
+        }
+        @else {
+            src: url("#{$file-path}.eot");
+            src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+            url("#{$file-path}.woff") format("woff"),
+            url("#{$file-path}.ttf") format("truetype");
+        }
+    }
+}
+
+@mixin placeholder( $fz,
+$color) {
+    &::-webkit-input-placeholder {
+        font-size: $fz;
+        color: $color;
+        @content;
+    }
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        font-size: $fz;
+        color: $color;
+        @content;
+    }
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: $fz;
+        color: $color;
+        @content;
+    }
+    &:-ms-input-placeholder {
+        font-size: $fz;
+        color: $color;
+        @content;
+    }
+}
+
+@mixin _focus($tm) {
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+        transition: opacity $tm ease;
+        @content;
+    }
+    &:focus:-moz-placeholder {
+        opacity: 0;
+        transition: opacity $tm ease;
+        @content;
+    }
+    &:focus::-moz-placeholder {
+        opacity: 0;
+        transition: opacity $tm ease;
+        @content;
+    }
+    &:focus:-ms-input-placeholder {
+        opacity: 0;
+        transition: opacity $tm ease;
+        @content;
+    }
+}

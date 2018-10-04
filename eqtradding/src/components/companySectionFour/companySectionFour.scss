@@ -1,0 +1,265 @@
+.companySectionFour {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 135px;
+}
+
+.companySectionFour__mainGroup {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.companySectionFour__group1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+}
+
+.companySectionFour__group2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+}
+
+.companySectionFour__group1 img {
+    opacity: .5;
+}
+
+.companySectionFour__group2 img {
+    opacity: .5;
+}
+
+.companySectionFour__item h3 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: $white-color;
+}
+
+.companySectionFour__item1 p {
+    font-family: $open-sans;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+}
+
+.companySectionFour__item1 {
+    padding-right: 50px;
+}
+
+.companySectionFour__item3 {
+    height: 90vh;
+}
+
+.companySectionFour__item3 img {
+    height: 90vh;
+}
+
+.companySectionFour__item4 {
+    background: transparent;
+    height: 100vh;
+}
+
+.companySectionFour__item4 img {
+    height: 100vh;
+}
+
+.companySectionFour__item {
+    position: relative;
+}
+
+.companySectionFour__item2 .position__p1 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    text-align: left;
+    ;
+    color: $white-color;
+}
+
+.companySectionFour__item3 .position__p1 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    text-align: left;
+    ;
+    color: $white-color;
+}
+
+.companySectionFour__item4 .position__p2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    text-align: left;
+    ;
+    color: $white-color;
+}
+
+.companySectionFour__item5 .position__p2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    text-align: left;
+    ;
+    color: $white-color;
+}
+
+.companySectionFour__item6 .position__p2 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    text-align: left;
+    ;
+    color: $white-color;
+}
+
+#last__p1 {
+    padding-top: 10px;
+    text-align: right;
+}
+
+#last__p2 {
+    text-align: right;
+}
+
+.position__p1 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+.position__p2 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transition: all .3s linear;
+}
+
+.hover__block4,
+.hover__block1,
+.hover__block2,
+.hover__block3,
+.hover__block5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 20px 30px;
+    transition: all .4s linear;
+}
+
+.hover__block4 h4,
+.hover__block1 h4,
+.hover__block2 h4,
+.hover__block3 h4,
+.hover__block5 h4 {
+    font-family: $main-fonts;
+    font-size: 32px;
+    line-height: 0.88;
+    letter-spacing: 0.3px;
+    color: $white-color;
+}
+
+.hover__block4 p,
+.hover__block1 p,
+.hover__block2 p,
+.hover__block3 p,
+.hover__block5 p {
+    font-family: $open-sans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+}
+
+.hover__block4:before,
+.hover__block1:before,
+.hover__block2:before,
+.hover__block3:before,
+.hover__block5:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background: $blue-color;
+    transition: all .2s linear;
+    z-index: -1;
+}
+
+.companySectionFour__item4:hover,
+.companySectionFour__item2:hover,
+.companySectionFour__item3:hover,
+.companySectionFour__item5:hover,
+.companySectionFour__item6:hover {
+    .hover__block4,
+    .hover__block1,
+    .hover__block2,
+    .hover__block3,
+    .hover__block5 {
+        opacity: .9;
+    }
+    .hover__block4:before,
+    .hover__block1:before,
+    .hover__block2:before,
+    .hover__block3:before,
+    .hover__block5:before {
+        background: $blue-color;
+        opacity: .4;
+        z-index: -1;
+    }
+    .position__p2 {
+        opacity: 0;
+    }
+    .position__p1 {
+        opacity: 0;
+    }
+}
+
+.hover__block1 span {
+    padding-right: 15px;
+}

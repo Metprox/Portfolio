@@ -1,0 +1,176 @@
+.feronSection1 {
+  width: 80%;
+  margin: auto;
+  margin-top: 97px; }
+
+.feronSection1 h1 {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 2.031;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #2c2c2c; }
+
+.feronSection1 h1 span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #203d88;
+  font-size: 32px;
+  line-height: 2.031; }
+
+.feronSection1 h1 span hr {
+  display: inline-block;
+  border: none;
+  height: 3px;
+  width: 20px;
+  margin-bottom: 6px;
+  background: #000; }
+
+.feronSection1 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #7f7f7f;
+  margin-bottom: 53px; }
+
+.feronSection1__ourProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 98px; }
+
+.feronSection1__text {
+  margin-left: 70px; }
+
+.feronSection1__text h2 {
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2c2c2c; }
+
+.feronSection1__text p {
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #7f7f7f; }
+
+.feronSection2 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 107px; }
+
+.feronSection2 h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.5;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2c2c2c;
+  margin-bottom: 67px; }
+
+.feronSection2__profi {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  width: 100%; }
+
+.feronSection2__profi div {
+  text-align: center;
+  flex-basis: 25%; }
+
+.feronSection2__profi div img {
+  margin-bottom: 23px; }
+
+.feronSection2__profi div h3 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #2c2c2c; }
+
+.feronSection2__profi div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #7f7f7f; }
+
+.feronSection3 {
+  width: 80%;
+  margin: auto; }
+
+.feronSection3 h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.5;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #2c2c2c;
+  margin-bottom: 25px; }
+
+.feronSection3 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #7f7f7f;
+  margin-bottom: 48px; }
+
+.feronSection3__img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+
+.feronSection3__img div {
+  margin: auto; }
+
+.feronSection3__img img {
+  position: relative; }
+
+.feronSection3__img p {
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+  background: red; }
+
+.wrappers {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: baseline; }
+
+/*# sourceMappingURL=textWrite.css.map */

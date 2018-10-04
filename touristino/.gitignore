@@ -1,0 +1,7 @@
+.idea
+node_modules
+brif
+layouts
+*.zip
+*.rar
+build

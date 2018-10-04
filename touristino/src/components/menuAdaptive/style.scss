@@ -1,0 +1,132 @@
+.menuAdaptive {
+    display: none;
+    &__ul {
+        display: none;
+        margin-top: -13px;
+        position: relative;
+        padding-bottom: 14px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        box-shadow: 0px 64px 133px 0 rgba(32, 94, 171, 0.16);
+        width: 100vw;
+        padding-left: 7vw;
+        padding-top: 24px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 3vh;
+            left: 10%;
+            width: 80%;
+            height: 1px;
+            background-color: #0d9e51;
+            opacity: .1;
+        }
+    }
+    &__li {
+        position: relative;
+        padding-left: 14vw;
+        margin-top: 14px;
+        margin-bottom: 28px;
+        font-family: $gotham;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.71;
+        letter-spacing: 0.7px;
+        text-align: left;
+        color: #393939;
+        text-transform: uppercase;
+        cursor: pointer;
+        &--1,
+        &--2,
+        &--3,
+        &--4,
+        &--5,
+        &--6,
+        &--7 {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 10%;
+                left: 0;
+                width: 28px;
+                height: 28px;
+                background-repeat: no-repeat;
+                z-index: 10;
+                background-size: 28px 28px;
+            }
+        }
+        &--1 {
+            &:before {
+                background-image: url('../img/icon/management.png');
+            }
+        }
+        &--2 {
+            &:before {
+                background-image: url('../img/icon/reserve.png');
+            }
+        }
+        &--3 {
+            &:before {
+                background-image: url('../img/icon/package.png');
+            }
+        }
+        &--4 {
+            &:before {
+                background-image: url('../img/icon/favorite.png');
+            }
+        }
+        &--5 {
+            &:before {
+                background-image: url('../img/icon/map.png');
+            }
+        }
+        &--6 {
+            &:before {
+                background-image: url('../img/icon/calendar.png');
+            }
+        }
+        &--7 {
+            &:before {
+                background-image: url('../img/icon/progress.png');
+            }
+        }
+    }
+}
+
+.humb--animations {
+    background-color: transparent!important;
+    &:before {
+        transform: translateY(-1vh) rotate(45deg);
+    }
+    &:after {
+        transform: translateY(1vh) rotate(-45deg);
+    }
+}
+
+.bodyToggle {
+    overflow: hidden;
+}
+
+.sectionToggle {
+    z-index: 1000;
+}
+
+.ulToggle {
+    display: block;
+}
+
+.breadcrumbsToggle {
+    >span {
+        &:before {
+            opacity: 0;
+        }
+    }
+}
+
+.line--width {
+    &:before {
+        transform: scaleX(4);
+    }
+}

@@ -1,0 +1,372 @@
+.tabItem {
+    &__bonus {
+        position: relative;
+        width: 90%;
+        box-shadow: 0px 27px 43px 0 rgba(32, 94, 171, 0.1);
+        background-color: #ffffff;
+        border: solid 1px #e9f0f5;
+        &--link {
+            width: 95%;
+            margin: auto;
+            margin-top: 54px;
+            margin-bottom: 68px;
+            >p {
+                font-family: $gotham;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.63;
+                letter-spacing: normal;
+                text-align: left;
+                color: #0d9e51;
+                >a {
+                    font-family: $gotham;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.63;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #0d9e51;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__bonusBlock {
+        width: 95%;
+        margin: auto;
+        margin-top: 14px;
+        margin-bottom: 24px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-radius: 5px;
+        box-shadow: 0px 27px 43px 0 rgba(32, 94, 171, 0.16);
+        background-color: #ffffff;
+        border: solid 1px #e9f0f5;
+    }
+}
+
+.bonusBlock {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    &__cup {
+        position: relative;
+        margin: auto 0px auto 14px;
+        &--black {
+            display: inline-block;
+            width: 105px;
+            height: 105px;
+            background: url('../img/icon/trophy.svg');
+            background-repeat: no-repeat;
+        }
+        &--color {
+            position: absolute;
+            bottom: 4px;
+            display: inline-block;
+            width: 100%;
+            height: 0%;
+            background: url('../img/icon/trophy-color.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+        }
+        &--color--1 {
+            height: 16%;
+        }
+        &--color--2 {
+            height: 32%;
+        }
+        &--color--3 {
+            height: 48%;
+        }
+        &--color--4 {
+            height: 64%;
+        }
+        &--color--5 {
+            height: 84%;
+        }
+        &--color--6 {
+            height: 96%;
+        }
+    }
+    &__promo {
+        position: relative;
+        width: 60%;
+        margin: 24px 0px 24px 44px;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: -2vw;
+            width: 1px;
+            height: 90%;
+            background-color: #e9f0f5;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            right: 0vw;
+            width: 1px;
+            height: 90%;
+            background-color: #e9f0f5;
+        }
+        >h3 {
+            font-family: $gotham;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #393939;
+        }
+        &:nth-child(2) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            font-family: $gotham;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.57;
+            letter-spacing: normal;
+            text-align: left;
+            color: rgba(57, 57, 57, 0.6);
+        }
+    }
+    &__content {
+        position: relative;
+        width: 60%;
+        margin: 24px 0px 24px 44px;
+        >h3 {
+            font-family: $gotham;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #393939;
+        }
+        >p:nth-child(2) {
+            font-family: $gotham;
+            font-size: 12px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2;
+            letter-spacing: 2.4px;
+            text-align: left;
+            color: #0d9e51;
+            text-transform: uppercase;
+        }
+        >p:nth-child(3) {
+            padding-top: 14px;
+            padding-bottom: 11px;
+            font-family: $gotham;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.57;
+            letter-spacing: normal;
+            text-align: left;
+            color: rgba(57, 57, 57, 0.6);
+        }
+        &--link {
+            position: relative;
+            font-family: $gotham;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            text-align: center;
+            color: #0d9e51;
+            text-decoration: none;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 25%;
+                right: -2vw;
+                width: 15px;
+                height: 12px;
+                background-image: url('../img/icon/left-arr-green.png');
+                background-repeat: no-repeat;
+                transform: rotate(-180deg);
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: -2vw;
+            width: 1px;
+            height: 90%;
+            background-color: #e9f0f5;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            right: 0vw;
+            width: 1px;
+            height: 90%;
+            background-color: #e9f0f5;
+        }
+    }
+    &__circle {
+        position: relative;
+        margin: auto;
+    }
+}
+
+#bonusBlock-dataOne {
+    &:before {
+        content: attr(data-value-one);
+        position: absolute;
+        top: 44%;
+        left: 37px;
+        width: 50px;
+        height: 24px;
+    }
+}
+
+#bonusBlock-dataTwo {
+    &:before {
+        content: attr(data-value-two);
+        position: absolute;
+        top: 44%;
+        left: 37px;
+        width: 50px;
+        height: 24px;
+    }
+}
+
+#circlChange {
+    stroke-dasharray: 55% 150%;
+}
+
+.tabItem__circle--basic {
+    stroke-dasharray: 0% 150%;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+}
+
+.circle__green--anim {
+    stroke-dasharray: 0% 150%;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+    &--1 {
+        stroke-dasharray: 20% 150%;
+        stroke-linecap: round;
+        stroke-dashoffset: 0;
+    }
+    &--2 {
+        stroke-dasharray: 40% 150%;
+        stroke-linecap: round;
+        stroke-dashoffset: 0;
+    }
+    &--3 {
+        stroke-dasharray: 70% 150%;
+        stroke-linecap: round;
+        stroke-dashoffset: 0;
+    }
+    &--4 {
+        stroke-dasharray: 90% 150%;
+        stroke-linecap: round;
+        stroke-dashoffset: 0;
+    }
+    &--5 {
+        stroke-dasharray: 114% 150%;
+        stroke-linecap: round;
+        stroke-dashoffset: 0;
+    }
+    &--6 {
+        stroke-dasharray: 144% 150%;
+        stroke-linecap: round;
+        stroke-dashoffset: 0;
+    }
+}
+
+.tabItem__ {
+    &promo {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transform: translate(1vw, 3vh);
+        transition: all .3s ease-in;
+        transform: scale(0);
+        &--m2 {
+            margin-bottom: 44px;
+        }
+    }
+}
+
+.bonusBlock__ {
+    &code {
+        position: relative;
+        border-radius: 25px;
+        border: solid 1px #ececec;
+        padding: 6px;
+        margin: auto 0 auto 14px;
+        &--text {
+            position: relative;
+            &>p {
+                padding-right: 2vw;
+                font-family: $source;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: left;
+                color: #454553;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 1px;
+                right: -10px;
+                width: 18px;
+                height: 15px;
+                background-image: url('../img/icon/lk__whiteArrowRight.png');
+                background-repeat: no-repeat;
+                z-index: 8;
+                cursor: pointer;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: -6px;
+                right: -17px;
+                width: 33px;
+                height: 33px;
+                border-radius: 50%;
+                background-color: #0d9e51;
+                z-index: 4;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bonusBlock__promo {
+    >p {
+        width: 85%;
+    }
+}

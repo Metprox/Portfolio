@@ -1,0 +1,234 @@
+{% include '../components/header/index.twig' %}
+
+{# main content start #}
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section class="main-section">
+
+        <div class="wrapper">
+
+            <div class="main-path">
+                <h1 class="h2">{{ h1 }}</h1>
+
+                <p class="subtitle">excursion tour</p>
+
+                <div class="present">
+
+                    <div class="slider-present">
+
+                        {% include '../components/slider/as.nav/index.twig' %}
+
+                        <div class="present-state">
+
+                            <div class="present-state__rating present-state__item">
+                                <p>Rating</p>
+                                {% include '../components/rating/index.twig' %}
+                            </div>
+
+                            <a href="#" class="present-state__comment present-state__item">
+                                <p>comments</p>
+                                <span>215</span>
+                                <span class="present-state__icon"><svg viewBox="0 0 60 60"><use xlink:href="#chat" /></svg></span>
+                            </a>
+
+                            <a href="#" class="present-state__share present-state__item">
+
+                                <p>share</p>
+                                <span class="present-state__icon"><svg viewBox="0 0 473.932 473.932"><use xlink:href="#share" /></svg></span>
+
+                            </a>
+
+                            <div class="present-state__view present-state__item">
+
+                                <p>views</p>
+                                <span class="present-state__icon"><svg viewBox="0 0 512 512"><use xlink:href="#eye" /></svg></span>
+                                <span>3456</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="present-desc">
+
+                    <div class="tabs">
+
+                        {% set switchers = ["Описание", "Примечания", "Тезисы"] %}
+
+                        {% set tabClass = "present-tabs__head" %}
+                        {% include '../components/tabs/index.twig' with tabsClass %}
+
+                        <div class="tabs__body present-tabs__body">
+
+                            {% for i in switchers %}
+                                <div class="tabs__content {% if loop.first %}active{% endif %}">
+                                    {% if loop.index == 1 %}
+
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <br />
+                                            <p>aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <br />
+                                            <p>aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        </div>
+
+                                        <button class="read__more" type="button" data-after="&rarr;">read more</button>
+
+                                    {% elseif loop.index == 2 %}
+
+                                        <div>
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <br />
+                                            <p>aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        </div>
+
+                                        <button class="read__more" type="button" data-after="&rarr;">read more</button>
+
+                                    {% else %}
+
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+
+                                        </div>
+
+                                        <button class="read__more" type="button" data-after="&rarr;">read more</button>
+
+                                    {% endif %}
+
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <aside class="sliding-aside">
+
+                <div class="banner">
+
+                    <style>
+
+                        .banner {
+                            max-width: 477px;
+                            width: 100%;
+                            height: 468px;
+                            box-shadow: 27px 5px 43px rgba(32, 94, 171, 0.1);
+                            border-radius: 5px;
+                            border: 1px solid #e9f0f5;
+                            background-color: #d0e17d;
+                        }
+
+                        .banner > a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background: no-repeat 0 0/cover;
+                            text-align: center;
+                            padding-top: 15px;
+                        }
+
+                    </style>
+
+                    <a href="" style="background-image:url('')">БАННЕР</a>
+
+                </div>
+
+                <div>
+
+                    <button type="button" class="button-white add-favorite">В избранное</button>
+
+                    {% include '../components/contact.us/index.twig' %}
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h3 class="h3">Купить</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/main/proposes/index.twig" %}
+
+        </div>
+
+    </section>
+
+    <section class="review">
+
+        <div class="wrapper">
+
+            <h3 class="h3">Review about tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/review/index.twig" %}
+
+            <div class="review__button">
+
+                <a href="" class="button-white review__more">view more</a>
+                <a href="" class="button-green review__send">Send review</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h3 class="h3">Recommended tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/main/recommend/index.twig" %}
+
+        </div>
+
+    </section>
+
+</main>
+{# main content end #}
+
+{% include '../components/footer/index.twig' %}

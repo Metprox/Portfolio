@@ -1,0 +1,31 @@
+@import '../bower_components/swiper/dist/css/swiper.css';
+@import '_vars';
+@import 'components/pricesectionOne/sectionOne';
+@import 'components/pricesectionTwo/sectionTwo';
+@import 'components/pricesectionThree/sectionThree';
+@import 'components//marketingSectionOne/marketingSectionOne';
+@import 'components/marketingSectionTwo/marketingSectionTwo';
+@import 'components/marketingSectionThree/marketingSectionThree';
+@import 'components/marketingSectionFour/marketingSectionFour';
+@import 'components/companySectionOne/companySectionOne';
+@import 'components/companySectionTwo/companySectionTwo';
+@import 'components/companySectionThree/companySectionThree';
+@import 'components/companySectionFour/companySectionFour';
+@import 'components/marketingSectionFive/marketingSectionFive';
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.main__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    flex-flow: column wrap;
+}
+
+@import '_media';

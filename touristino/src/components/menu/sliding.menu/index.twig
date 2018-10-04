@@ -1,0 +1,32 @@
+<div class="sliding-menu" data-default-height="">
+
+    <div class="sliding-menu__switcher">
+
+        <span class="sliding-menu__button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+
+        <p>guide menu</p>
+
+    </div>
+
+    <ul class="sliding-menu__list">
+
+        {% for item in slidingMenu %}
+        <li>
+            <a href="{{ item.href }}" {% if item.id %}data-anchor="{{ item.id }}"{% endif %}>{{ item.name }}{% if item.sublist %}<i><svg viewBox="0 0 284.929 284.929"><use xlink:href="#arrow-down" /></svg></i>{% endif %}</a>
+            {% if item.sublist %}
+            <ul>
+                {% for subitem in item.sublist %}
+                <li><a href="{{ subitem.href }}">{{ subitem.name }}</a></li>
+                {% endfor %}
+             </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+
+    </ul>
+
+</div>

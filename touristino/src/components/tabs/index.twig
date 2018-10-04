@@ -1,0 +1,7 @@
+<div class="tabs__head {% if tabClass %}{{ tabClass }}{% endif %}">
+
+    {% for item in switchers %}
+        <div type="button" class="tabs__switcher  {% if loop.first %}active{% endif %}">{{ item }}</div>
+    {% endfor %}
+
+</div>

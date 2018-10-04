@@ -1,0 +1,89 @@
+.companySectionThree {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 205px;
+}
+
+.companySectionThree__headerText div h2 {
+    font-family: $main-fonts;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $white-color;
+}
+
+.companySectionThree__headerText div h2 span {
+    color: $blue-color;
+}
+
+.companySectionThree__headerText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.companySectionThree__headerTextItem1 {
+    flex-basis: 50%;
+}
+
+.companySectionThree__headerTextItem2 {
+    flex-basis: 50%;
+}
+
+.marketingTable__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 60px;
+    border: solid 4px $blue-color;
+    margin: auto;
+    margin-bottom: 0;
+    transition: all .5s linear;
+}
+
+.marketingTable__button a {
+    font-family: $main-fonts;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-align: center;
+    color: $white-color;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.marketingTable__button:before {
+    content: "";
+    position: absolute;
+    top: -.3px;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    color: white;
+    background-image: linear-gradient(to right, $blue-color, #000);
+    opacity: .9;
+    transform-origin: 0% 0%;
+    transform: scaleX(0);
+    transition: all .2s linear;
+}
+
+.marketingTable__button:hover:before {
+    transform: scaleX(1);
+    background-image: linear-gradient(to right, $blue-color, #000);
+    width: 100%;
+    opacity: .9;
+}

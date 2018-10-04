@@ -1,0 +1,38 @@
+<div class="reviewer">
+
+    {% for item in reviewers|merge(reviewers) %}
+    <div class="reviewer__item">
+
+        <div class="reviewer__avatar">
+
+            <img src="./img/reviewer.png" alt="">
+
+        </div>
+
+        <div class="reviewer__review">
+
+            <div class="reviewer__name">John Dou</div>
+
+            <div class="reviewer__rate">
+                <p>Mark:</p>
+
+                {% include '../../rating/index.twig' %}
+
+            </div>
+
+            <div class="reviewer__text">
+                <p>Real  Estate  advertising  department  brings  together  a  range  of  exclusive  offers, collected  by  us  from...  networking.  with  the  best  agents  and  brokers  all  over  the  world.
+                    The  structure  of  our  work  comes  from  understanding  the  International  Real  Estate  industry and  our  drive  to  build  upon  .
+                    and  maximize  the  value  of  all  our  property  marketing  projects. Our  detailed  knowledge  and  talent  for  spotting  prime  locations  guarantees  that  our  clients
+                    and  sellers  benefit  in  every  way.
+                </p>
+            </div>
+
+            <span class="dots"></span>
+
+        </div>
+
+    </div>
+    {% endfor %}
+
+</div>

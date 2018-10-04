@@ -1,0 +1,14 @@
+.excursion {
+  &-content {
+    padding-bottom: 220px;
+
+    .sort {
+      margin-bottom : 90px;
+    }
+
+    .section__image {
+      margin-top: -110px;
+      z-index: 0;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{# footer start #}
+<footer>
+
+    <div class="wrapper footer__wrapper">
+
+        <div class="footer__item footer-social">
+
+            <a href="./index.html" class="logo"><img src="./img/logo.png" alt="{{ companyName }}"></a>
+
+            {% include '../social/index.twig' %}
+
+        </div>
+
+        <div class="footer-item__wrapper"><div class="footer__item footer-contact">
+
+                <h5 class="h5">Контакты</h5>
+
+                {% set footerList = [
+                    { name: "Sacramento, CA <br /> 222 Woodmere Road Suite 250", box: "0 0 430.114 430.114", id: "mark" },
+                    { name: "<span>Пн-Пт</span> 9:00- 12:00 <br /> <span>Сб-Вс</span> Выходной ", box: "0 0 97.16 97.16", id: "clock" },
+                    { name: "<a href='tel:+6221-2269 2089'>+6221-2269 2089</a>", box: "0 0 411.595 411.595", id: "telephone", footerContactName : "footer-contact__telephone" },
+                    { name: "<a href='mailto:support@gmail.com'>support@gmail.com</a>", box: "0 0 485.211 485.211", id: "mail" }
+                ] %}
+                <ul class="footer__list footer-contact__list">
+                    {% for item in footerList %}
+                        <li class="footer-contact__item {% if item.footerContactName %}{{ item.footerContactName }}{% endif %}">
+                    <span class="footer-contact__icon">
+                        <svg viewBox="{{ item.box }}">
+                            <use xlink:href="#{{ item.id }}" />
+                        </svg>
+                    </span>
+                            <span>{{ item.name }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+
+            <div class="footer__item">
+
+                <h5 class="h5">Навигация</h5>
+
+                {% set footerList = [
+                    { name : "Главная", href: "./index.html" },
+                    { name : "Экскурсии", href: "./excursion.html" },
+                    { name : "Путеводитель", href: "./guid.html" },
+                    { name : "О нас", href: "./about.html" },
+                    { name : "Программа лояльности", href: "./loyalty.html" },
+                    { name : "Контакты", href: "./contacts.html" }
+                ] %}
+                {% include './footer.list/index.twig' with footerList %}
+            </div>
+
+            <div class="footer__item">
+
+                <h5 class="h5">Экскурсии</h5>
+
+                {% set footerList = [
+                    { name : "Знакомство с городом", href: "#" },
+                    { name : "Маршруты", href: "#" },
+                    { name : "Шоппинг", href: "#" },
+                    { name : "ТРЦ", href: "#" },
+                    { name : "Развлечения", href: "#" }
+                ] %}
+                {% include './footer.list/index.twig' with footerList %}
+            </div>
+
+            <div class="footer__item">
+
+                <h5 class="h5">Путеводитель</h5>
+
+                {% set footerList = [
+                    { name : "Достопримечательности", href: "#" },
+                    { name : "Знакомство с городом", href: "#" },
+                    { name : "Рестораны", href: "#" },
+                    { name : "Ночная жизнь", href: "#" },
+                    { name : "Развлечения", href: "#" },
+                    { name : "Шоппинг", href: "#" }
+                ] %}
+                {% include './footer.list/index.twig' with footerList %}
+            </div>
+
+        </div>
+
+        <div class="footer__item payment">
+            {% set payments = [ "master", "visa", "payfort", "v&s" ] %}
+            {% for item in payments %}
+            <a class="payment__link" href="#"><img src="./img/payment/{{ item }}.png" alt="{{ item }}"></a>
+            {% endfor %}
+        </div>
+
+        <p class="copy">Copyright &copy; <span>{{ companyName }}</span>. LLC</p>
+
+    </div>
+
+</footer>
+{# footer end #}
+</div>
+
+<script src="./js/bundle.js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4rIaix2bvKXYmwl_qUJk6ZwILq6Q7bZ8&callback=initMap"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<div class="proposes__item">
+    <a href="" class="proposes__image">
+
+        {% if item.flag %}
+            <div class="flag flag-{{ item.flag.class }}" style="background-image:url('./img/flag-{{ item.flag.class }}.png')">
+
+                {{ item.flag.text }}
+
+            </div>
+        {% endif %}
+
+        <div>
+
+            <img src="./img/{{ item.imageName }}.png" alt="">
+
+            <div class="proposes__value proposes-value">
+
+                <div class="proposes-value__duration proposes-value__icon">
+
+                            <span>
+                                <svg viewBox="0 0 448 448">
+                                    <use xlink:href="#person" />
+                                </svg>
+                            </span>
+                    3+ year
+
+                </div>
+
+
+                <div class="proposes-value__time proposes-value__icon">
+                            <span>
+                                <svg viewBox="0 0 97.16 97.16">
+                                    <use xlink:href="#clock" />
+                                </svg>
+                            </span>
+                    1,5 hours
+                </div>
+                <div class="proposes-value__mark proposes-value__icon">
+                            <span>
+                                <svg viewBox="0 0 430.114 430.114">
+                                    <use xlink:href="#mark" />
+                                </svg>
+                            </span>
+                    Al Habtoor City
+                </div>
+
+            </div>
+
+        </div>
+
+        <button type="button" class="favorite__ui"><span><svg viewBox="0 0 512 512"><use xlink:href="#favorite" /></svg></span></button>
+        <button type="button" class="mark__ui"><span><svg viewBox="0 0 119.88 119.88"><use xlink:href="#shoppingCart" /></svg></span></button>
+
+    </a>
+
+    <div class="proposes__text-wrapper">
+
+        <div class="proposes__text">
+
+            <a href="">{{ item.text }}</a>
+
+            {% include '../rating/index.twig' %}
+
+        </div>
+
+        <div class="proposes__price proposes-price">
+
+            <p class="proposes-price__name">{{ item.propName }}</p>
+
+            {% include '../rating/index.twig' %}
+
+            <p class="proposes-price__cost">
+                price
+                <span class="cy" data-cy="{{ cy }}">{{ item.propCost }}</span>
+            </p>
+
+        </div>
+
+        <p class="proposes__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Ut enim ad minim veniam, quis... nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+    </div>
+</div>

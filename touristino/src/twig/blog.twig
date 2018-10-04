@@ -1,0 +1,97 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                <br /> ut labore et dolore magna aliqua.</p>
+
+        </div>
+
+    </section>
+
+    {% set sectionImage = { image:'blog-image'} %}
+    {% include '../components/section.image/index.twig' with sectionImage %}
+
+    <section class="main-section">
+
+        <div class="wrapper">
+
+            <div class="main-path">
+
+                <div class="blog-head">
+
+                    <form class="blog-head__path">
+                        <p>Search :</p>
+
+                        <div class="search__wrapper">
+
+                            <input type="search" placeholder="Search"/>
+
+                            <button class="search__button"><svg viewBox="0 0 451 451"><use xlink:href="#search" /></svg></button>
+
+                        </div>
+                    </form>
+
+                    <div class="blog-head__path">
+
+                        <p>Sort by :</p>
+
+                        <div class="cselect sort-by-price">
+                            <span class="cselect__current sort-by-price__current" data-current="{{ sortByPrice.curr }}"></span>
+                            <ul class="cselect__list sort-by-price__list">
+                                {% for item in sortByPrice.items %}
+                                    <li class="cselect__item sort-by-price__item {% if loop.index == 1 %}active{% endif %}">
+                                        <span data-select="{{ item }}">{{ item }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="blog-body">
+
+                    {% include '../components/blog.list/index.twig' %}
+
+                </div>
+
+                {# = по ТЗ кнопка отсутствует = #}
+                {#<button type="button" class="button-white blog-button show__more">view more</button>#}
+
+                {% set pagination = { reverseClass: "pagination-reverse" } %}
+                {% include '../components/pagination/index.twig' with pagination %}
+
+            </div>
+
+            <aside>
+
+                {% include '../components/post.list/index.twig' %}
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    {% include '../components/section.subscription/index.twig' %}
+
+</main>
+
+{% include '../components/footer/index.twig' %}

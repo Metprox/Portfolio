@@ -1,0 +1,49 @@
+.recommendation {
+  &__list {
+    display: flex;
+    max-width: 1290px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 0 68px;
+  }
+
+  &__item {
+    max-width: 335px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & >div {
+      height: 84px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    & >* {
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      margin: 0 20px;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 24px 0 11px;
+  }
+
+  p {
+    font-size:1.6rem;
+    line-height: 2.2rem;
+  }
+}

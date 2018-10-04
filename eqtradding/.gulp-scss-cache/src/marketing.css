@@ -1,0 +1,56 @@
+@import url(../bower_components/swiper/dist/css/swiper.css);
+.marketingSectionOne {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 136px; }
+
+.marketingSectionTwo {
+  margin: auto;
+  width: 90%; }
+
+.marketingSectionTwo__headerText h1 {
+  font-family: Akzidenz-Grotesk BQ;
+  font-size: 72px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #fff; }
+
+.marketingSectionTwo__headerText h1 span {
+  color: #305e9a; }
+
+.marketingSectionTwo__headerText {
+  margin-bottom: 134px; }
+
+.marketingSectionTwo__middleText h2 {
+  font-family: Akzidenz-Grotesk BQ;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #fff; }
+
+.marketingSectionTwo__middleText h2 span {
+  color: #305e9a; }
+
+.wrapper {
+  width: 100%;
+  margin: auto; }
+
+.main__container {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto; }
+
+/*# sourceMappingURL=marketing.css.map */

@@ -1,0 +1,67 @@
+<section style="z-index: 2;">
+    <div class="wrapper">
+
+        <div class="sort">
+
+            <div class="sort__block">
+
+                <p>Сортировать по:</p>
+
+                <div class="cselect sort-by-price">
+                    <span class="cselect__current sort-by-price__current" data-current="{{ sortByPrice.curr }}"></span>
+                    <ul class="cselect__list sort-by-price__list">
+                        {% for item in sortByPrice.items %}
+                            <li class="cselect__item sort-by-price__item {% if loop.index == 1 %}active{% endif %}">
+                                <span data-select="{{ item }}">{{ item }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sort__block">
+
+                <p>Категория тура:  </p>
+
+                <div class="cselect sort-category">
+                    <span class="cselect__current sort-category__current" data-current="{{ sortCategory.curr }}"></span>
+                    <ul class="cselect__list sort-category__list">
+                        {% for item in sortCategory.items %}
+                            <li class="cselect__item sort-category__item {% if loop.index == 1 %}active{% endif %}">
+                                <span data-select="{{ item }}">{{ item }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sort__block sort-buttons">
+
+                <p>Вид тура:  </p>
+
+                {% set checkbox = [
+                    { type : "radio", name : "group-1", label : "Групповые" },
+                    { type : "radio", name : "group-1", label : "Индивидуальные" },
+                    { type : "checkbox", name : "group-2", label : "burning" }
+                ] %}
+
+                <div class="sort-buttons__block">
+                    {% for item in checkbox %}
+                        <label class="custom-box">
+
+                            <input type="{{ item.type }}" name="{{ item.name }}" value="" />
+                            <span class="custom-{{ item.type }}"></span>
+                            <span class="custom-label">{{ item.label }}</span>
+
+                        </label>
+                    {% endfor %}
+
+                    <button type="button" class="sort-reset button-white">reset all</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

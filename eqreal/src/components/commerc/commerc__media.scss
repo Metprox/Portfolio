@@ -1,0 +1,239 @@
+@media screen and (max-width: 575px) {
+    .leftBlock__commercial {
+        flex-basis: 100%;
+        height: 60vh;
+        margin-top: 20px;
+    }
+    .content__img--commercial {
+        width: 100%;
+    }
+    .header__container--commercial {
+        height: 14vh;
+        width: 100vw;
+    }
+    .text__rightBlock--commercial {
+        height: 30%;
+        justify-content: flex-start;
+    }
+    .logo__leftBlock--commercial {
+        justify-content: space-between;
+    }
+    .hoverBlock1,
+    .hoverBlock2 {
+        width: 150px;
+        height: 130px;
+    }
+    .hoverBlock1__shadow,
+    .hoverBlock2__shadow {
+        width: 150px;
+        height: 130px;
+    }
+    .hoverBlock1__allText,
+    .hoverBlock2__allText {
+        display: none;
+    }
+    .hoverBlock1 {
+        top: -4vh;
+        right: 2vw;
+    }
+    .hoverBlock2 {
+        bottom: 2vh;
+        left: 3vw;
+    }
+    .rightBlock__commercial {
+        margin-left: auto;
+        flex-basis: 95%;
+    }
+    .media__text {
+        font-size: 48px;
+    }
+    .commercial {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .leftBlock__commercial {
+        flex-basis: 100%;
+        height: 60vh;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .content__img--commercial {
+        width: 100%;
+    }
+    .header__container--commercial {
+        height: 14vh;
+        width: 100vw;
+    }
+    .text__rightBlock--commercial {
+        height: 30%;
+        justify-content: flex-start;
+    }
+    .logo__leftBlock--commercial {
+        justify-content: space-between;
+    }
+    .hoverBlock1,
+    .hoverBlock2 {
+        width: 180px;
+        height: 160px;
+    }
+    .hoverBlock1__shadow,
+    .hoverBlock2__shadow {
+        width: 180px;
+        height: 160px;
+    }
+    .hoverBlock1__allText,
+    .hoverBlock2__allText {
+        display: block;
+    }
+    .hoverBlock1__allText {
+        top: -5vh;
+        left: -24vw;
+    }
+    .hoverBlock2__allText {
+        bottom: -5vh;
+        right: -23vw;
+    }
+    .hoverBlock1 {
+        top: -4vh;
+        right: 2vw;
+    }
+    .hoverBlock2 {
+        bottom: 2vh;
+        left: 3vw;
+    }
+    .rightBlock__commercial {
+        margin-left: auto;
+        flex-basis: 95%;
+    }
+    .media__text {
+        font-size: 48px;
+    }
+    .commercial {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .leftBlock__commercial {
+        flex-basis: 100%;
+        height: 60vh;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .content__img--commercial {
+        width: 100%;
+    }
+    .header__container--commercial {
+        height: 14vh;
+        width: 100vw;
+    }
+    .text__rightBlock--commercial {
+        height: 30%;
+        justify-content: flex-start;
+    }
+    .logo__leftBlock--commercial {
+        justify-content: space-between;
+    }
+    .hoverBlock1,
+    .hoverBlock2 {
+        width: 210px;
+        height: 190px;
+    }
+    .hoverBlock1__shadow,
+    .hoverBlock2__shadow {
+        width: 210px;
+        height: 190px;
+    }
+    .hoverBlock1__allText,
+    .hoverBlock2__allText {
+        display: block;
+    }
+    .hoverBlock1__allText {
+        top: -5vh;
+        left: -24vw;
+    }
+    .hoverBlock2__allText {
+        bottom: -5vh;
+        right: -23vw;
+    }
+    .hoverBlock1 {
+        top: -4vh;
+        right: 2vw;
+    }
+    .hoverBlock2 {
+        bottom: 2vh;
+        left: 3vw;
+    }
+    .rightBlock__commercial {
+        margin-left: auto;
+        flex-basis: 95%;
+    }
+    .media__text {
+        font-size: 48px;
+    }
+    .commercial {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .commercial {
+        height: 60vh;
+    }
+    .leftBlock__commercial {
+        flex-basis: 58%;
+        height: 70vh;
+    }
+    .rightBlock__commercial {
+        margin-left: 0;
+        margin-right: 14px;
+    }
+    .content__img--commercial {
+        width: 100vw;
+    }
+    .hoverBlock1__allText {
+        left: -19vw;
+    }
+    .hoverBlock2__allText {
+        bottom: -3vh;
+        right: -16vw;
+    }
+    .hoverBlock1 {
+        right: -2vw;
+    }
+    .hoverBlock2 {
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .commercial {
+        height: 60vh;
+    }
+    .leftBlock__commercial {
+        flex-basis: 53%;
+        height: 70vh;
+    }
+    .rightBlock__commercial {
+        margin-left: 0;
+        margin-right: 44px;
+    }
+    .content__img--commercial {
+        width: 100vw;
+    }
+    .hoverBlock1__allText {
+        left: -19vw;
+    }
+    .hoverBlock2__allText {
+        bottom: -3vh;
+        right: -16vw;
+    }
+    .hoverBlock1 {
+        right: -2vw;
+    }
+    .hoverBlock2 {
+        bottom: 0;
+    }
+}

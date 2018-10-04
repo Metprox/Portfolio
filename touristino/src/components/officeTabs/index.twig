@@ -1,0 +1,101 @@
+<main class="officeTabs">
+
+    <div class="officeTabs__bg officeTabs__bg--localData">
+
+        <h1 class="officeMain__h1">Личный кабинет</h1>
+
+
+        <aside class="officeTabs__aside">
+            <ul class="officeTabs__ul">
+                <li class="officeTabs__li officeTabs__li--select">
+                    <img src="img/icon/management.png" alt="local data" class="officeTabs__img" width="37px" height="37px">
+                    <p class="officeTabs__p">Личные данные</p>
+                </li>
+
+                <li class="officeTabs__li">
+                    <img src="img/icon/reserve.png" alt="reseptions" class="officeTabs__img" width="37px" height="37px">
+                    <p class="officeTabs__p">Резервации</p>
+                </li>
+
+                <li class="officeTabs__li">
+                    <img src="img/icon/package.png" alt="keys" class="officeTabs__img" width="37px" height="37px">
+                    <p class="officeTabs__p">Брони</p>
+                </li>
+
+                <li class="officeTabs__li">
+                    <img src="img/icon/favorite.png" alt="service" class="officeTabs__img" width="37px" height="37px">
+                    <p class="officeTabs__p">Избранные услуги</p>
+                </li>
+
+                <li class="officeTabs__li">
+                    <img src="img/icon/map.png" alt="map" class="officeTabs__img" width="37px" height="37px">
+                    <p class="officeTabs__p">Карта</p>
+                </li>
+
+                <li class="officeTabs__li">
+                    <img src="img/icon/calendar.png" alt="calendar" class="officeTabs__img" width="37px" height="37px">
+                    <p class="officeTabs__p">Календарь</p>
+                </li>
+
+                <li class="officeTabs__li">
+                    <img src="img/icon/progress.png" alt="bonus" class="officeTabs__img" width="37px" height="37px">
+                    <p class="officeTabs__p">Достижения и бонусы</p>
+                </li>
+
+            </ul>
+        </aside>
+
+
+        <section class="officeTabs__section">
+
+            <ul class="officeTabs__tabBlock">
+
+                <li class="officeTabs__tabItem officeTabs__tabItem--1">
+
+                    {% include '../tabItem__localData/index.twig' %}
+                    
+                </li>
+
+                <li class="officeTabs__tabItem officeTabs__tabItem--2">
+
+                    {% include '../tabItem__reserve/index.twig' %}
+
+                </li>
+
+                <li class="officeTabs__tabItem officeTabs__tabItem--3">
+
+                    {% include '../tabItem__bron/index.twig' %}
+
+                </li>
+
+                <li class="officeTabs__tabItem officeTabs__tabItem--4">
+
+                    {% include '../tabItem__service/index.twig' %}
+
+                </li>
+
+                <li class="officeTabs__tabItem officeTabs__tabItem--5">
+
+                    {% include '../tabItem__map/index.twig' %}
+
+                </li>
+
+                <li class="officeTabs__tabItem officeTabs__tabItem--6">
+
+                    {% include '../tabItem__calendar/index.twig' %}
+                    
+                </li>
+
+                <li class="officeTabs__tabItem officeTabs__tabItem--7">
+
+                    {% include '../tabItem__bonus/index.twig' %}
+
+                </li>
+
+            </ul>
+        </section>
+
+
+    </div>
+
+</main>

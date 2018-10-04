@@ -1,0 +1,9 @@
+<div class="section-catalog">
+
+    {% for item in proposesElements|merge(proposesElements) %}
+
+        {% include '../proposes.item/index.twig' with item %}
+
+    {% endfor %}
+
+</div>

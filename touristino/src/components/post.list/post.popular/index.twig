@@ -1,0 +1,44 @@
+<h4 class="h4">popular post</h4>
+
+<ul class="posts__list">
+
+    {% for item in postsPopular %}
+        <li class="posts__item posts-item">
+
+            <div>
+                <div class="posts-item__image"><img src="./img/posts-item.png" alt=""></div>
+            </div>
+            <div>
+
+                <div class="posts-item__info posts-info">
+
+                    {% for subitem in item %}
+                        <span class="posts-info__{{ subitem.infoClass }}">
+
+                            {% if subitem.text %}
+                                <p>{{ subitem.text }}</p>
+                            {% endif %}
+
+                            {% if subitem.subtext %}
+                                <span>{{ subitem.subtext }}</span>
+                            {% endif %}
+
+                            {% if subitem.icon %}
+                                <i><svg viewBox="{{ subitem.icon.box }}"><use xlink:href="#{{ subitem.icon.id }}" /></svg></i>
+                            {% endif %}
+
+                        </span>
+                    {% endfor %}
+
+                </div>
+
+                <p class="posts-item__text">Who accompany the trip always full of enthusiasm</p>
+
+                <a href="" class="read__more" data-after="&rarr;">Read More</a>
+
+            </div>
+
+        </li>
+    {% endfor %}
+
+</ul>

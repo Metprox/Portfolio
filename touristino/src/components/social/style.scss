@@ -1,0 +1,37 @@
+.social {
+  align-self: center;
+  display: flex;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 250ms ease;
+    transition-property: background-color, box-shadow;
+
+    &:not(:last-of-type) {
+      margin-right: 4px;
+    }
+
+    &:hover {
+      box-shadow: 0 27px 43px rgba(32, 94, 171, 0.1);
+      background-color: #96e01f;
+
+      span {
+        fill: #fff;
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      fill: #393939;
+      transition: fill 250ms ease;
+    }
+  }
+}

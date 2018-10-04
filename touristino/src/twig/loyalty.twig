@@ -1,0 +1,125 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h1 class="h1">{{ h1 }}</h1>
+            <p class="subtitle-page">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt <br /> ut labore et dolore magna aliqua.</p>
+
+            <div class="about-block">
+
+                <h2 class="h2">Что это такое?</h2>
+
+                <div class="about-block__text">
+
+                    <p>Приобретение услуг с Turistino является не только удобным, но еще и весьма выгодным.
+                        Зарегистрировавшись на нашем сайте, Вы автоматически становитесь учасником программы лояльности и с того момента получаете возможность стать обладателем множества специальных предложений, бонусов, скидок и других привелегий.</p>
+                    <p>Все очень просто и понятно.</p>
+                        <p>Теперь, благодяря уникальным промо-кодам, которые присваиваються Вам при приобретении услуг становиться доступными дисконтные возможности.</p>
+
+                </div>
+
+                <div class="about-block__image">
+                    <img src="./img/bg/loyalty-item.png" alt="">
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="loyalty">
+
+        <div class="wrapper">
+
+            <h2 class="h2">Как это работает?</h2>
+
+            <ul class="loyalty__list">
+
+                {% set loyalties = [
+                    'Покупайте интересующие туры, экскурсии, билеты и другие сервисы и получайте промокоды.',
+                    'Перейдите в личный кабинет и ознакомьтесь с имеющимися кодами, а так же перечнем возможностей, которые открываются благодаря ему.',
+                    'Перейдите к интересующей услуге и активируйте промо-код либо перейдите напрямую к странице преобретения услуги и введите куд вручную в специальном поле.',
+                    'Получите скидку, дисконтній ваучер и сэкономьте благодаря Turistino и программе лояльности.'
+
+                ] %}
+
+                {% for item in loyalties %}
+                    <li class="loyalty__item">
+
+                        <div class="loyalty__image">
+                            <img src="./img/icon/loyalty-item-{{ loop.index }}.png" alt="">
+                            <span class="loyalty__counter">
+                                <span data-counter="0{{ loop.index }}">step</span>
+                            </span>
+                        </div>
+
+                        <div class="loyalty__text">
+
+                            <p data-counter="0{{ loop.index }}.">{{ item }}</p>
+
+                        </div>
+
+                    </li>
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="review">
+
+        <div class="wrapper">
+
+            <h3 class="h3">Review about tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/review/index.twig" %}
+
+            <div class="review__button">
+
+                <a href="" class="button-white review__more">view more</a>
+                <a href="" class="button-green review__send">Send review</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h3 class="h3">Recommended tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/main/proposes/index.twig" %}
+
+        </div>
+
+    </section>
+
+</main>
+
+{% include '../components/footer/index.twig' %}

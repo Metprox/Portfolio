@@ -1,0 +1,78 @@
+<div class="tabItem__headerText">
+    <h2>Личные данные</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+
+<form class="tabItem__form" method="POST" action="">
+
+    <div class="tabItem__info">
+
+        <label class="tabItem__label" for="names">Контактные данные</label>
+
+        <input class="tabItem__input" id="names" type="text" placeholder="ФИО" required>
+
+        <input class="tabItem__input tabItem__input--tel" type="tel" placeholder="Телефон" minlength="10" maxlength="10" pattern="[\(][0-9]{3}[\)]\s[0-9]{3}[\-][0-9]{2}[\-][0-9]{2}" required>
+
+        <input id="tabItem__input--email" class="tabItem__input" type="email" placeholder="E-mail" required>
+
+    </div>
+
+    <div class="tabItem__password">
+
+        <label class="tabItem__label" for="password">Смена пароля</label>
+
+        <input class="tabItem__input" id="newPassword" type="password" placeholder="Новый пароль" minlength="6" maxlength="18" required>
+        <input class="tabItem__input" id="repeatPassword" type="password" placeholder="Повторите пароль" minlength="6" maxlength="18" required>
+
+        <label class="tabItem__label--green tabItem__label--width" for="repeatPassword">* Пароль должен: содержать не менее 6 символов; содержать заглавные и прописные латинские буквы; содержать цифры</label>
+    </div>
+
+    <div class="tabItem__communication">
+
+        <label class="tabItem__label" for="tabItem__selectCommunication">Предпочитаемый способ коммуникации</label>
+
+        <div id="idListSelect" class="tabItem__listSelect tabItem__arrowSlide" data-communication="Twitter">
+
+            <ul class="tabItem__ul" name="select--communication" id="tabItem__selectCommunication">
+
+                <li class="tabItem__li">Viber</li>
+
+                <li class="tabItem__li">Telegram</li>
+
+                <li class="tabItem__li">Twitter</li>
+
+                <li class="tabItem__li">Ingtagram</li>
+
+            </ul>
+
+        </div>
+
+        <label class="tabItem__label" for="tabItem__selectLeanguage">Укажите язык для общения</label>
+
+        <div id="idListLang" class="tabItem__listSelect--lang tabItem__arrowSlide--lang" data-language="Русский">
+
+            <ul class="tabItem__ul--lang" name="select--communication" id="tabItem__selectLanguage">
+
+                <li class="tabItem__li--lang">Русский</li>
+
+                <li class="tabItem__li--lang">Английский</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="tabItem__subscribe">
+
+        <label class="tabItem__label" for="checkbox">Подписка</label>
+
+        <label class="tabItem__label tabItem__label--width"><input class="tabItem__checkbox" type="checkbox" id="checkbox">Подписаться на акции и новости нашего магазина, что бы узнать первым о скидках и предположениях</label>
+
+
+        <button class="tabItem__submit" type="submit">Подтвердить изменения</button>
+
+    </div>
+
+
+</form>

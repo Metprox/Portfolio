@@ -1,0 +1,213 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .marketplace__h1 {
+        max-width: 100%;
+        font-size: 52px;
+    }
+    .buyer {
+        flex-basis: 100%;
+        margin-bottom: 14vh;
+    }
+    .seller {
+        flex-basis: 100%;
+    }
+    .marketplace__list,
+    .marketplace__list2 {
+        flex-flow: column wrap;
+    }
+    .list__img {
+        width: 100%;
+        flex-basis: 100%;
+        &>img {
+            height: 20vh;
+        }
+    }
+    .list__content {
+        width: 100%;
+        flex-basis: 100%;
+        flex-flow: column wrap;
+        &>p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .buyer__header,
+    .seller__header {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .buyer__header--createBtn {
+        font-size: 14px;
+    }
+    .marketplace__navItems--size {
+        flex: none;
+        height: 150px;
+    }
+    .nav__link {
+        font-size: 18px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .marketplace__h1 {
+        max-width: 100%;
+        font-size: 62px;
+    }
+    .buyer {
+        flex-basis: 45%;
+        margin-bottom: 14vh;
+    }
+    .seller {
+        flex-basis: 45%;
+    }
+    .marketplace__list,
+    .marketplace__list2 {
+        flex-flow: row wrap;
+    }
+    .list__img {
+        width: 100%;
+        flex-basis: 100%;
+        &>img {
+            height: 20vh;
+        }
+    }
+    .list__content {
+        width: 100%;
+        flex-basis: 100%;
+        flex-flow: column wrap;
+        &>p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .buyer__header,
+    .seller__header {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .buyer__header--createBtn {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    .marketplace__navItems--size {
+        flex: none;
+    }
+    .nav__link {
+        font-size: 18px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .marketplace__h1 {
+        max-width: 100%;
+        font-size: 72px;
+    }
+    .buyer {
+        flex-basis: 45%;
+        margin-bottom: 14vh;
+    }
+    .seller {
+        flex-basis: 45%;
+    }
+    .marketplace__list,
+    .marketplace__list2 {
+        flex-flow: row wrap;
+    }
+    .list__img {
+        width: 100%;
+        flex-basis: 100%;
+        &>img {
+            height: 20vh;
+        }
+    }
+    .list__content {
+        width: 100%;
+        flex-basis: 100%;
+        flex-flow: column wrap;
+        &>p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .buyer__header,
+    .seller__header {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .buyer__header--createBtn {
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+    .marketplace__navItems--size {
+        flex: none;
+    }
+    .nav__link {
+        font-size: 18px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .marketplace__h1 {
+        max-width: 60%;
+        font-size: 52px;
+    }
+    .buyer {
+        flex-basis: 45%;
+        margin-bottom: 14vh;
+    }
+    .seller {
+        flex-basis: 45%;
+    }
+    .marketplace__list,
+    .marketplace__list2 {
+        flex-flow: row wrap;
+    }
+    .list__img {
+        width: 100%;
+        flex-basis: 100%;
+        &>img {
+            height: 20vh;
+        }
+    }
+    .list__content {
+        width: 100%;
+        flex-basis: 100%;
+        flex-flow: column wrap;
+        &>p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .buyer__header,
+    .seller__header {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .buyer__header--createBtn {
+        font-size: 16px;
+        letter-spacing: 7px;
+    }
+    .marketplace__navItems--size {
+        flex: none;
+    }
+    .nav__link {
+        font-size: 20px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .marketplace__h1 {
+        max-width: 50%;
+        font-size: 52px;
+    }
+    .social__allSvg>p:last-child {
+        left: -4vw;
+    }
+    .nav__link {
+        font-size: 20px;
+    }
+}

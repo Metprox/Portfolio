@@ -1,0 +1,281 @@
+.calendar {
+  width: 513px;
+  height: 392px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 6px 6px;
+  background-color: #ffffff;
+  padding: 28px;
+
+  //display: block !important;
+
+  @media only screen and (max-width: 1439px) {
+    width: 433px;
+    height: 352px;
+    padding: 15px;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    width: 343px;
+    height: 302px;
+  }
+
+  @media only screen and (max-width: 479px) {
+    width: 280px;
+    height: 260px;
+    padding: 7px;
+  }
+
+  &__item {
+    width: 100% !important;
+    height: 100%;
+    margin: 0 !important;
+
+    .xdsoft {
+      &_monthpicker {
+        display: flex;
+        margin-bottom: 40px;
+
+        @media only screen and (max-width: 1199px) {
+          margin-bottom: 10px;
+        }
+      }
+
+      &_today_button, &_label > i {
+        display: none;
+      }
+
+      &_label {
+        width: auto;
+        text-align: left;
+        padding: 0;
+        color: #333333;
+        font-family: $montserrat;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        font-weight: normal;
+
+        @media only screen and (max-width: 767px) {
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+
+        &:hover {
+          span {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &_month {
+        span {
+          display: inline-block;
+          &:after {
+            content: ",";
+            margin-right: 5px;
+          }
+        }
+      }
+
+      &_monthselect, &_yearselect {
+        max-height: 200px !important;
+        border-radius: 2px;
+      }
+
+      &_monthselect {
+        width:160px;
+      }
+
+      &_yearselect {
+        width: 80px;
+
+        .xdsoft_option {
+          text-align: center;
+        }
+      }
+
+      &_option {
+        color: rgba(#333, .7);
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+
+        &:hover {
+          background-color: rgba(#0d9e51, .5) !important;
+        }
+
+        &.xdsoft_current {
+          background-color: #0d9e51 !important;
+        }
+      }
+
+      &_scrollbar {
+        width: 4px;
+      }
+
+      &_prev, &_next {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 1px solid #333333 !important;
+        opacity: .35;
+        background: url('../img/icon/calendar-arrow.svg') no-repeat 50%/contain;
+
+        &:hover {
+          transition: opacity 250ms ease;
+        }
+      }
+
+      &_prev {
+        order: 1;
+        margin-left: auto;
+      }
+
+      &_next {
+        order: 2;
+        transform: rotate(180deg);
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.calendar {
+  .xdsoft {
+    &_calendar {
+      height: 100%;
+
+      th, td {
+        background: none;
+        border: none;
+        height: 20px !important;
+
+        &:first-of-type {
+          color: #ff5252;
+        }
+      }
+
+      th {
+        color: #333333;
+        font-family: $montserrat;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+
+        @media only screen and (max-width: 767px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      td {
+        color: #333333;
+        font-family: $montserrat;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.8rem;
+        text-align: center;
+
+        @media only screen and (max-width: 767px) {
+          font-size: 1.2rem;
+        }
+
+        &.xdsoft_other_month {
+          color: rgba(#333, .35);
+        }
+
+        &:hover {
+          background: none !important;
+
+          & >div {
+            background-color: rgba(#0d9e51, .5);
+          }
+        }
+
+        &.xdsoft_current {
+          background: none !important;
+          box-shadow: none;
+          color: #fff;
+          font-weight:300;
+
+          & >div {
+            background-color: #4588f2 !important;
+          }
+        }
+
+        & >div {
+          width: 25px;
+          height: 25px;
+          display: flex;
+          margin: 0 auto;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          transition: background-color 250ms ease;
+
+          @media only screen and (max-width: 767px) {
+            width: 20px; height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  table {
+    height: calc(100% - 66px);
+
+    @media only screen and (max-width: 1199px) {
+      height: calc(100% - 36px);
+    }
+  }
+
+  &-time {
+    width: 100px;
+
+    &__item {
+      width: calc(100% - 12px) !important;
+
+      & >button {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+    }
+
+    .xdsoft {
+      &_scroller_box {
+        border: none !important;
+      }
+
+      &_time {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        border: none !important;
+        background: none !important;
+        color: #333333 !important;
+        font-family: $montserrat;
+        font-size: 1.6rem !important;
+        font-weight: 300;
+        line-height: 1.8rem !important;
+        transition: color 250ms ease;
+
+        &.xdsoft_current {
+          box-shadow: none !important;
+          color:#4588f2 !important;
+          font-weight: 300 !important;
+        }
+
+        &:hover:not(.xdsoft_current) {
+          color: rgba(#0d9e51,.8) !important;
+          background: none !important;
+        }
+      }
+
+      &_scrollbar {
+        width: 4px;
+        transform: translateX(100%);
+      }
+    }
+  }
+}
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover {
+  color: rgba(#0d9e51,.8) !important;
+  background: none !important;
+}

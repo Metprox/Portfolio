@@ -1,0 +1,20 @@
+<div class="contact-us">
+
+    <h3 class="h3">contact us</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+    <div class="contact-us__list">
+
+        {% for item in contactUs %}
+        <div>
+            <a href="#" class="contact-us__item">
+                <span class="contact-us__icon icon__{{ item.icSoc }}"><span><svg viewBox="{{ item.box }}"><use xlink:href="#{{ item.id }}" /></svg></span></span>
+                <span>{{ item.name }}</span>
+            </a>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</div>

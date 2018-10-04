@@ -1,0 +1,27 @@
+<div class="guid-item">
+
+    {% if item.image %}
+
+    <div class="guid-item__image">
+
+        <img src="./img/{{ item.image }}.png" alt="">
+
+    </div>
+
+    {% elseif item.icon %}
+
+    <span class="guid-item__icon">
+
+        <img class="guid-item__icon_desk" src="./img/sliding/sliding-{{ item.icon }}.png" alt="">
+
+    </span>
+
+    {% endif %}
+
+    <div class="guid-item__name">{{ item.name }}</div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+    <a href="#" class="guid__button read__more" data-after="&rarr;">{{ item.button }}</a>
+
+</div>

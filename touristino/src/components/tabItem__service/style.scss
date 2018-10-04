@@ -1,0 +1,42 @@
+.service {
+    &__content {
+        width: 65%;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+        }
+    }
+    &__cencel {
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+    &__humb {
+        display: block;
+        padding: 14px;
+        cursor: pointer;
+        position: relative;
+        transform: translateY(1vh);
+        &:after {
+            content: "";
+            position: absolute;
+            top: 45%;
+            left: 20%;
+            width: 20px;
+            height: 3px;
+            background-color: #0d9e51;
+            transform: rotate(45deg);
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 45%;
+            left: 20%;
+            width: 20px;
+            height: 3px;
+            background-color: #0d9e51;
+            transform: rotate(-45deg);
+        }
+    }
+}

@@ -1,0 +1,312 @@
+{% include '../components/header/index.twig' %}
+
+<main class="{% if contentClass %}{{ contentClass }}{% endif %}">
+
+
+    <section>
+
+        <div class="wrapper">
+
+            {% include '../components/breadcrumbs/index.twig' %}
+
+        </div>
+
+    </section>
+
+    <section class="main-section">
+
+        <div class="wrapper">
+
+            <div class="main-path">
+                <h1 class="h2">{{ h1 }}</h1>
+
+                <p class="subtitle">excursion tour</p>
+
+                <div class="present">
+
+                    <div class="slider-present">
+
+                        {% include '../components/slider/as.nav/index.twig' %}
+
+                        <div class="present-state">
+
+                            <div class="present-state__rating present-state__item">
+                                <p>Rating</p>
+                                {% include '../components/rating/index.twig' %}
+                            </div>
+
+                            <a href="#" class="present-state__comment present-state__item">
+                                <p>comments</p>
+                                <span>215</span>
+                                <span class="present-state__icon"><svg viewBox="0 0 60 60"><use xlink:href="#chat" /></svg></span>
+                            </a>
+
+                            <a href="#" class="present-state__share present-state__item">
+
+                                <p>share</p>
+                                <span class="present-state__icon"><svg viewBox="0 0 473.932 473.932"><use xlink:href="#share" /></svg></span>
+
+                            </a>
+
+                            <div class="present-state__view present-state__item">
+
+                                <p>views</p>
+                                <span class="present-state__icon"><svg viewBox="0 0 512 512"><use xlink:href="#eye" /></svg></span>
+                                <span>3456</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="present-desc">
+
+                    <div class="tabs">
+
+                        {% set switchers = ["Описание", "Примечания", "Тезисы"] %}
+
+                        {% set tabClass = "present-tabs__head" %}
+                        {% include '../components/tabs/index.twig' with tabsClass %}
+
+                        <div class="tabs__body present-tabs__body">
+
+                            {% for i in switchers %}
+                                <div class="tabs__content {% if loop.first %}active{% endif %}">
+                                    {% if loop.index == 1 %}
+
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <br />
+                                            <p>aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <br />
+                                            <p>aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        </div>
+
+                                        <button class="read__more" type="button" data-after="&rarr;">read more</button>
+
+                                    {% elseif loop.index == 2 %}
+
+                                        <div>
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <br />
+                                            <p>aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        </div>
+
+                                        <button class="read__more" type="button" data-after="&rarr;">read more</button>
+
+                                    {% else %}
+
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br />
+                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des erunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur ...</p>
+
+                                        </div>
+
+                                        <button class="read__more" type="button" data-after="&rarr;">read more</button>
+
+                                    {% endif %}
+
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <aside class="sliding-aside">
+
+                <div class="service-reserve reserve">
+
+                    <h3 class="h3">rush to buy</h3>
+                    <form class="reserve-form">
+
+                        <div class="reserve__row">
+
+                            <div class="reserve__item">
+                                <label for="datepicker" class="reserve__title"><i>
+                                        <svg viewBox="0 0 276.338 276.338">
+                                            <use xlink:href="#calendar"/>
+                                        </svg></i>Выберите дату:</label>
+                                <input type="text" value="" name="" id="datepicker" readonly />
+                            </div>
+
+                            <dvi class="reserve__item">
+                                <label for="timepicker" class="reserve__title"><i>
+                                        <svg viewBox="0 0 97.16 97.16">
+                                            <use xlink:href="#clock" />
+                                        </svg></i>Время:</label>
+                                <input type="text" value="" name="" id="timepicker" />
+                            </dvi>
+
+                        </div>
+
+                        <div class="reserve__row">
+
+                            <div class="reserve__item">
+                                <span class="reserve__title"><i><svg viewBox="0 0 448 448"><use xlink:href="#person" /></svg></i>Кол-во человек:</span>
+                                <div class="cselect person unselected">
+                                    <span class="cselect__current person__current" data-current="{{ person.curr }}"></span>
+                                    <ul class="cselect__list person__list">
+                                        {% for item in person.items %}
+                                            <li class="cselect__item person__item {% if loop.index == 1 %}active{% endif %}">
+                                                <span data-select="{{ item }}">{{ item }}</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="reserve__item">
+                                <span class="reserve__title"><i><svg viewBox="0 0 437.6 437.6"><use xlink:href="#info" /></svg></i>Способ связи: </span>
+                                <div class="cselect social-linker unselected">
+                                    <span class="cselect__current social-linker__current" data-current="{{ socialLinker.curr }}"></span>
+                                    <ul class="cselect__list social-linker__list">
+                                        {% for item in socialLinker.items %}
+                                            <li class="cselect__item social-linker__item {% if loop.index == 1 %}active{% endif %}">
+                                                <span data-select="{{ item }}">{{ item }}</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="reserve__row">
+
+                            <div class="reserve__item">
+                                <span class="reserve__title">Запоните поля</span>
+                                <input type="text" name="" value=""  placeholder="Имя"/>
+                            </div>
+
+                            <div class="reserve__item">
+                                <input type="email" name="" value="" placeholder="E-Mail" />
+                            </div>
+
+                        </div>
+
+                        <div class="reserve__row">
+
+                            <div class="reserve__item">
+                                <input type="text" name="" value="" placeholder="Отель откуда забрать" />
+                            </div>
+
+                            <div class="reserve__item">
+                                <input type="text" name="" value="" placeholder="Номер комнаты" />
+                            </div>
+
+                        </div>
+
+                        <div class="reserve__row row-telephone">
+
+                            <div class="reserve__item reserve__tel">
+                                <label for="tel" class="reserve__title">Ваш номер телефона:</label>
+                                <input type="tel" name="" value="" id="tel" data-mask="+99(999)999-99-99" placeholder="+38 (_ _ ) _ _ _ -_ _- _ _ " />
+                            </div>
+
+                        </div>
+
+                        <div class="reserve__row promocode">
+
+                            <div class="reserve__item promocode__item">
+                                <label for="code" class="reserve__title">Введите промо-код :</label>
+                                <input type="text" name="" value="" id="code" />
+                                <button type="submit"></button>
+                            </div>
+
+                            <p>*Оставьте поле пустім если у Вас нет промокода для данной услуги.</p>
+                        </div>
+
+                        <div class="reserve__button">
+
+                            <button class="button-white" type="button">в избранное</button>
+                            <button class="button-green" type="button">
+                                <i>
+                                    <svg viewBox="0 0 119.88 119.88">
+                                        <use xlink:href="#shoppingCart" />
+                                    </svg>
+                                </i>
+                                Add to cart
+                            </button>
+
+                        </div>
+
+                        <p>Представитель позвонит Вам в указаное в заявке время.</p>
+                        <p>Пожалуйста ожидайте в номере.</p>
+
+                    </form>
+
+                </div>
+
+                <div>
+
+                    {% include '../components/contact.us/index.twig' %}
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    <section class="review">
+
+        <div class="wrapper">
+
+            <h3 class="h3">Review about tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/review/index.twig" %}
+
+            <div class="review__button">
+
+                <a href="" class="button-white review__more">view more</a>
+                <a href="" class="button-green review__send">Send review</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="wrapper">
+
+            <h3 class="h3">Recommended tour</h3>
+
+            <p style="line-height: 26px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            {% include "../components/slider/main/recommend/index.twig" %}
+
+        </div>
+
+    </section>
+
+
+</main>
+
+{% include '../components/footer/index.twig' %}
